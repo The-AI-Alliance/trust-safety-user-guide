@@ -6,3 +6,4 @@ dependencies:
   - python>3.10
   - pip>23
   - jupyter-book
+  - sphinx-jupyterbook-latex
