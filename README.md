@@ -1,71 +1,188 @@
 # README
 
-This repo contains the AI Alliance _Understanding AI Trust and Safety: A Living Guide_, a [Jupyter Book](https://jupyterbook.org/). We welcome contributions as PRs. See the AI Alliance [CONTRIBUTING](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md). Also note the AI Alliance [Code of Conduct](https://github.com/The-AI-Alliance/community/blob/main/CODE_OF_CONDUCT.md) and [LICENSE](https://github.com/The-AI-Alliance/community/blob/main/LICENSE) (which is also in [this repo](LICENSE)).
+[Published Website](https://pages.github.com/The-AI-Alliance/trust-safety-user-guide)
 
-## Setup
+This repo contains the AI Alliance _Understanding AI Trust and Safety: A Living Guide_, published using [GitHub Pages](https://pages.github.com/). We welcome contributions as PRs. See the AI Alliance [CONTRIBUTING](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md) instructions. Also, you'll need to agree with the AI Alliance [Code of Conduct](https://github.com/The-AI-Alliance/community/blob/main/CODE_OF_CONDUCT.md) and all contributions will be covered by the [LICENSE](https://github.com/The-AI-Alliance/community/blob/main/LICENSE) (which is also in [this repo](LICENSE)).
 
-We recommend using a [Conda environment](https://conda.io/). Running the following command in this directory will setup everything you need in a Conda environment called `trust-safety-user-guide`:
+## Quick Setup
 
-```shell
-conda env create -f conda.yml
+We use [GitHub Pages](https://pages.github.com/) so edits can be made in Markdown, updates can be managed using pull requests, and the results can be published automatically by GitHub.
+
+No setup is required locally unless you want to review your changes as they will appear fully rendered in the GitHub Pages website. While GitHub renders Markdown well, you won't _really_ know how the edits look until they are rendered as pages.
+
+So, to view the website locally, you'll need to have a recent version of [Ruby](https://www.ruby-lang.org/en/) installed, along with the [`gem`](https://docs.ruby-lang.org/en/master/Gem.html) and [`jekyll`](https://jekyllrb.com/) tools.
+
+We discuss these steps in more depth [below](#setup-jekyll), but try the following now.
+
+Install a recent version of Ruby 3. Note that the MacOS default Ruby installation is old, version 2.6.10. Installing Ruby will also install `gem`.
+
+This project's `Makefile` will attempt to install the remaining dependencies, including `jekyll`, when you run `make all` or `make view-local`, before doing their "real jobs", running the website locally for your review.
+
+> **WARN:** The automatic setup of `jekyll` has only been tested on MacOS. If you encounter problems on other platforms, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help. Of course, [pull requests](https://github.com/The-AI-Alliance/trust-safety-user-guide/pulls) (PRs) are always welcome, too :nerd_face:. (More details on PRs below.)
+> **Tip:** Run `make help` for a list of commands defined.
+
+When you run either `make all` or `make view-local`, it will finish with a message like this:
+
 ```
-
-At any time, you can activate the environment:
-
-```shell
-conda activate trust-safety-user-guide
-```
-
-Verify that `jupyter-book` is working:
-
-```shell
-jupyter-book --help
-```
-
-Which prints the following:
-
-```text
-Usage: jupyter-book [OPTIONS] COMMAND [ARGS]...
-
-  Build and manage books with Jupyter.
-
-Options:
-  --version   Show the version and exit.
-  -h, --help  Show this message and exit.
 ...
+Server address: http://127.0.0.1:4000/
+Server running... press ctrl-c to stop.
 ```
 
-We used the following command to create the initial "skeleton" for the User Guide:
+Open the URL in a browser. 
+
+> **Tip:** On MacOS, use CMD-click on the URL to open it in a browser.
+
+## Contributing New or Improved Content
+
+What gets displayed by GitHub Pages is the customized Markdown files in the `doc` directory. If you need to create a new page, copy an existing page to get the correct "header" information, then edit as needed.
+
+Here are some things you should know.
+
+### Using the Correct Branch
+
+As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
+
+> **Note:** If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).) 
+
+## Editing Conventions and Tips
+
+### Links
+
+For internal cross-references, use the conventional `[title](URL)` Markdown syntax. For external links, use HTML links with a `target` instead, e.g., `<a href="https://github.com/The-AI-Alliance/trust-safety-user-guide" target="_dp">The AI Alliance Trust Safety User Guide</a>`. (The `target` value is arbitrary; use whatever you want.) While this is more tedious to type, it is usually better for users so they don't lose their place in the documentation. Also, <a href="https://pages.github.com/The-AI-Alliance/trust-safety-user-guide/blob/main/doc/_includes/css/custom.scss.liquid" target="_css">our CSS</a> is configured to put the little up-and-to-the-right arrows after every link that isn't relative, i.e., it starts with `http` or `https`, as a visual clue that a new tab will be opened. You see that icon on the _our CSS_ link! :smirk:
+
+### Emojis
+
+In the pages, you can use emojis, e.g., `:+1:` yields :+1:, `:smirk:` yields :smirk:, `:nerd_face:` yields :nerd_face:, etc. The `jemoji` Ruby gem adds this capability. <a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="jemoji">Here is a list of available emojis</a>.
+
+
+## Previewing Your Work Locally
+
+If you want to preview your work locally before pushing the changes upstream, _some assembly is required:_
+
+### Setup Jekyll
+
+First, you'll need a reasonably recent version of Ruby installed. The one that comes with MacOS is _not new enough_. See [Use Homebrew to Install Ruby on MacOS](#use-homebrew-to-install-ruby-on-macos) to install [Homebrew](https://brew.sh) and then Ruby using the `brew` command.
+
+Afterwards, the commands shown next should produce similar output that shown from Dean's machine, circa June 2024:
 
 ```shell
-jupyter-book create user-guide/
+$ which ruby
+/usr/local/Cellar/ruby/3.3.0/bin/ruby
+$ ruby --version
+ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [x86_64-darwin23]
 ```
 
-The `user-guide` directory has the actual book content.
+> **Warning:** In 2022, when we used these tools, building the website was not working with Ruby 3.2, you may still need to use 3.3 or 3.1.
 
-### Building the Book
+Make sure your `ruby` command is not located in `/usr/bin/ruby` nor shows a version older than 3.1.
 
-```sell
-jupyter-book build user-guide/
-```
-
-For convenience, a `Makefile` is provided in the root directory. You can also build the book using the following command:
+Now, it _should_ be sufficient to run the following command:
 
 ```shell
-make build
+make setup-jekyll
 ```
 
-> **Tip:** Run `make help` to see other commands you can run.
+If this fails, then see the [Tips and Known Issues](#tips-and-known-issues) below.
 
-This creates an HTML tree, [userguide/_build/html/index.html](userguide/_build/html/index.html) and a PDF (TBD).
+### View the Pages Locally
 
-However, in order to build the PDF, you have to install LaTex. We use [TeX Live](https://www.tug.org/texlive/)
+Once Jekyll is set up, you can serve the pages locally for previewing and editing by running the following command, then open <a href="http://localhost:4000" target="_lh4000">localhost:4000</a> in a browser.
 
-## Editing Jupyter Books
+```shell
+make view-local   # Or use "make all" or just "make"!
+```
 
-If you are new to Jupyter Book, consider going through the [Create your first book](https://jupyterbook.org/en/stable/start/overview.html) tutorial.
+If this throws an error, see the [Tips and Known Issues](#tips-and-known-issues) below.
 
-### Markdown Dialect(s)
+> **Tip:** In MacOS terminal windows, you can &#8984;+click any URL printed to open it in a browser!
 
-The pages are written in Markdown, using [CommonMark markdown](https://commonmark.org/), a markdown standard that is very common, and [MyST Markdown](https://jupyterbook.org/en/stable/content/myst.html), an extension of CommonMark with extra functionality for enriched documents.
+The `make` target runs the following command:
 
+```shell
+cd doc && bundle exec jekyll serve --baseurl '' --incremental
+```
+
+The `--baseurl` flag effectively supports the simple URL, `localhost:4000`. (Without it, the URL would be `localhost:4000/The-AI-Alliance/trust-safety-user-guide/`.) The `--incremental` flag lets you edit the pages and refresh the browser tab to see the updates immediately. 
+
+> **Note:** Well, more or less immediately. It can take several seconds for new pages to be generated and sometimes you'll get weird behaviors if you change URL paths, etc. So, occasionally it is useful to _control-c_ in the terminal and rerun `make view-local`.
+
+> **Pro Tip:** `make view-pages` opens the _published_ GitHub Pages in a browser tab.
+
+### Now Edit!
+
+You can now edit the pages, save them, then refresh your browser to see the updates.
+
+## Tips and Known Issues
+
+### Use Homebrew to Install Ruby on MacOS (Recommended)
+
+You really can't use the Ruby that comes with your Mac, because:
+1. It's too old, 2.6.X, instead of 3.X, which we need.
+2. You don't have permissions to install Gems into `/Library/...`
+
+So, install [Homebrew](https://brew.sh), if you haven't already. Then use it to install a local, recent version of Ruby:
+
+```shell
+brew install ruby@3.3
+which -a ruby
+```
+
+If the last command shows `/usr/bin/ruby` before a path like `/usr/local/Cellar/ruby/3.3.0/bin/ruby`, then you will have to edit your `~/.zshrc` file and make sure the `/usr/local/Cellar/ruby/...` path comes before `/usr/bin`. For example, the following line will just put this Ruby first. (this is a hack):
+
+```shell
+PATH="/usr/local/opt/ruby/3.3.0/bin:$PATH"
+```
+
+(Use the exact version number you have!)
+
+Then in your terminal, either open a new window/tab or run the command `source ~/.zshrc` to load the changed `PATH`. Now `which ruby` should return a path in `/usr/local/Cellar/...` and `ruby --version` should return the correct 3.X version.
+
+### The Jekyll Installation Instructions Failed
+
+Suppose you run the following commands and the second one fails:
+
+```shell
+cd docs
+make setup-jekyll
+```
+
+First, make sure you are using a valid version of `ruby`, as described in the previous section. A symptom you didn't do that? You'll see this error message:
+
+```
+You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
+```
+
+The commands run by `make setup-jekyll` discussed previously include the following (a few details omitted for simplification):
+
+```shell
+gem install jekyll bundler jemoji
+bundle install
+bundle update html-pipeline
+```
+
+Finally, if you are still stuck, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help.
+
+> **Help Needed:** If you find missing steps that `make setup-jekyll` should run but doesn't, or you find and fix problems that only occur on non-MacOS platforms, **please** submit a PR with fixes! Thank you. 
+
+### The "make view-local" Command Fails
+
+What if `make view-local` command fails with this error message?
+
+```
+jekyll 3.9.2 | Error: No such file or directory @ rb_check_realpath_internal
+```
+
+First, that's an old Jekyll version. It should be 4.3.3 or later. Try these commands:
+
+```
+gem uninstall jekyll
+gem install jekyll
+gem list | grep jekyll
+```
+
+### Configuring GitHub Pages in the Repo Settings
+
+This section documents the one-time settings changes we did to <a href="https://docs.github.com/en/enterprise-server@3.1/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_ghe_gp">configure publication of our GitHub Pages</a>. We changed the desired branch to use, `latest`, rather than the default `main` branch, and we specified the directory for the website pages, `doc`. This only needs to be done if and when the branch or directory location is changed.
+
+In the repo's _Settings > GitHub Pages_ section, set the branch to be `latest` and the folder to be `/doc`. The reason for using `latest` rather than `main`, is to allow small changes to be made without affecting what is published until we decide to publish an update.
