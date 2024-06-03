@@ -35,7 +35,37 @@ Options:
 ...
 ```
 
-## Using Jupyter Book
+We used the following command to create the initial "skeleton" for the User Guide:
+
+```shell
+jupyter-book create user-guide/
+```
+
+The `user-guide` directory has the actual book content.
+
+### Building the Book
+
+```sell
+jupyter-book build user-guide/
+```
+
+For convenience, a `Makefile` is provided in the root directory. You can also build the book using the following command:
+
+```shell
+make build
+```
+
+> **Tip:** Run `make help` to see other commands you can run.
+
+This creates an HTML tree, [userguide/_build/html/index.html](userguide/_build/html/index.html) and a PDF (TBD).
+
+However, in order to build the PDF, you have to install LaTex. We use [TeX Live](https://www.tug.org/texlive/)
+
+## Editing Jupyter Books
 
 If you are new to Jupyter Book, consider going through the [Create your first book](https://jupyterbook.org/en/stable/start/overview.html) tutorial.
+
+### Markdown Dialect(s)
+
+The pages are written in Markdown, using [CommonMark markdown](https://commonmark.org/), a markdown standard that is very common, and [MyST Markdown](https://jupyterbook.org/en/stable/content/myst.html), an extension of CommonMark with extra functionality for enriched documents.
 
