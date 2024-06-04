@@ -12,9 +12,9 @@ has_children: false
 
 Welcome to the **The AI Alliance Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
-[The AI Alliance](https://thealliance.ai){:target="_ai" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [User Guide GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="_repo" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
+[The AI Alliance](https://thealliance.ai){:target="_ai" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .no-glyph} [User Guide GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="_repo" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .no-glyph} 
 
-> **Pro Tip:** Use the search box at the top of this page to find specific content.
+> **Tip:** Use the search box at the top of this page to find specific content.
 
 This guide is organized as follows:
 
