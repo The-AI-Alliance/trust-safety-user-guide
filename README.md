@@ -35,7 +35,7 @@ Server running... press ctrl-c to stop.
 Open the URL in a browser. 
 
 > **Tips:** 
-> 1. On MacOS, use CMD-click on the URL to open it in a browser.
+> 1. On MacOS, use &#8984;-click on the URL to open it in a browser.
 > 2. Run `make help` for a list of commands defined.
 
 > **WARNING:** The automatic setup of `jekyll` in the `Makefile` has only been tested on MacOS. If you encounter problems on other platforms, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help, or if you can fix the issue, a [pull request](https://github.com/The-AI-Alliance/trust-safety-user-guide/pulls) (PR) is always welcome :nerd_face:. (More details on PRs below.)
@@ -52,7 +52,7 @@ Here are some things you should know.
 
 As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
 
-> **Note:** If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).) 
+> **Note:** If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
 
 ## Editing Conventions and Tips
 
@@ -77,7 +77,7 @@ In the pages, you can use emojis, e.g., `:+1:` yields :+1:, `:smirk:` yields :sm
 
 ## Previewing Your Work Locally
 
-If you want to preview your work locally before pushing the changes upstream, _some assembly is required:_
+We provided a basic set of instructions above for setting up Jekyll locally. Here is a more detailed set of instructions, if you need them.
 
 ### Setup Jekyll
 
@@ -94,7 +94,7 @@ ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [x86_64-darwin23]
 
 > **Warning:** In 2022, when we used these tools, building the website was not working with Ruby 3.2, you may still need to use 3.3 or 3.1.
 
-Make sure your `ruby` command is not located in `/usr/bin/ruby` nor shows a version older than 3.1.
+For MacOS, make sure the `ruby` path shown is not `/usr/bin/ruby`, which is the old, built-in 2.6 version. Try `which -a ruby`, which will hopefully show the `Cellar` version second. If so, edit the `PATH` definition in your `~/.zshrc` file to put the newer `/usr/local/Cellar/ruby/3.X.Y/bin` directory before `/usr/bin/`.
 
 Now, it _should_ be sufficient to run the following command:
 
