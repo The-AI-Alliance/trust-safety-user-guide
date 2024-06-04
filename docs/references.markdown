@@ -176,7 +176,7 @@ A popular, crowd-sourced platform for gauging the performance of chatbots.
 
 A consortium of universities and United States Department of Defense (DoD) agencies researching the requirements for trustworthy AI. See also the ND Crane GitHub repository.
 
-Liu, Haochen, Yiqi Wang, Wenqi Fan, Xiaorui Liu, Yaxin Li, Shaili Jain, Yunhao Liu, Anil K Jain, and Jiliang Tang, [“Trustworthy AI: A Computational Perspective.” ACM Trans. Intell. Syst. Technol., June, 2022](https://dl.acm.org/doi/10.1145/3546872){:target="_3546872"}. 
+Liu, Haochen, Yiqi Wang, Wenqi Fan, Xiaorui Liu, Yaxin Li, Shaili Jain, Yunhao Liu, Anil K Jain, and Jiliang Tang, [“Trustworthy AI: A Computational Perspective”](https://dl.acm.org/doi/10.1145/3546872){:target="_3546872"}, ACM Trans. Intell. Syst. Technol., June, 2022. 
 
 ## Other Resources
 
