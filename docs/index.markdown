@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 10
-has_children: true
+has_children: false
 ---
 
 # The AI Alliance Trust and Safety User Guide
@@ -24,6 +24,9 @@ This guide is organized as follows:
 * [Safety for Your AI Systems]({{site.baseurl}}/safety-recommendations/safety-recommendations): Some particular recommendations on how to successfully build trusted and safe AI systems.
 * [Final Thoughts]({{site.baseurl}}/final-thoughts): Conclusions.
 * [References]({{site.baseurl}}/references): For more information.
+
+Additional links:
+
 * [Contributing to This Document]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can contribute.
 * [About Us]({{site.baseurl}}/about): More about the AI Alliance and this document.
 

@@ -12,6 +12,6 @@ We welcome contributions! For more information, see [Contributing]({{site.baseur
 
 ## About Jekyll
 
-[Jekyll](https://github.com/jekyll){:target="_jekyll_org"} is used by GitHub Pages to create and publish sites. ([GitHub source code repo](https://github.com/jekyll/jekyll){:target="_jekyll"}) 
+[Jekyll](https://github.com/jekyll){:target="_jekyll_org"} is used by GitHub Pages to create and publish sites. ([GitHub](https://github.com/jekyll/jekyll){:target="_jekyll"}) 
 
-We use the [Just the Docs](https://just-the-docs.github.io/just-the-docs/){:target="_just_the_docs"} theme. ([GitHub source code repo](https://github.com/just-the-docs/just-the-docs){:target="_just_the_docs_src"})
+We use the [Just the Docs](https://just-the-docs.github.io/just-the-docs/){:target="_just_the_docs"} theme. ([GitHub](https://github.com/just-the-docs/just-the-docs){:target="_just_the_docs_src"})
