@@ -265,7 +265,6 @@ build-iPhoneSimulator/
 .sass-cache
 _site
 .jekyll-metadata
-vendor
 /.config
 /coverage/
 /InstalledFiles
