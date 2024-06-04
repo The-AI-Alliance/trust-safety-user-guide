@@ -42,7 +42,7 @@ A comprehensive assessment of risks in LLM-based systems.
 
 [Their definition of alignment](https://www.eleuther.ai/alignment){:target="_align"}
 
-Discussed in [What We Mean by Trust and Safety](/introduction#what-we-mean-by-trust-and-safety).
+Discussed in [What We Mean by Trust and Safety]({{site.baseurl}}/introduction#what-we-mean-by-trust-and-safety).
 
 [lm-eval-harness](https://github.com/EleutherAI/lm-evaluation-harness){:target="_lmeval"}
 

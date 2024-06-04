@@ -7,8 +7,8 @@ has_children: true
 
 # The AI Alliance Trust and Safety User Guide
 
-| **Authors** | The AI Alliance Trust and Safety Work Group |
-| **History** | V1.1, June 5, 2024<br/>V1.0, May 20, 2024<br/> |
+| **Authors** | [The AI Alliance Trust and Safety Work Group](https://thealliance.ai/focusareas/trust-and-safety){:target="_ts"} |
+| **History** | V1.0.1, June 5, 2024<br/>V1.0.0, May 20, 2024<br/> |
 
 Welcome to the **The AI Alliance Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
@@ -18,9 +18,12 @@ Welcome to the **The AI Alliance Trust and Safety User Guide**, an introduction 
 
 This guide is organized as follows:
 
-* [Introduction to Trust and Safety](introduction): What these concepts mean to us and why they are important.
-* [A Glossary of Terms](glossary): How we define various terms.
-* [Exploring Trust and Safety](exploring/exploring): Several expert explorations of key concepts.
-* [Contributing to This Document](contributing): We welcome your contributions! Here's how you can contribute.
-* [About Us](about): More about the AI Alliance and this document.
+* [Introduction to Trust and Safety]({{site.baseurl}}/introduction): What these concepts mean to us and why they are important.
+* [A Glossary of Terms]({{site.baseurl}}/glossary): How we define various terms.
+* [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/exploring): Several expert explorations of key concepts.
+* [Safety for Your AI Systems]({{site.baseurl}}/safety-recommendations/safety-recommendations): Some particular recommendations on how to successfully build trusted and safe AI systems.
+* [Final Thoughts]({{site.baseurl}}/final-thoughts): Conclusions.
+* [References]({{site.baseurl}}/references): For more information.
+* [Contributing to This Document]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can contribute.
+* [About Us]({{site.baseurl}}/about): More about the AI Alliance and this document.
 

@@ -41,4 +41,4 @@ You might notice the emphasis on evaluation, looking for problems with mitigatio
 
 Next, we will define some terms. Then we will explore the work of several leading organizations on trust and safety. How they define and analyze risks, how they mitigate them, and how systems should be developed with risk in mind. Finally, we will conclude with some suggestions for assessing risk priorities for your applications, followed by a list of references for more information.
 
-Proceed to the [glossary](glossary).
+Proceed to the [glossary]({{site.baseurl}}/glossary).

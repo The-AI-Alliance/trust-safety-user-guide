@@ -49,10 +49,14 @@ As for most Git projects, issue PRs to the `main` branch. However, the repo is a
 
 ### Links
 
-For internal cross-references, use the conventional `[title](URL)` Markdown syntax. For external links, add a `target` tag using the following syntax, which works for GitHub Markdown and GitHub Pages.
+For internal cross-references, use the conventional `[title]({{site.baseurl}}/relative_URL)` Markdown syntax. 
+
+> **WARNING:** the `{{site.baseurl}}/` prefix is _essential_, because this _prefix_ will be different for local execution vs. published serving.
+
+For external links, add a `target` tag using the following syntax, which works for GitHub Markdown and GitHub Pages.
 
 ```
-[title](url){:target="_target"}
+[title]({{site.baseurl}}/relative_URL){:target="_target"}
 ```
 
 The `target` value is arbitrary; use whatever you want. While this is a little more tedious to type, it is usually better for users so they don't lose their place in the document. Also, [our stylesheet](https://github.com/The-AI-Alliance/trust-safety-user-guide/blob/main/docs/_includes/css/custom.scss.liquid) is configured to put the little up-and-to-the-right arrows after every link that isn't relative, i.e., links that start with `http` or `https`. This provides a visual clue that a new tab will be opened.

@@ -21,6 +21,6 @@ Here is a summary of the seven hazards that model responses may include, which t
 
 The taxonomy document emphasizes that these defined hazards focus on textual content, so some extensions may be required for multimodal applications. However, most of the defined hazards generalize beyond text. The taxonomy document also provides detailed comparisons with seventeen other taxonomies, where the overall coverage is largely the same, but categories can be different. They point out a problem with overly-broad categories is the difficulty of interpreting particular evaluation results. Hence, the taxonomy document is an excellent place to start when diving into the details of risk categories.
 
-The next section dives into the [The Trusted AI (TAI) Frameworks Project](/exploring/tai-frameworks).
+The next section dives into the [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks).
 
 <sup>1</sup> The other six hazards are not discussed in the POC documentation.

@@ -106,4 +106,4 @@ How well does the [AI System](#ai-system) continue to perform within acceptable 
 
 For language models, the training texts and query prompts are split into tokens, usually whole words or fractions according to a vocabulary of tens of thousands of tokens that can include common single characters, several characters, and &ldquo;control&rdquo; tokens (like &ldquo;end of input&rdquo;). The rule of thumb is a corpus will have roughly 1.5 times the number of tokens as it will have words.
 
-Next, [we explore trust and safety concepts](exploring/exploring) as expressed by various expert organizations.
+Next, we [explore trust and safety concepts]({{site.baseurl}}/exploring/exploring) as expressed by various expert organizations.

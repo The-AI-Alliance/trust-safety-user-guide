@@ -39,4 +39,4 @@ These functions are somewhat continuously and iteratively applied over a systemâ
 
 For a complementary assessment of risks in AI, see this comprehensive guide to AI security risk analysis from [BIML: An Architectural Risk Analysis of Large Language Models](https://berryvilleiml.com/results/){:target="_biml"}.
 
-The next section explores [Trust and Safety at Meta](/exploring/meta-trust-safety).
+The next section explores [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety).

@@ -67,4 +67,4 @@ Continuous monitoring of your system against your benchmarks is necessary to ens
 
 Also beware of concerns about benchmark gaming and training data pollution. Even without trying to game a benchmark, by training a model specifically to do well on it, if the benchmark is open source, its code and data are likely to become part of the training data set used for future models. A related, but less direct problem is the growth of synthetic data sets created for model training that are also starting to appear in general data sets used to train all major models.
 
-Let's finish with some [final thoughts](/final-thoughts) and [References](/references) for more information.
+Let's finish with some [final thoughts]({{site.baseurl}}/final-thoughts) and [References]({{site.baseurl}}/references) for more information.

@@ -8,7 +8,7 @@ nav_order: 100
 
 This **Trust and Safety User Guide** is developed by the [Trust and Safety Work Group](https://thealliance.ai/focusareas/trust-and-safety){:target="_ts"} in the [The AI Alliance](https://thealliance.ai){:target="_ai"} and built with [GitHub Pages](https://pages.github.com/){:target="_gp"}. The sources for this guide are in [this GitHub repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="_repo"}.
 
-We welcome contributions! For more information, see [Contributing](/contributing/).
+We welcome contributions! For more information, see [Contributing]({{site.baseurl}}/contributing/).
 
 ## About Jekyll
 

@@ -13,4 +13,4 @@ Openness promotes faster innovation and easier accountability, such as quick det
 
 Openness also involves diversity of voices to minimize biases against particular demographic groups, cultures, and countries. Technologies need to improve for detecting and mitigating bias and other undesirable outputs. Not everyone has access to enormous compute resources, so efforts to build small models that perform well while running on devices like laptops are essential for broadening the community. Effective use of AI also requires an informed public, so efforts to train consumers and workers, as well as developers, are crucial.
 
-The next section dives into the [MLCommons Taxonomy of Hazards](/exploring/mlcommons-taxonomy-hazards).
+The next section dives into the [MLCommons Taxonomy of Hazards]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards).
