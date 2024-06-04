@@ -8,20 +8,23 @@ This repo contains the AI Alliance _Understanding AI Trust and Safety: A Living 
 
 We use [GitHub Pages](https://pages.github.com/) so edits can be made in Markdown, updates can be managed using pull requests, and the results can be published automatically by GitHub.
 
-No setup is required locally unless you want to review your changes as they will appear fully rendered in the GitHub Pages website. While GitHub renders Markdown well, you won't _really_ know how the edits look until they are rendered as pages.
+In fact, each page has _Edit this page on GitHub_ links, making it easy to view a page, then go straight to the source to edit it and submit a PR! This is the best way to help us fix typos and make similar small edits.
 
-So, to view the website locally, you'll need to have a recent version of [Ruby](https://www.ruby-lang.org/en/) installed, along with the [`gem`](https://docs.ruby-lang.org/en/master/Gem.html) and [`jekyll`](https://jekyllrb.com/) tools.
+However, this easy approach only supports correcting content on a single page. for more significant changes, like adding new pages, you'll want to edit and preview the changes locally.
 
-We discuss these steps in more depth [below](#setup-jekyll), but try the following now.
+Local previewing also helps you see how the changes will _really_ look when rendered. While GitHub renders Markdown well, there are extensions we use that are supported by Jekyll that won't be rendered correctly in GitHub's default file viewer. 
 
-Install a recent version of Ruby 3. Note that the MacOS default Ruby installation is old, version 2.6.10. Installing Ruby will also install `gem`.
+So, to view the website locally and to make more extensive changes, you'll need to have a recent version of [Ruby](https://www.ruby-lang.org/en/) installed, along with the [`gem`](https://docs.ruby-lang.org/en/master/Gem.html) and [`jekyll`](https://jekyllrb.com/) tools.
 
-This project's `Makefile` will attempt to install the remaining dependencies, including `jekyll`, when you run `make all` or `make view-local`, before doing their "real jobs", running the website locally for your review.
+We discuss these steps in more depth [below](#setup-jekyll), but the following steps may _just work_ for you.
 
-> **WARN:** The automatic setup of `jekyll` has only been tested on MacOS. If you encounter problems on other platforms, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help. Of course, [pull requests](https://github.com/The-AI-Alliance/trust-safety-user-guide/pulls) (PRs) are always welcome, too :nerd_face:. (More details on PRs below.)
-> **Tip:** Run `make help` for a list of commands defined.
+Install a recent version of Ruby 3. Note that on MacOS, the default Ruby installation is old, version 2.6.10. Installing Ruby will also install the `gem` dependency tool.
 
-When you run either `make all` or `make view-local`, it will finish with a message like this:
+This project's `Makefile` will attempt to install the remaining dependencies, including `jekyll`, when you run `make all` or `make view-local`, as a prerequisite task.
+
+So, try `make view-local` and see if Jekyll is installed successfully and website is rendered.
+
+The command will finish with a message like this:
 
 ```
 ...
@@ -31,11 +34,17 @@ Server running... press ctrl-c to stop.
 
 Open the URL in a browser. 
 
-> **Tip:** On MacOS, use CMD-click on the URL to open it in a browser.
+> **Tips:** 
+> 1. On MacOS, use CMD-click on the URL to open it in a browser.
+> 2. Run `make help` for a list of commands defined.
+
+> **WARNING:** The automatic setup of `jekyll` in the `Makefile` has only been tested on MacOS. If you encounter problems on other platforms, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help, or if you can fix the issue, a [pull request](https://github.com/The-AI-Alliance/trust-safety-user-guide/pulls) (PR) is always welcome :nerd_face:. (More details on PRs below.)
+
+
 
 ## Contributing New or Improved Content
 
-What gets displayed by GitHub Pages is the customized Markdown files in the `doc` directory. If you need to create a new page, copy an existing page to get the correct "header" information, then edit as needed.
+What gets displayed by GitHub Pages is the customized Markdown files in the `docs` directory. If you need to create a new page, copy an existing page to get the correct "header" information, then edit as needed.
 
 Here are some things you should know.
 
@@ -110,7 +119,7 @@ If this throws an error, see the [Tips and Known Issues](#tips-and-known-issues)
 The `make` target runs the following command:
 
 ```shell
-cd doc && bundle exec jekyll serve --baseurl '' --incremental
+cd docs && bundle exec jekyll serve --baseurl '' --incremental
 ```
 
 The `--baseurl` flag effectively supports the simple URL, `localhost:4000`. (Without it, the URL would be `localhost:4000/The-AI-Alliance/trust-safety-user-guide/`.) The `--incremental` flag lets you edit the pages and refresh the browser tab to see the updates immediately. 
@@ -150,10 +159,9 @@ Then in your terminal, either open a new window/tab or run the command `source ~
 
 ### The Jekyll Installation Instructions Failed
 
-Suppose you run the following commands and the second one fails:
+Suppose you run the following command and it fails:
 
 ```shell
-cd docs
 make setup-jekyll
 ```
 
