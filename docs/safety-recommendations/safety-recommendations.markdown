@@ -5,6 +5,8 @@ nav_order: 50
 has_children: false
 ---
 
+# Safety for Your AI Systems
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -13,8 +15,6 @@ has_children: false
 1. TOC
 {:toc}
 </details>
-
-# Safety for Your AI Systems
 
 When starting your own AI-enabled projects, we recommend studying [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="_metarug"} as a good reference guide for how to proceed. See, in particular, the section titled _Responsible LLM product development stages_. We highlight a few guidelines here, some of which are also discussed in the Meta guide.
 

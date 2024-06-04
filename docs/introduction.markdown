@@ -4,6 +4,8 @@ title: Introduction to Trust and Safety
 nav_order: 20
 ---
 
+# Introduction
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -12,8 +14,6 @@ nav_order: 20
 1. TOC
 {:toc}
 </details>
-
-# Introduction
 
 A major challenge for the successful use of AI is the importance of understanding potential trust and safety issues, along with their mitigation strategies. Failure to do this can be painful. For example, we often hear news stories of chatbots that engage with customers in embarrassing, harmful, and costly ways. Not only can enterprise operations and customer satisfaction be harmed by trust and safety issues, but governmental bodies are starting to regulate AI in large part over these concerns. Hence, applications built with AI must be designed and implemented with AI trust and safety in mind.
 
