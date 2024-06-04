@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Introduction to Trust and Safety
+title: Introduction
 nav_order: 20
 ---
 
-# Introduction
+# Introduction to Trust and Safety
 
 <details open markdown="block">
   <summary>
