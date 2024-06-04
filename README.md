@@ -183,6 +183,6 @@ gem list | grep jekyll
 
 ### Configuring GitHub Pages in the Repo Settings
 
-This section documents the one-time settings changes we did to <a href="https://docs.github.com/en/enterprise-server@3.1/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_ghe_gp">configure publication of our GitHub Pages</a>. We changed the desired branch to use, `latest`, rather than the default `main` branch, and we specified the directory for the website pages, `doc`. This only needs to be done if and when the branch or directory location is changed.
+This section documents the one-time settings changes we did to <a href="https://docs.github.com/en/enterprise-server@3.1/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_ghe_gp">configure publication of our GitHub Pages</a>. We changed the desired branch to use, `latest`, rather than the default `main` branch, and we specified the directory for the website pages, `docs`. This only needs to be done if and when the branch or directory location is changed.
 
-In the repo's _Settings > GitHub Pages_ section, set the branch to be `latest` and the folder to be `/doc`. The reason for using `latest` rather than `main`, is to allow small changes to be made without affecting what is published until we decide to publish an update.
+In the repo's _Settings > GitHub Pages_ section, set the branch to be `latest` and the folder to be `/docs`. The reason for using `latest` rather than `main`, is to allow small changes to be made without affecting what is published until we decide to publish an update.
