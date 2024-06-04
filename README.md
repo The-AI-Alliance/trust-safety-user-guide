@@ -1,6 +1,6 @@
 # README
 
-[Published Website](https://pages.github.com/The-AI-Alliance/trust-safety-user-guide)
+[Published Website](https://the-ai-alliance.github.io/trust-safety-user-guide/)
 
 This repo contains the AI Alliance _Understanding AI Trust and Safety: A Living Guide_, published using [GitHub Pages](https://pages.github.com/). We welcome contributions as PRs. See the AI Alliance [CONTRIBUTING](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md) instructions. Also, you'll need to agree with the AI Alliance [Code of Conduct](https://github.com/The-AI-Alliance/community/blob/main/CODE_OF_CONDUCT.md) and all contributions will be covered by the [LICENSE](https://github.com/The-AI-Alliance/community/blob/main/LICENSE) (which is also in [this repo](LICENSE)).
 
@@ -49,11 +49,17 @@ As for most Git projects, issue PRs to the `main` branch. However, the repo is a
 
 ### Links
 
-For internal cross-references, use the conventional `[title](URL)` Markdown syntax. For external links, use HTML links with a `target` instead, e.g., `<a href="https://github.com/The-AI-Alliance/trust-safety-user-guide" target="_dp">The AI Alliance Trust Safety User Guide</a>`. (The `target` value is arbitrary; use whatever you want.) While this is more tedious to type, it is usually better for users so they don't lose their place in the documentation. Also, <a href="https://pages.github.com/The-AI-Alliance/trust-safety-user-guide/blob/main/docs/_includes/css/custom.scss.liquid" target="_css">our CSS</a> is configured to put the little up-and-to-the-right arrows after every link that isn't relative, i.e., it starts with `http` or `https`, as a visual clue that a new tab will be opened. You see that icon on the _our CSS_ link! :smirk:
+For internal cross-references, use the conventional `[title](URL)` Markdown syntax. For external links, add a `target` tag using the following syntax, which works for GitHub Markdown and GitHub Pages.
+
+```
+[title](url){:target="_target"}
+```
+
+The `target` value is arbitrary; use whatever you want. While this is a little more tedious to type, it is usually better for users so they don't lose their place in the document. Also, [our stylesheet](https://github.com/The-AI-Alliance/trust-safety-user-guide/blob/main/docs/_includes/css/custom.scss.liquid) is configured to put the little up-and-to-the-right arrows after every link that isn't relative, i.e., links that start with `http` or `https`. This provides a visual clue that a new tab will be opened.
 
 ### Emojis
 
-In the pages, you can use emojis, e.g., `:+1:` yields :+1:, `:smirk:` yields :smirk:, `:nerd_face:` yields :nerd_face:, etc. The `jemoji` Ruby gem adds this capability. <a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="jemoji">Here is a list of available emojis</a>.
+In the pages, you can use emojis, e.g., `:+1:` yields :+1:, `:smirk:` yields :smirk:, `:nerd_face:` yields :nerd_face:, etc. The `jemoji` Ruby gem adds this capability. [Here is a list of available emojis](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
 
 ## Previewing Your Work Locally
@@ -87,7 +93,7 @@ If this fails, then see the [Tips and Known Issues](#tips-and-known-issues) belo
 
 ### View the Pages Locally
 
-Once Jekyll is set up, you can serve the pages locally for previewing and editing by running the following command, then open <a href="http://localhost:4000" target="_lh4000">localhost:4000</a> in a browser.
+Once Jekyll is set up, you can serve the pages locally for previewing and editing by running the following command, then open [localhost:4000](http://localhost:4000) in a browser.
 
 ```shell
 make view-local   # Or use "make all" or just "make"!
@@ -183,6 +189,6 @@ gem list | grep jekyll
 
 ### Configuring GitHub Pages in the Repo Settings
 
-This section documents the one-time settings changes we did to <a href="https://docs.github.com/en/enterprise-server@3.1/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_ghe_gp">configure publication of our GitHub Pages</a>. We changed the desired branch to use, `latest`, rather than the default `main` branch, and we specified the directory for the website pages, `docs`. This only needs to be done if and when the branch or directory location is changed.
+This section documents the one-time settings changes we did to [configure publication of our GitHub Pages](https://docs.github.com/en/enterprise-server@3.1/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). We changed the desired branch to use, `latest`, rather than the default `main` branch, and we specified the directory for the website pages, `docs`. This only needs to be done if and when the branch or directory location is changed.
 
 In the repo's _Settings > GitHub Pages_ section, set the branch to be `latest` and the folder to be `/docs`. The reason for using `latest` rather than `main`, is to allow small changes to be made without affecting what is published until we decide to publish an update.

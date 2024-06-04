@@ -1,5 +1,5 @@
 
-pages_url    := https://pages.github.com/The-AI-Alliance/trust-safety-user-guide/
+pages_url    := https://the-ai-alliance.github.io/trust-safety-user-guide/
 docs_dir     := docs
 site_dir     := ${docs_dir}/_site
 clean_dirs   := ${site_dir} ${docs_dir}/.sass-cache

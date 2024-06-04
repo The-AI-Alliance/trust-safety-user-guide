@@ -1,23 +1,26 @@
 ---
 layout: default
 title: Home
-nav_order: 1
+nav_order: 10
+has_children: true
 ---
 
-# The AI Alliance &#124; Trust and Safety User Guide
-{: .fs-9}
+# The AI Alliance Trust and Safety User Guide
 
-Welcome to the **The AI Alliance &#124; Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by the <a href="https://thealliance.ai" target="_ai">The AI Alliance</a>.
+| **Authors** | The AI Alliance Trust and Safety Work Group |
+| **History** | V1.1, June 5, 2024<br/>V1.0, May 20, 2024<br/> |
 
-<a href="https://thealliance.ai" target="_ai">The AI Alliance</a>{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } <a href="https://github.com/The-AI-Alliance/trust-safety-user-guide" target="_repo">User Guide GitHub Repo</a>{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
-<!--
-[View it on GitHub]({{layout.github_url}}){: .btn .fs-5 .mb-4 .mb-md-0 }
--->
+Welcome to the **The AI Alliance Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
-> **Pro Tip:** You can search this document at the top of the page.
+[The AI Alliance](https://thealliance.ai){:target="_ai" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [User Guide GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="_repo" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
 
-TODO
+> **Pro Tip:** Use the search box at the top of this page to find specific content.
 
-### Contributing to This Document
+This guide is organized as follows:
 
-Contributions are welcome! For instructions on contributing, see the [Contributing](/contributing/contributing) page.
+* [Introduction to Trust and Safety](introduction): What these concepts mean to us and why they are important.
+* [A Glossary of Terms](glossary): How we define various terms.
+* [Exploring Trust and Safety](exploring/exploring): Several expert explorations of key concepts.
+* [Contributing to This Document](contributing): We welcome your contributions! Here's how you can contribute.
+* [About Us](about): More about the AI Alliance and this document.
+
