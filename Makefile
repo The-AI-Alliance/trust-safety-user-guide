@@ -1,15 +1,12 @@
 
-doc_dir     := doc
-doc_url     := https://pages.github.com/The-AI-Alliance/trust-safety-user-guide/
-
-# The GitHub Pages documentation.
-# Recently, generation of the Python SDK docs and addition to the User Guide were implemented.
-site_dir           := ${doc_dir}/_site
-images_dir         := assets/images
+pages_url    := https://pages.github.com/The-AI-Alliance/trust-safety-user-guide/
+docs_dir     := docs
+site_dir     := ${docs_dir}/_site
+clean_dirs   := ${site_dir} ${docs_dir}/.sass-cache
 
 # Environment variables
 MAKEFLAGS            = -w  # --warn-undefined-variables
-MAKEFLAGS_RECURSIVE ?= --print-directory
+MAKEFLAGS_RECURSIVE ?= # --print-directory (only useful for recursive makes...)
 UNAME               ?= $(shell uname)
 ARCHITECTURE        ?= $(shell uname -m)
 
@@ -18,29 +15,28 @@ GIT_HASH            ?= $(shell git show --pretty="%H" --abbrev-commit |head -1)
 TIMESTAMP           ?= $(shell date +"%Y%m%d-%H%M%S")
 
 define help_message
-  Quick help for trust-safety-user-guide make process.
+Quick help for trust-safety-user-guide make process.
 
-  make all                # Clean and builds the doc.
-  make build              # Build the doc.
-  make clean              # Remove built artifacts, etc.
-  make view-pages         # View the published GitHub pages in a browser.
-  make view-local         # View the pages locally (requires Jekyll).
+make all                # Clean and locally view the document.
+make clean              # Remove built artifacts, etc.
+make view-pages         # View the published GitHub pages in a browser.
+make view-local         # View the pages locally (requires Jekyll).
 
-  Miscellaneous help, debugging, and setup tasks:
+Miscellaneous help, debugging, and setup tasks:
 
-  make help               # Prints this output.
-  make print-info         # Print the current values of some make variables.
-  make setup-jekyll       # Install Jekyll. Make sure Ruby is installed. 
-                          # (Only needed for local viewing of the docs.)
-  make run-jekyll         # Used by "view-local"; assumes everything is already built.
+make help               # Prints this output.
+make print-info         # Print the current values of some make and env. variables.
+make setup-jekyll       # Install Jekyll. Make sure Ruby is installed. 
+                        # (Only needed for local viewing of the document.)
+make run-jekyll         # Used by "view-local"; assumes everything is already built.
 endef
 
 define missing_shell_command_error_message
-is needed by ${CURRENT_DIR}/Makefile. Try 'make help' and look at the README.
+is needed by ${PWD}/Makefile. Try 'make help' and look at the README.
 endef
 
-ifndef doc_dir
-$(error ERROR: There is no ${doc_dir} directory!)
+ifndef docs_dir
+$(error ERROR: There is no ${docs_dir} directory!)
 endif
 
 define gem-error-message
@@ -75,7 +71,7 @@ ERROR: Answer "y" (yes) to the prompts and ignore any warnings that you can't un
 endef
 
 define missing_ruby_gem_or_command_error_message
-is needed by ${CURRENT_DIR}/Makefile. Try "gem install ..."
+is needed by ${PWD}/Makefile. Try "gem install ..."
 endef
 
 define ruby_and_gem_required_message
@@ -97,17 +93,28 @@ help::
 	@echo
 
 print-info:
-	@echo "CURRENT_DIR:      ${CURRENT_DIR} (PWD: ${PWD})"
-	@echo "GIT_HASH:         ${GIT_HASH}"
-	@echo "TIMESTAMP:        ${TIMESTAMP}"
+	@echo "GitHub Pages URL:    ${pages_url}"
+	@echo "current dir:         ${PWD}"
+	@echo "docs dir:            ${docs_dir}"
+	@echo "site dir:            ${site_dir}"
+	@echo "clean dirs:          ${clean_dirs} (deleted by 'make clean')"
+	@echo
+	@echo "GIT_HASH:            ${GIT_HASH}"
+	@echo "TIMESTAMP:           ${TIMESTAMP}"
+	@echo "MAKEFLAGS:           ${MAKEFLAGS}"
+	@echo "MAKEFLAGS_RECURSIVE: ${MAKEFLAGS_RECURSIVE}"
+	@echo "UNAME:               ${UNAME}"
+	@echo "ARCHITECTURE:        ${ARCHITECTURE}"
+	@echo "GIT_HASH:            ${GIT_HASH}"
+	@echo "TIMESTAMP:           ${TIMESTAMP}"
 
 clean::
-	rm -rf ${site_dir} 
+	rm -rf ${clean_dirs} 
 
 view-pages::
-	@python -m webbrowser "${doc_url}" || \
+	@python -m webbrowser "${pages_url}" || \
 		(echo "ERROR: I could not open the GitHub Pages URL. Try ⌘-click or ^-click on this URL instead:" && \
-		 echo "ERROR:   ${doc_url}" && exit 1 )
+		 echo "ERROR:   ${pages_url}" && exit 1 )
 
 view-local:: setup-jekyll clean run-jekyll
 
@@ -117,7 +124,7 @@ run-jekyll:
 	@echo
 	@echo "Once you see the http://127.0.0.1:4000/ URL printed, open it with command+click..."
 	@echo
-	cd ${doc_dir} && bundle exec jekyll serve --baseurl '' --incremental || ( echo "ERROR: Failed to run Jekyll. Try running 'make setup-jekyll'." && exit 1 )
+	cd ${docs_dir} && bundle exec jekyll serve --baseurl '' --incremental || ( echo "ERROR: Failed to run Jekyll. Try running 'make setup-jekyll'." && exit 1 )
 
 setup-jekyll:: ruby-installed-check bundle-ruby-command-check
 	@echo "Updating Ruby gems required for local viewing of the docs, including jekyll."
