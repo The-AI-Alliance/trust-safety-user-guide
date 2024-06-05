@@ -116,7 +116,8 @@ view-pages::
 		(echo "ERROR: I could not open the GitHub Pages URL. Try ⌘-click or ^-click on this URL instead:" && \
 		 echo "ERROR:   ${pages_url}" && exit 1 )
 
-view-local:: setup-jekyll clean run-jekyll
+view-local:: setup-jekyll do-view-local
+do-view-local: clean run-jekyll
 
 # Passing --baseurl '' allows us to use `localhost:4000` rather than require
 # `localhost:4000/The-AI-Alliance/trust-safety-user-guide` when -ping locally.

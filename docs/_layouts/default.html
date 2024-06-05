@@ -181,24 +181,33 @@ layout: table_wrappers
 
             {{ footer_custom }}
             {% if site.last_edit_timestamp or site.gh_edit_link %}
-              <div class="d-flex mt-2">
-                {% if site.last_edit_timestamp and site.last_edit_time_format and page.last_modified_date %}
-                  <p class="text-small text-grey-dk-000 mb-0 mr-2">
-                    Page last modified: <span class="d-inline-block">{{ page.last_modified_date | date: site.last_edit_time_format }}</span>.
-                  </p>
-                {% endif %}
-                {% if
-                  site.gh_edit_link and
-                  site.gh_edit_link_text and
-                  site.gh_edit_repository and
-                  site.gh_edit_branch and
-                  site.gh_edit_view_mode
-                %}
+              {% if
+                site.gh_edit_link and
+                site.gh_edit_link_text and
+                site.gh_edit_repository and
+                site.gh_edit_branch and
+                site.gh_edit_view_mode
+              %}
+                <div class="d-flex mt-2">
                   <p class="text-small text-grey-dk-000 mb-0">
                     <a href="{{ site.gh_edit_repository }}/{{ page.path }}" id="edit-this-page" target="_doc_repo_page">{{ site.gh_edit_link_text }}</a>
                   </p>
-                {% endif %}
-              </div>
+                </div>
+              {% endif %}
+              {% if site.last_edit_timestamp and site.last_edit_time_format %}
+                <div class="d-flex mt-2">
+                  <p class="text-small text-grey-dk-000 mb-0 mr-2">
+                    {% if site.last_version %}
+                      Version: <span class="d-inline-block">{{ site.last_version }}</span>. 
+                    {% endif %}
+                    {% if page.last_modified_date %}
+                      Page last modified: <span class="d-inline-block">{{ page.last_modified_date | date: site.last_edit_time_format }}</span>.
+                    {% elsif site.last_modified_date %}
+                      Site last modified: <span class="d-inline-block">{{ site.last_modified_date | date: site.last_edit_time_format }}</span>.
+                    {% endif %}
+                  </p>
+                </div>
+              {% endif %}
             {% endif %}
           </footer>
         {% endif %}
