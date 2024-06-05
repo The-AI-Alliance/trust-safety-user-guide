@@ -5,6 +5,7 @@ tsformat="%Y-%m-%d %H:%M %z"
 script=$0
 dir=$(dirname $script)
 cfg="$dir/docs/_config.yml"
+index="$dir/docs/index.markdown" 
 work_branch=main
 publich_branch=latest
 
@@ -97,8 +98,39 @@ then
 	grep "last_modified_timestamp: $timestamp" $cfg -q || error "New timestamp $timestamp not found in $cfg"
 fi
 
+# Update the index page table with versions.
+latest_history_line=$(grep '\*\*History\*\*' "$index")
+latest_history=$(echo $latest_history_line | sed -e 's/[^V]*V\([^, ]*\).*/\1/')
+
+if [[ "$latest_history" = "$version" ]]
+then
+	echo "New version ($version) is the same as the old version in $index. Not changing that file."
+else
+	mv $index $index.$$
+	cat $index.$$ | while read line
+	do
+		case $line in
+			**History**.*)
+				ymd=$(date -j -f "$tsformat" +"%Y-%m-%d" "$timestamp")
+				echo "| **History** | V$version, $ymd |"
+				old_line=$(echo "$line" | sed -e 's/\*\*History\*\*/           /')
+				echo $old_line
+				;;
+			*)
+				echo "$line"
+				;;
+		esac
+	done > $index
+	rm $index.$$
+fi
+
 # Commit and push the updated config file:
-$NOOP git commit -m "Updated version and timestamps in $cfg" $cfg
+if [[ "$latest_history" = "$version" ]]
+then
+	$NOOP git commit -m "Updated version and timestamps in $cfg" $cfg
+else
+	$NOOP git commit -m "Updated version and timestamps in $cfg and $index" $cfg $index
+fi
 $NOOP git push
 
 # Merge to latest and push to publish.
