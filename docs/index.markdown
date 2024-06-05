@@ -8,7 +8,8 @@ has_children: false
 # The AI Alliance Trust and Safety User Guide
 
 | **Authors** | [The AI Alliance Trust and Safety Work Group](https://thealliance.ai/focusareas/trust-and-safety){:target="_ts"} |
-| **History** | V1.0.1, June 5, 2024<br/>V1.0.0, May 20, 2024 |
+| **History** | V1.0.1, 2024-06-05 |
+|             | V1.0.0, 2024-05-20 |
 
 Welcome to the **The AI Alliance Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
@@ -27,13 +28,13 @@ Additional links:
 
 * [Contributing to This Document]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can contribute.
 * [About Us]({{site.baseurl}}/about): More about the AI Alliance and this document.
-* [The AI Alliance](https://thealliance.ai){:target="_ai"} 
-* [This Guide's GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="_repo"} 
+* [The AI Alliance](https://thealliance.ai){:target="_ai"}
+* [This Guide's GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="_repo"}
 
-<!-- 
+<!--
 These are nice looking buttons, but using a "gratuitously different" way to show links doesn't really work...
 -->
-<!-- 
+<!--
 [The AI Alliance](https://thealliance.ai){:target="_ai" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .no-glyph} [GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="_repo" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .no-glyph}
 -->
 
