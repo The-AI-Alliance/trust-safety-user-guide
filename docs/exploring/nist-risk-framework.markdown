@@ -37,6 +37,17 @@ The relationship between these functions are shown in Figure 1.
 
 These functions are somewhat continuously and iteratively applied over a system’s lifetime. It is reminiscent of the [OODA loop](https://en.wikipedia.org/wiki/OODA_loop){:target="_ooda"} - Observe, Orient, Decide, Act - that was developed by United States Air Force Colonel [John Boyd](https://en.wikipedia.org/wiki/John_Boyd_(military_strategist)){:target="_jb"} for combat operations, where it is essential to constantly update situational awareness, make effective, well-informed decisions, and act upon them. See also [this Pacific Northwest Laboratory presentation](https://www.sto.nato.int/publications/STO%20Meeting%20Proceedings/STO-MP-IST-160/MP-IST-160-PP-3P.pdf){:target="_pnl"}.
 
+NIST is expanding its AI-related efforts. The [Assessing Risks and Impacts of AI](https://ai-challenges.nist.gov/aria) program was launched in May 2024. From their website:
+
+> The latest in a portfolio of evaluations managed by the NIST Information Technology Laboratory – ARIA will assess models and systems submitted by technology developers from around the world. ARIA is an evaluation environment which is sector and task agnostic.
+>
+> ARIA will support three evaluation levels: model testing, red-teaming, and field testing. ARIA is unique in that it will move beyond an emphasis on system performance and accuracy and produce measurements on technical and societal robustness.
+>
+> The program will result in guidelines, tools, methodologies, and metrics that organizations can use for evaluating the safety of their systems as part of their governance and decision-making processes to design, develop, release or use AI technology. ARIA will inform the work of the U.S. AI Safety Institute at NIST.
+> -- Source: [Assessing Risks and Impacts of AI](https://ai-challenges.nist.gov/aria)
+
+We will update this section as more details become available.
+
 For a complementary assessment of risks in AI, see this comprehensive guide to AI security risk analysis from [BIML: An Architectural Risk Analysis of Large Language Models](https://berryvilleiml.com/results/){:target="_biml"}.
 
 The next section explores [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety).
