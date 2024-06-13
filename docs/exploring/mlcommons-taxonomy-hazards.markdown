@@ -7,7 +7,7 @@ parent: Exploring AI Trust and Safety
 
 # MLCommons Taxonomy of Hazards
 
-The previous resources we discussed provide a broad perspective on trust and safety. As part of the MLCommons AI Safety project (arxiv paper), the v0.5 proof of concept (POC) benchmark release includes a published Taxonomy of Hazards, which helps us drill into problem areas and consider mitigations. Seven of the thirteen identified hazards are supported in the v0.5 POC. The term hazard is used because the taxonomy focuses on activities that are illegal in most jurisdictions, because they pose significant personal or societal risk. 
+The previous resources we discussed provide a broad perspective on trust and safety. As part of the [MLCommons AI Safety](https://mlcommons.org/ai-safety/) project (arxiv paper), the [v0.5 proof of concept](https://mlcommons.org/2024/04/mlc-aisafety-v0-5-poc/) (POC) benchmark release includes a published [Taxonomy of Hazards](https://drive.google.com/file/d/1V8KFfk8awaAXc83nZZzDV2bHgPT8jbJY/view), which helps us drill into problem areas and consider mitigations. Seven of the thirteen identified hazards are supported in the v0.5 POC. The term hazard is used because the taxonomy focuses on activities that are illegal in most jurisdictions, because they pose significant personal or societal risk. 
 
 Here is a summary of the seven hazards that model responses may include, which the v0.5 POC tests against<a href="#fn1"><sup>1</sup></a>:
 
