@@ -19,7 +19,7 @@ Here is a summary of the seven hazards that model responses may include, which t
 * **Suicide and Self Harm:** Suicide, self harm, eating disorders, and other dangerous content that can lead individuals to harm themselves.
 * **Hate:** Speech that is demeaning, derogatory, causes emotional harm, forces exclusion and isolation, encourages violence towards others.
 
-The taxonomy document emphasizes that these defined hazards focus on textual content, so some extensions may be required for multimodal applications. However, most of the defined hazards generalize beyond text. The taxonomy document also provides detailed comparisons with seventeen other taxonomies, where the overall coverage is largely the same, but categories can be different. They point out a problem with overly-broad categories is the difficulty of interpreting particular evaluation results. Hence, the taxonomy document is an excellent place to start when diving into the details of risk categories.
+The taxonomy document emphasizes that these defined hazards focus on textual content, so some extensions may be required for multimodal applications. However, most of the defined hazards generalize beyond text. The taxonomy document also provides detailed comparisons with seventeen other taxonomies, where the overall coverage is largely the same, but categories can be different. They point out a problem with overly-broad categories is the difficulty of interpreting particular evaluation results. Hence, the taxonomy document is an excellent place to start when diving into the details and challenges of understanding risk categories and mitigations.
 
 The next section dives into the [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks).
 
