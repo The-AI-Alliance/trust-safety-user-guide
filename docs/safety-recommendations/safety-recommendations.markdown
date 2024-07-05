@@ -16,7 +16,7 @@ has_children: false
 {:toc}
 </details>
 
-When starting your own AI-enabled projects, we recommend studying [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="_metarug"} as a good reference guide for how to proceed. See, in particular, the section titled _Responsible LLM product development stages_. We highlight a few guidelines here, some of which are also discussed in the Meta guide.
+When starting your own AI-enabled projects, we recommend studying [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="meta-rug"} as a good reference guide for how to proceed. See, in particular, the section titled _Responsible LLM product development stages_. We highlight a few guidelines here, some of which are also discussed in the Meta guide.
 
 ## Define the Objectives and Safety Requirements for the AI System
 
@@ -36,14 +36,14 @@ Consider an application that helps a user generate creative ideas for artistic p
 
 In contrast, for an application intended to provide factually-accurate information to a user, Hallucination can have serious harmful consequences. In this case, quotation of copyrighted and trademarked information may be desirable, even required, as long as proper attribution is included.
 
-A recent infamous example illustrates the challenges of understanding a user’s _good intentions_. The first release of Google’s Gemini model was [found to generate images](https://www.npr.org/2024/03/18/1239107313/google-races-to-find-a-solution-after-ai-generator-gemini-misses-the-mark){:target="_gemini"} of people with diverse ethnicities and genders set in historical or real-world situations where only white people or white men should have been represented to reflect the realities of those situations. For example, images of the United States &lgquo;Founding Fathers&rdquo; should only include white men, as no one from any other demographic group was allowed to participate in their activities.
+A recent infamous example illustrates the challenges of understanding a user’s _good intentions_. The first release of Google’s Gemini model was [found to generate images](https://www.npr.org/2024/03/18/1239107313/google-races-to-find-a-solution-after-ai-generator-gemini-misses-the-mark){:target="gemini"} of people with diverse ethnicities and genders set in historical or real-world situations where only white people or white men should have been represented to reflect the realities of those situations. For example, images of the United States &lgquo;Founding Fathers&rdquo; should only include white men, as no one from any other demographic group was allowed to participate in their activities.
 
 In this case, the Gemini team over-compensated for known biases in training data. _Their good intentions_ were to have the model create images with diverse representation. While desirable for &lgquo;generic&rdquo; images of modern life, like workplaces and sporting events, this was deemed offensive in those scenarios where diverse representation most certainly did not exist. This behavior has been observed in other widely-used models, too.
 However, it is possible that some users would want images with diversity in known historical situations for the purpose of visualizing a &lgquo;better world&rdquo;, free of bias and unequal representation. As an analogy, it is common to see modern stagings of the plays of Shakespeare with a diverse cast, even though in Shakespeare’s time only white men, not even women, could perform. The modern musical _Hamilton_ is a popular depiction of mostly Anglo-Saxon Americans, but portrayed with a diverse cast, using modern music and dance forms that emerged in diverse communities. Hence, understanding and respecting a user’s good intentions in a given context can be key to creating optimal, acceptable results.
 
 ## Design for Model-Level and System-Level Alignment
 
-We discussed previously how tools like Meta Llama Cybersec Eval 2, Meta Llama Guard 2, and Meta Llama Code Shield are used in different parts of the development process and AI system architecture. It may take some experimentation to find the optimal places to address safety concerns, balancing overall performance with trustworthy results. Other alignment tools include various tuning methodologies to improve model alignment and application patterns like [RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){:target="_rag"} as part of inference processing. 
+We discussed previously how tools like Meta Llama Cybersec Eval 2, Meta Llama Guard 2, and Meta Llama Code Shield are used in different parts of the development process and AI system architecture. It may take some experimentation to find the optimal places to address safety concerns, balancing overall performance with trustworthy results. Other alignment tools include various tuning methodologies to improve model alignment and application patterns like [RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){:target="ibm-rag"} as part of inference processing. 
 
 ## Identify Metrics for the Prioritized Safety Categories
 
@@ -53,7 +53,7 @@ Make sure you understand the limitations of these tests and benchmarks, both the
 
 ## Measure Your AI Systems Against those Metrics
 
-Use resources such as the emerging [MLCommons AI Safety Benchmarks](https://mlcommons.org/benchmarks/ai-safety/){:target="_mlc"} to select models with the best results based on the metrics identified. Most benchmarks are open source, so they can also be used internally for evaluation of proprietary models. For example, if you tune a public model using your private data to achieve better alignment for your domain. You will want to use the same benchmarks to verify that alignment for the domain has improved while also preserving safety performance.
+Use resources such as the emerging [MLCommons AI Safety Benchmarks](https://mlcommons.org/benchmarks/ai-safety/){:target="mlc-benchmarks"} to select models with the best results based on the metrics identified. Most benchmarks are open source, so they can also be used internally for evaluation of proprietary models. For example, if you tune a public model using your private data to achieve better alignment for your domain. You will want to use the same benchmarks to verify that alignment for the domain has improved while also preserving safety performance.
 
 Also test the whole AI system, because while models generate responses to prompts, the system can include filters or modify prompts to keep them aligned, add extra information from RAG queries, etc. Similarly, filtering and transformations of the responses are usually implemented.
 
