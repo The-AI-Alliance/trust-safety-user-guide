@@ -46,6 +46,28 @@ NIST is expanding its AI-related efforts. The [Assessing Risks and Impacts of AI
 > The program will result in guidelines, tools, methodologies, and metrics that organizations can use for evaluating the safety of their systems as part of their governance and decision-making processes to design, develop, release or use AI technology. ARIA will inform the work of the U.S. AI Safety Institute at NIST.
 > -- Source: [Assessing Risks and Impacts of AI](https://ai-challenges.nist.gov/aria)
 
+[NIST AI RMF Profiles](https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/6-sec-profile) are companion resources designed to assist organizations in managing AI risks in specific settings. _Use case_ profiles are targeted implementations of the AI RMF functions to specific use cases or scenarios. _Cross-sectoral_ profiles can be applied across industries and use cases. 
+
+In April 2024 NIST released a draft of the [NIST AI RMF Generative AI Profile](https://airc.nist.gov/docs/NIST.AI.600-1.GenAI-Profile.ipd.pdf) for public review. The Generative AI (GAI) Profile defines a set of risks considered to be specific to or amplified by GAI. Additionally, an extensive catalog of over 400 mitigation actions is provided. This profile is both an use case profile (i.e., it is concerned specifically with GAI applications) and a cross-sectoral profile (neither industry- nor technology-specific). 
+
+The profile puts forth, describing in detail, the following GenAI risks:
+1. CBRN Information
+1. Confabulation
+1. Dangerous or Violent Recommendations
+1. Data Privacy
+1. Environmental
+1. Human-AI Configuration
+1. Information Integrity
+1. Information Security
+1. Intellectual Property
+1. Obscene, Degrading, and/or Abusive Content
+1. Toxicity, Bias, and Homogenization
+1. Value Chain and Component Integration
+
+The catalog of mitigation actions is grouped by AI RMF function - GOVERN, MAP, MEASURE, MANAGE. Sets of related actions are contained in action tables addressing a single RMF sub-function. Each action has a globally unique action identifier, description, and list of the GenAI risks the action addresses.  The sub-functions are implicitly linked to the [AI Actors](https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Appendices/Appendix_A#:~:text=AI%20actors%20in%20this%20category,data%20providers%2C%20system%20funders%2C%20product) through the base NIST AI RMF document.  For an example of an action table, see [page 50 of the GAI Profile document](https://airc.nist.gov/docs/NIST.AI.600-1.GenAI-Profile.ipd.pdf#page=50) where the action table for sub-function, "MEASURE 2.10 Privacy risk of the AI system", compromised of mitigation actions for privacy-related risks, is depicted.
+
+By mapping its own risk taxonomy to NIST GAI risks, organizations can leverage the rich mitigation catalog contained in the GAI profile.
+
 We will update this section as more details become available.
 
 For a complementary assessment of risks in AI, see this comprehensive guide to AI security risk analysis from [BIML: An Architectural Risk Analysis of Large Language Models](https://berryvilleiml.com/results/){:target="_biml"}.
