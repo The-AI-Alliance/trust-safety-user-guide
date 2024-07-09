@@ -15,7 +15,8 @@ has_children: false
 
 Welcome to the **The AI Alliance Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
-> **Tip:** Use the search box at the top of this page to find specific content.
+> [!TIP]
+> Use the search box at the top of this page to find specific content.
 
 This guide is organized as follows:
 
