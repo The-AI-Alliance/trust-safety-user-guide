@@ -22,7 +22,7 @@ make clean              # Remove built artifacts, etc.
 make view-pages         # View the published GitHub pages in a browser.
 make view-local         # View the pages locally (requires Jekyll).
 
-Miscellaneous help, debugging, and setup tasks:
+Miscellaneous tasks for help, debugging, setup, etc:
 
 make help               # Prints this output.
 make print-info         # Print the current values of some make and env. variables.
