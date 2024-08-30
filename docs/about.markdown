@@ -6,7 +6,7 @@ nav_order: 100
 
 # About The AI Alliance and This Document
 
-This **Trust and Safety User Guide** is developed by the [Trust and Safety Work Group](https://thealliance.ai/focusareas/trust-and-safety){:target="tands"} in the [The AI Alliance](https://thealliance.ai){:target="ai-alliance"} and built with [GitHub Pages](https://pages.github.com/){:target="github-pages"}. The sources for this guide are in [this GitHub repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="tsug-repo"}.
+This **Trust and Safety User Guide** is developed by the [Trust and Safety Work Group](https://thealliance.ai/focusareas/trust-and-safety){:target="tands"} in [The AI Alliance](https://thealliance.ai){:target="ai-alliance"} and built with [GitHub Pages](https://pages.github.com/){:target="github-pages"}. The sources for this guide are in [this GitHub repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="tsug-repo"}.
 
 We welcome contributions! For more information, see [Contributing]({{site.baseurl}}/contributing/).
 
