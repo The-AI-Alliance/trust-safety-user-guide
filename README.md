@@ -12,19 +12,25 @@ We use [GitHub Pages](https://pages.github.com/) so edits can be made in Markdow
 
 In fact, each page has _Edit this page on GitHub_ links, making it easy to view a page, then go straight to the source to edit it and submit a PR! This is the best way to help us fix typos and make similar small edits.
 
-However, this easy approach only supports correcting content on a single page. for more significant changes, like adding new pages, you'll want to edit and preview the changes locally.
+However, this easy approach only supports correcting content on a single page. for more significant changes, like adding new pages, you may want the ability to preview the changes locally. 
 
-Local previewing also helps you see how the changes will _really_ look when rendered. While GitHub renders Markdown well, there are extensions we use that are supported by Jekyll that won't be rendered correctly in GitHub's default file viewer. 
+Local previewing allows you to see how any changes, even on a single page, will _really_ look when rendered with stylesheets, etc. While GitHub renders Markdown well, there are extensions we use that are supported by Jekyll that won't be rendered correctly in GitHub's default Markdown file viewer. 
 
-So, to view the website locally and to make more extensive changes, you'll need to have a recent version of [Ruby](https://www.ruby-lang.org/en/) installed, along with the [`gem`](https://docs.ruby-lang.org/en/master/Gem.html) and [`jekyll`](https://jekyllrb.com/) tools.
+> [!NOTE]
+> If you don't want to setup `jekyll` for previewing or if you have trouble setting it up, don't let that stop you from contributing content! Submit a PR with your changes and we'll review them in a running environment ourselves. We'll provide feedback as needed.
+
+So, to view the website locally and to make more extensive changes, you'll need to have a recent version of [Ruby](https://www.ruby-lang.org/en/) installed, along with the [`gem`](https://docs.ruby-lang.org/en/master/Gem.html) library management tool, and [`jekyll`](https://jekyllrb.com/) which is the webserver and rendering engine.
 
 We discuss these steps in more depth [below](#setup-jekyll), but the following steps may _just work_ for you.
 
 Install a recent version of Ruby 3. Note that on MacOS, the default Ruby installation is old, version 2.6.10. Installing Ruby will also install the `gem` dependency tool.
 
-This project's `Makefile` will attempt to install the remaining dependencies, including `jekyll`, when you run `make all` or `make view-local`, as a prerequisite task.
+This project's `Makefile` will attempt to install the remaining dependencies, including `jekyll`, when you run `make all` or `make view-local`.
 
-So, try `make view-local` and see if Jekyll is installed successfully and website is rendered.
+> [!WARNING]
+> The automatic setup of `jekyll` in the `Makefile` has only been tested on MacOS and it most likely doesn't work on Windows, unless you use the Linux subsystem. If you encounter problems on other platforms, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help, or if you can fix the issue, a [pull request](https://github.com/The-AI-Alliance/trust-safety-user-guide/pulls) (PR) is always welcome :nerd_face:. (More details on PRs below.)
+
+So, try `make view-local` and see if Jekyll is installed successfully and the website is rendered.
 
 The command will finish with a message like this:
 
@@ -36,13 +42,9 @@ Server running... press ctrl-c to stop.
 
 Open the URL in a browser. 
 
-> **Tips:** 
+> [!TIP]
 > 1. On MacOS, use &#8984;-click on the URL to open it in a browser.
 > 2. Run `make help` for a list of commands defined.
-
-> **WARNING:** The automatic setup of `jekyll` in the `Makefile` has only been tested on MacOS. If you encounter problems on other platforms, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help, or if you can fix the issue, a [pull request](https://github.com/The-AI-Alliance/trust-safety-user-guide/pulls) (PR) is always welcome :nerd_face:. (More details on PRs below.)
-
-
 
 ## Contributing New or Improved Content
 
@@ -54,13 +56,14 @@ Here are some things you should know.
 
 As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
 
-> **Note:** If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
+> [!NOTE]
+> If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
 
 ## Publishing a New Version
 
 Because PRs go to the `main` branch, but the pages are published from the `latest` branch, PRs are not immediately published. When it is time to publish a new version of the website, change to the `main` git branch and run the script `./publish.sh`. It takes several options:
 
-```
+```shell
 > publish.sh -h
 publish.sh [-h|--help] [-n|--noop] [-v|--version V] [-t|--timestamp T]
 
@@ -91,11 +94,12 @@ Both strings are printed at the bottom of each page, e.g.:
 
 For internal cross-references, use the conventional `[title]({{site.baseurl}}/relative_URL)` Markdown syntax. 
 
-> **WARNING:** the `{{site.baseurl}}/` prefix is _essential_, because this _prefix_ will be different for local execution vs. published serving.
+> [!WARNING]
+> the `{{site.baseurl}}/` prefix is _essential_, because this _prefix_ will be different for local execution vs. published serving.
 
 For external links, add a `target` tag using the following syntax, which works for GitHub Markdown and GitHub Pages.
 
-```
+```markdown
 [title]({{site.baseurl}}/relative_URL){:target="_target"}
 ```
 
@@ -122,7 +126,8 @@ $ ruby --version
 ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [x86_64-darwin23]
 ```
 
-> **Warning:** In 2022, when we used these tools, building the website was not working with Ruby 3.2, you may still need to use 3.3 or 3.1.
+> [!WARNING]
+> In 2022, when we used these tools, building the website was not working with Ruby 3.2, you may still need to use 3.3 or 3.1.
 
 For MacOS, make sure the `ruby` path shown is not `/usr/bin/ruby`, which is the old, built-in 2.6 version. Try `which -a ruby`, which will hopefully show the `Cellar` version second. If so, edit the `PATH` definition in your `~/.zshrc` file to put the newer `/usr/local/Cellar/ruby/3.X.Y/bin` directory before `/usr/bin/`.
 
@@ -144,7 +149,8 @@ make view-local   # Or use "make all" or just "make"!
 
 If this throws an error, see the [Tips and Known Issues](#tips-and-known-issues) below.
 
-> **Tip:** In MacOS terminal windows, you can &#8984;+click any URL printed to open it in a browser!
+> [!TIP]
+> In MacOS terminal windows, you can &#8984;+click any URL printed to open it in a browser!
 
 The `make` target runs the following command:
 
@@ -154,9 +160,11 @@ cd docs && bundle exec jekyll serve --baseurl '' --incremental
 
 The `--baseurl` flag effectively supports the simple URL, `localhost:4000`. (Without it, the URL would be `localhost:4000/The-AI-Alliance/trust-safety-user-guide/`.) The `--incremental` flag lets you edit the pages and refresh the browser tab to see the updates immediately. 
 
-> **Note:** Well, more or less immediately. It can take several seconds for new pages to be generated and sometimes you'll get weird behaviors if you change URL paths, etc. So, occasionally it is useful to _control-c_ in the terminal and rerun `make view-local`.
+> [!NOTE]
+> Well, more or less immediately. It can take several seconds for new pages to be generated and sometimes you'll get weird behaviors if you change URL paths, etc. So, occasionally it is useful to _control-c_ in the terminal and rerun `make view-local`.
 
-> **Pro Tip:** `make view-pages` opens the _published_ GitHub Pages in a browser tab.
+> [!TIP]
+> `make view-pages` opens the _published_ GitHub Pages in a browser tab.
 
 ### Now Edit!
 
@@ -211,19 +219,21 @@ bundle update html-pipeline
 
 Finally, if you are still stuck, please [post an issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues) to get help.
 
-> **Help Needed:** If you find missing steps that `make setup-jekyll` should run but doesn't, or you find and fix problems that only occur on non-MacOS platforms, **please** submit a PR with fixes! Thank you. 
+> **Help Needed:**
+>
+> If you find missing steps that `make setup-jekyll` should run but doesn't, or you find and fix problems that only occur on non-MacOS platforms, **please** submit a PR with fixes! Thank you. 
 
 ### The "make view-local" Command Fails
 
 What if `make view-local` command fails with this error message?
 
-```
+```shell
 jekyll 3.9.2 | Error: No such file or directory @ rb_check_realpath_internal
 ```
 
 First, that's an old Jekyll version. It should be 4.3.3 or later. Try these commands:
 
-```
+```shell
 gem uninstall jekyll
 gem install jekyll
 gem list | grep jekyll
