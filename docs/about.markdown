@@ -10,6 +10,10 @@ This **Trust and Safety User Guide** is developed by the [Trust and Safety Work 
 
 We welcome contributions! For more information, see [Contributing]({{site.baseurl}}/contributing/).
 
+* [More About the AI Alliance](https://thealliance.ai/about-aia){:target="ai-alliance"}
+* [Contact Us](mailto:contact@thealliance.ai) (email)
+* Follow us on [LinkedIn](https://www.linkedin.com/company/the-aialliance/){:target="linkedin"} and [X](https://x.com/thealliance_ai){:target="twitter"}
+
 ## About Jekyll
 
 [Jekyll](https://github.com/jekyll){:target="jekyll_org"} is used by GitHub Pages to create and publish sites. ([GitHub](https://github.com/jekyll/jekyll){:target="jekyll"}) 
