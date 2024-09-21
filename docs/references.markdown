@@ -38,7 +38,7 @@ A forum for researchers to discuss all facets of AI model and system alignment.
 
 A comprehensive assessment of risks in LLM-based systems.
 
-### Eleuther AI
+### EleutherAI
 
 [Their definition of alignment](https://www.eleuther.ai/alignment){:target="eleuther"}
 
