@@ -5,7 +5,7 @@ nav_order: 10
 has_children: false
 ---
 
-# The AI Alliance Trust and Safety User Guide
+# The Trust and Safety User Guide
 
 | **Authors** | [The AI Alliance Trust and Safety Work Group](https://thealliance.ai/focusareas/trust-and-safety){:target="ai-alliance-tswg"} |
 | **History** | V1.0.3, 2024-07-05 |
@@ -13,7 +13,7 @@ has_children: false
 |             | V1.0.1, 2024-06-05 |
 |             | V1.0.0, 2024-05-20 |
 
-Welcome to the **The AI Alliance Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
+Welcome to the **The Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
 > **Tip:** Use the search box at the top of this page to find specific content.
 
@@ -28,7 +28,7 @@ This guide is organized as follows:
 
 Additional links:
 
-* [Contributing to This Document]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can contribute.
+* [Contributing to This Document]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can help.
 * [About Us]({{site.baseurl}}/about): More about the AI Alliance and this document.
 * [The AI Alliance](https://thealliance.ai){:target="ai-alliance"}
 * [This Guide's GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="tsug-repo"}
