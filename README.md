@@ -52,6 +52,13 @@ What gets displayed by GitHub Pages is the customized Markdown files in the `doc
 
 Here are some things you should know.
 
+### We Require "Developer Certificate of Origin" (DCO)
+
+> [!WARNING]
+> Before you make any git commits with changes, understand what's required for DCO.
+
+See the [Alliance contributing guide](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md#developer-certificate-of-origin) for details. In practical terms, supporting this requirement means you must use the `-s` flag with your `git commit` commands.
+
 ### Using the Correct Branch
 
 As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
