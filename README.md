@@ -121,6 +121,8 @@ Both strings are printed at the bottom of each page, e.g.:
 
 ## Setup Jekyll
 
+If the "quick setup" instructions didn't work for installing Jekyll, this section provides more detailed instructions.
+
 First, you'll need a reasonably recent version of Ruby installed. The one that comes with MacOS is _not new enough_. See [Use Homebrew to Install Ruby on MacOS](#use-homebrew-to-install-ruby-on-macos) to install [Homebrew](https://brew.sh) and then Ruby using the `brew` command.
 
 Afterwards, the commands shown next should produce similar output that shown from Dean's machine, circa June 2024:
