@@ -28,7 +28,6 @@ As for most Git projects, issue PRs to the `main` branch. However, the repo is a
 > [!NOTE]
 > If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
 
-
 ### Editing Conventions and Tips
 
 #### Links
