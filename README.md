@@ -6,6 +6,51 @@ This repo contains the AI Alliance _Understanding AI Trust and Safety: A Living 
 
 > This work is licensed under Creative Commons Attribution 4.0 International. To view a copy of this license, see [LICENSE](LICENSE) or visit https://creativecommons.org/licenses/by/4.0/legalcode.
 
+## Contributing New or Improved Web Site Content
+
+First, thank you for your interest in improving this content!. Please see our [Alliance contributing page](https://github.com/The-AI-Alliance/community/) for general information about contributing to any of our projects. This section provides some specific details you need to know.
+
+What gets displayed by GitHub Pages is the customized Markdown files in the `docs` directory. If you need to create a new page, copy an existing page to get the correct "header" information, then edit as needed.
+
+Here are some things you should know.
+
+### We Require "Developer Certificate of Origin" (DCO)
+
+> [!WARNING]
+> Before you make any git commits with changes, understand what's required for DCO.
+
+See the Alliance contributing guide [section on DCO](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md#developer-certificate-of-origin) for details. In practical terms, supporting this requirement means you must use the `-s` flag with your `git commit` commands.
+
+### Using the Correct Branch
+
+As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
+
+> [!NOTE]
+> If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
+
+
+### Editing Conventions and Tips
+
+#### Links
+
+For internal cross-references, use the conventional `[title]({{site.baseurl}}/relative_URL)` Markdown syntax. 
+
+> [!WARNING]
+> the `{{site.baseurl}}/` prefix is _essential_, because this _prefix_ will be different for local execution vs. published serving.
+
+For external links, add a `target` tag using the following syntax, which works for GitHub Markdown and GitHub Pages.
+
+```markdown
+[title]({{site.baseurl}}/relative_URL){:target="_target"}
+```
+
+The `target` value is arbitrary; use whatever you want. While this is a little more tedious to type, it is usually better for users so they don't lose their place in the document. Also, [our stylesheet](https://github.com/The-AI-Alliance/trust-safety-user-guide/blob/main/docs/_includes/css/custom.scss.liquid) is configured to put the little up-and-to-the-right arrows after every link that isn't relative, i.e., links that start with `http` or `https`. This provides a visual clue that a new tab will be opened.
+
+#### Emojis
+
+In the pages, you can use emojis, e.g., `:+1:` yields :+1:, `:smirk:` yields :smirk:, `:nerd_face:` yields :nerd_face:, etc. The `jemoji` Ruby gem adds this capability. [Here is a list of available emojis](https://www.webfx.com/tools/emoji-cheat-sheet/).
+
+
 ## Quick Setup
 
 We use [GitHub Pages](https://pages.github.com/) so edits can be made in Markdown, updates can be managed using pull requests, and the results can be published automatically by GitHub.
@@ -46,19 +91,6 @@ Open the URL in a browser.
 > 1. On MacOS, use &#8984;-click on the URL to open it in a browser.
 > 2. Run `make help` for a list of commands defined.
 
-## Contributing New or Improved Content
-
-What gets displayed by GitHub Pages is the customized Markdown files in the `docs` directory. If you need to create a new page, copy an existing page to get the correct "header" information, then edit as needed.
-
-Here are some things you should know.
-
-### Using the Correct Branch
-
-As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
-
-> [!NOTE]
-> If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
-
 ## Publishing a New Version
 
 Because PRs go to the `main` branch, but the pages are published from the `latest` branch, PRs are not immediately published. When it is time to publish a new version of the website, change to the `main` git branch and run the script `./publish-website.sh`. It takes several options:
@@ -88,32 +120,7 @@ Both strings are printed at the bottom of each page, e.g.:
 
 > Version: 1.0.1. Site last modified: Jun 5 2024 08:13 -0500.
 
-## Editing Conventions and Tips
-
-### Links
-
-For internal cross-references, use the conventional `[title]({{site.baseurl}}/relative_URL)` Markdown syntax. 
-
-> [!WARNING]
-> the `{{site.baseurl}}/` prefix is _essential_, because this _prefix_ will be different for local execution vs. published serving.
-
-For external links, add a `target` tag using the following syntax, which works for GitHub Markdown and GitHub Pages.
-
-```markdown
-[title]({{site.baseurl}}/relative_URL){:target="_target"}
-```
-
-The `target` value is arbitrary; use whatever you want. While this is a little more tedious to type, it is usually better for users so they don't lose their place in the document. Also, [our stylesheet](https://github.com/The-AI-Alliance/trust-safety-user-guide/blob/main/docs/_includes/css/custom.scss.liquid) is configured to put the little up-and-to-the-right arrows after every link that isn't relative, i.e., links that start with `http` or `https`. This provides a visual clue that a new tab will be opened.
-
-### Emojis
-
-In the pages, you can use emojis, e.g., `:+1:` yields :+1:, `:smirk:` yields :smirk:, `:nerd_face:` yields :nerd_face:, etc. The `jemoji` Ruby gem adds this capability. [Here is a list of available emojis](https://www.webfx.com/tools/emoji-cheat-sheet/).
-
-## Previewing Your Work Locally
-
-We provided a basic set of instructions above for setting up Jekyll locally. Here is a more detailed set of instructions, if you need them.
-
-### Setup Jekyll
+## Setup Jekyll
 
 First, you'll need a reasonably recent version of Ruby installed. The one that comes with MacOS is _not new enough_. See [Use Homebrew to Install Ruby on MacOS](#use-homebrew-to-install-ruby-on-macos) to install [Homebrew](https://brew.sh) and then Ruby using the `brew` command.
 
