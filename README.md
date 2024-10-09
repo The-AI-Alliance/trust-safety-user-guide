@@ -6,6 +6,26 @@ This repo contains the AI Alliance _Understanding AI Trust and Safety: A Living 
 
 > This work is licensed under Creative Commons Attribution 4.0 International. To view a copy of this license, see [LICENSE](LICENSE) or visit https://creativecommons.org/licenses/by/4.0/legalcode.
 
+## Contributing New or Improved Content
+
+What gets displayed by GitHub Pages is the customized Markdown files in the `docs` directory. If you need to create a new page, copy an existing page to get the correct "header" information, then edit as needed.
+
+Here are some things you should know.
+
+### We Require "Developer Certificate of Origin" (DCO)
+
+> [!WARNING]
+> Before you make any git commits with changes, understand what's required for DCO.
+
+See the [Alliance contributing guide](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md#developer-certificate-of-origin) for details. In practical terms, supporting this requirement means you must use the `-s` flag with your `git commit` commands.
+
+### Using the Correct Branch
+
+As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
+
+> [!NOTE]
+> If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
+
 ## Quick Setup
 
 We use [GitHub Pages](https://pages.github.com/) so edits can be made in Markdown, updates can be managed using pull requests, and the results can be published automatically by GitHub.
@@ -45,26 +65,6 @@ Open the URL in a browser.
 > [!TIP]
 > 1. On MacOS, use &#8984;-click on the URL to open it in a browser.
 > 2. Run `make help` for a list of commands defined.
-
-## Contributing New or Improved Content
-
-What gets displayed by GitHub Pages is the customized Markdown files in the `docs` directory. If you need to create a new page, copy an existing page to get the correct "header" information, then edit as needed.
-
-Here are some things you should know.
-
-### We Require "Developer Certificate of Origin" (DCO)
-
-> [!WARNING]
-> Before you make any git commits with changes, understand what's required for DCO.
-
-See the [Alliance contributing guide](https://github.com/The-AI-Alliance/community/blob/main/CONTRIBUTING.md#developer-certificate-of-origin) for details. In practical terms, supporting this requirement means you must use the `-s` flag with your `git commit` commands.
-
-### Using the Correct Branch
-
-As for most Git projects, issue PRs to the `main` branch. However, the repo is actually configured to publish the docs from the `latest` branch, so we can accept PRs quickly, then decide when to publish a new version. (We will also tag `latest` for each release with a version number, for historical tracking.)
-
-> [!NOTE]
-> If you are curious, the details of how this publication branch is configured are discussed [below](#configuring-github-pages-in-the-repo-settings).
 
 ## Publishing a New Version
 
