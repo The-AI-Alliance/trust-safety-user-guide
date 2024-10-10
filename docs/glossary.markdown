@@ -34,7 +34,7 @@ An aspect of [Governance](#governance), where we trace behaviors through [AI Sys
 
 ## AI System
 
-Umbrella term for an application or system with AI components, including datasets, models, safety detection and mitigation components, external services, databases for runtime queries, and other application logic that together provide functionality.
+Umbrella term for an application or system with AI components, including [Datasets](#dataset), [Models](#model), [Evaluation Framework](#evaluation-framework) and [Evaluators](#evaluator) for safety detection and mitigation, etc., plus external services, databases for runtime queries, and other application logic that together provide functionality.
 
 ## Alignment
 
@@ -46,9 +46,9 @@ A general term for how well an [AI System's](#ai-system) outputs (e.g., replies 
 
 ## Benchmark
 
-[\[1\]](#mlc) A methodology or function used for offline evaluation of a model or system for a particular purpose and to interpret the results. It consists of:
-* A set of tests with metrics
-* A summarization of the results
+[\[1\]](#mlc) A methodology or function used for offline [Evaluation](#evaluation) of a [Model](#model) or [AI System](#ai-system) for a particular purpose and to interpret the results. It consists of:
+* A set of tests with metrics.
+* A summarization of the results.
 
 ## Dataset
 
@@ -58,13 +58,17 @@ A general term for how well an [AI System's](#ai-system) outputs (e.g., replies 
 
 Can humans understand why the system behaves the way that it does in a particular scenario?
 
+## Evaluation
+
+The capability of measuring and quantifying how a [Model](#model) or [AI System](#ai-system) that uses models responds to inputs. Much like other software, models and AI systems need to be trusted and useful to their users. Evaluation aims to provide the evidence needed to gain users’ confidence. See also [Evaluation Framework](#evaluation-framework) and [Evaluator](#evaluator).
+
 ## Evaluation Framework
 
-An umbrella term for the software tools, runtime services, benchmark systems, etc. used to run different [Evaluators](#evaluator) to measure [AI Systems](#ai-system) for trust and safety risks and mitigations, as well as other kinds of measurements, such as carbon footprint for sustainability objectives.
+An umbrella term for the software tools, runtime services, benchmark systems, etc. used to perform [Evaluations](#evaluation) by running different [Evaluators](#evaluator) to measure [AI Systems](#ai-system) for trust and safety risks and mitigations, and other kinds of measurements.
 
 ## Evaluator
 
-A classifier model or similar tool that can quantify an [AI System's](#ai-system) inputs and outputs to detect the presence of risky content, such as hate speech, hallucinations, etc. For our purposes, an evaluator is API compatible for execution within an [Evaluation Framework](#evaluation-framework). In general, an evaluator could be targeted towards non-safety needs, such as measuring other aspects of [Alignment](#alignment), model latency and throughput, carbon footprint, etc. Also, a given evaluator could be used at many points in the total AI life cycle, e.g., for a benchmark and an inference-time test.
+A classifier [Model](#model) or similar tool, possibly including a [Dataset](#dataset), that can quantify an [AI System's](#ai-system) inputs and outputs to detect the presence of risky content, such as hate speech, hallucinations, etc. For our purposes, an evaluator is API compatible for execution within an [Evaluation Framework](#evaluation-framework). In general, an evaluator could be targeted towards non-safety needs, such as measuring other aspects of [Alignment](#alignment), [Inference](#inference) model latency and throughput, carbon footprint, etc. Also, a given evaluator could be used at many points in the total AI life cycle, e.g., for a benchmark and an inference-time test.
 
 ## Fairness
 
@@ -72,11 +76,27 @@ Does the [AI System's](#ai-system) behaviors exhibit social biases, preferential
 
 ## Governance
 
-End-to-end control of assets, especially data and models, with lineage traceability and access controls for protecting the security and integrity of assets.
+End-to-end control of assets, especially [Datasets](#dataset) and [Models](#model), with lineage traceability and access controls for protecting the security and integrity of assets.
 
 ## Hallucination
 
-When a model generates text that seems plausible, but is not factually accurate. Lying is not the right term, because there is no malice intended by the model, which only knows how to generate [Tokens](#token); sequences that are plausible, i.e., probabilistically likely.
+When a [Model](#model) generates text that seems plausible, but is not factually accurate. Lying is not the right term, because there is no malice intended by the model, which only knows how to generate a sequence of [Tokens](#token) that are plausible, i.e., probabilistically likely.
+
+## Inference
+
+Sending information to a [Model](#model) or [AI System](#ai-system) to have it return an analysis of some kind, summarization of the input, or newly generated information, such as text. The term _query_ is typically used when working with [LLMs](#large-language-model). The term _inference_ comes from traditional statistical analysis, including model building, that is used to _infer_ information from data.
+
+## Large Language Model
+
+Abbreviated _LLM_, a state of the art [Model](#model), often with billions of parameters, that has the ability to summarize, classify, and even generate text in one or more spoken and programming languages. See also [Multimodal Model](#multimodal-models).
+
+## Model
+
+A combination of data and code, usually trained on a [Dataset](#dataset), to support [Inference](#inference) of some kind. See also [Large Language Model](#large-language-model) and [Multimodal Model](#multimodal-models).
+
+## Multimodal Model
+
+[Models](#model) that extend the text-based capabilities of [LLMs](#large-language-model) with additional support for other media, such as video, audio, still images, or other kinds of data.
 
 ## Privacy
 
@@ -92,7 +112,7 @@ Protection of individuals’ sensitive data and preservation of their rights.
 
 ## Robustness
 
-How well does the [AI System](#ai-system) continue to perform within acceptable limits or degrade &ldquo;gracefully&rdquo; when stressed in some way? For example, how well does a model respond to prompts that deviate from its training data?
+How well does the [AI System](#ai-system) continue to perform within acceptable limits or degrade &ldquo;gracefully&rdquo; when stressed in some way? For example, how well does a [Model](#model) respond to prompts that deviate from its training data?
 
 ## Social Responsibility
 
@@ -104,6 +124,6 @@ How well does the [AI System](#ai-system) continue to perform within acceptable 
 
 ## Token
 
-For language models, the training texts and query prompts are split into tokens, usually whole words or fractions according to a vocabulary of tens of thousands of tokens that can include common single characters, several characters, and &ldquo;control&rdquo; tokens (like &ldquo;end of input&rdquo;). The rule of thumb is a corpus will have roughly 1.5 times the number of tokens as it will have words.
+For language [Models](#model), the training texts and query prompts are split into tokens, usually whole words or fractions according to a vocabulary of tens of thousands of tokens that can include common single characters, several characters, and &ldquo;control&rdquo; tokens (like &ldquo;end of input&rdquo;). The rule of thumb is a corpus will have roughly 1.5 times the number of tokens as it will have words.
 
 Next, we [explore trust and safety concepts]({{site.baseurl}}/exploring/exploring) as expressed by various expert organizations.
