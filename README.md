@@ -88,7 +88,8 @@ Open the URL in a browser.
 
 > [!TIP]
 > 1. On MacOS, use &#8984;-click on the URL to open it in a browser.
-> 2. Run `make help` for a list of commands defined.
+> 2. If you want to use a different port, use this command: `JEKYLL_PORT=NNNN make view-local`, where `NNNN` is the port your want to use.
+> 3. Run `make help` for a list of commands defined.
 
 ## Publishing a New Version
 
