@@ -7,7 +7,7 @@ dir=$(dirname $script)
 cfg="$dir/docs/_config.yml"
 index="$dir/docs/index.markdown" 
 work_branch=main
-publich_branch=latest
+publish_branch=latest
 
 help() {
 	cat << EOF
@@ -135,7 +135,7 @@ $NOOP git push
 
 # Merge to latest and push to publish.
 
-$NOOP git checkout $publich_branch
+$NOOP git checkout $publish_branch
 $NOOP git merge $work_branch
 $NOOP git push
 $NOOP git checkout $work_branch
