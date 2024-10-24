@@ -117,7 +117,10 @@ Mozilla’s approachable guide to AI trust and safety. It makes the argument tha
 
 ### Organization for Economic Co-operation and Development (OECD)
 
-[Resources on Artificial Intelligence](https://www.oecd.org/digital/artificial-intelligence/){:target="oecd"}
+[Resources on Artificial Intelligence](https://www.oecd.org/digital/artificial-intelligence/){:target="oecd1"}
+
+[Catalogue of Tools & Metrics for Trustworthy AI](
+https://oecd.ai/en/catalogue/tools){:target="oecd2"}
 
 Various useful resources on AI safety and accessibility.
 
