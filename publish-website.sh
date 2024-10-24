@@ -7,7 +7,7 @@ dir=$(dirname $script)
 cfg="$dir/docs/_config.yml"
 index="$dir/docs/index.markdown" 
 work_branch=main
-publich_branch=latest
+publish_branch=latest
 
 help() {
 	cat << EOF
@@ -127,15 +127,15 @@ fi
 # Commit and push the updated config file:
 if [[ "$latest_history" = "$version" ]]
 then
-	$NOOP git commit -m "Updated version and timestamps in $cfg" $cfg
+	$NOOP git commit -s -m "Updated version and timestamps in $cfg" $cfg
 else
-	$NOOP git commit -m "Updated version and timestamps in $cfg and $index" $cfg $index
+	$NOOP git commit -s -m "Updated version and timestamps in $cfg and $index" $cfg $index
 fi
 $NOOP git push
 
 # Merge to latest and push to publish.
 
-$NOOP git checkout $publich_branch
+$NOOP git checkout $publish_branch
 $NOOP git merge $work_branch
 $NOOP git push
 $NOOP git checkout $work_branch
