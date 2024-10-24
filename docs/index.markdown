@@ -7,7 +7,7 @@ has_children: false
 
 # The AI Trust and Safety User Guide
 
-| **Authors** | [The AI Alliance Trust and Safety Work Group](https://thealliance.ai/focus-areas/trust-and-safety){:target="ai-alliance-tswg"} |
+| **Authors** | [The AI Alliance Trust and Safety Work Group](https://thealliance.ai/focus-areas/trust-and-safety){:target="ai-alliance-tswg"} (See the [Contributors]({{site.baseurl}}/contributing/#contributors)) |
 | **History** | V1.1.1, 2024-10-24 |
 |             | V1.1.0, 2024-10-10 |
 |             | V1.0.3, 2024-07-05 |
