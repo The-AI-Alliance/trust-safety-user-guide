@@ -1,5 +1,13 @@
 #!/usr/bin/env zsh
-# Publish a new version.
+#------------------------------------------------------------------------
+# Publish a new version of the site.
+# This script can be used to publish a new version of this site, which in
+# this case means bump the version number and corresponding new timestamp
+# that appears on the index page (optionally), the footer of every page in
+# the Just the Docs template, and the _config.yaml file, which is where
+# the footer gets the value.
+# NOTE: While recommended, it's not required to use this script...
+#------------------------------------------------------------------------
 
 tsformat="%Y-%m-%d %H:%M %z"
 script=$0
@@ -133,10 +141,12 @@ else
 fi
 $NOOP git push
 
-# Merge to latest and push to publish.
+# Merge to latest and push to publish. Also tag it!
 
 $NOOP git checkout $publish_branch
 $NOOP git merge $work_branch
 $NOOP git push
+$NOOP git tag v${version}
+$NOOP git push --tags
 $NOOP git checkout $work_branch
 
