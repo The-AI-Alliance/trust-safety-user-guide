@@ -148,21 +148,27 @@ An influential platform and tools for general evaluation of AI models and system
 
 Describes a wide range of trends in A. In particular, it discusses how there are no current standards for responsible AI. All model and systems builders use different evaluations.
 
-### United States Government
+### United States Government, Department of Commerce, National Institute of Standards and Technology (NIST)
+
+[NIST’s Responsibilities Under the October 30, 2023 Executive Order](https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence){:target="nist-exec-order"}
+
+NIST’s clarification of its roles and responsibilities under the executive order (next reference), including a Request for Information (RFI) to which [the AI Alliance responded](https://thealliance.ai/files/AI_Alliance_NTIA_Response.pdf){:target="ai-alliance-nist-reponse"}.
+
+[Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework){:target="nist-rmf"}
+
+The NIST framework and guidance for assessing and managing AI Risk.
+
+### United States Government, Executive Branch
 
 [Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/){:target="wh-exec-order"}
 
 The current US Government administration’s view on AI safety.
 
-### United States Department of Commerce, National Institute of Standards and Technology (NIST)
+### United States Government, Department of State, Bureau of Arms Control, Deterrence, and Stability
 
-[NIST’s Responsibilities Under the October 30, 2023 Executive Order](https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence){:target="nist-exec-order"}
+[Political Declaration on Responsible Military Use of Artificial Intelligence and Autonomy](https://www.state.gov/political-declaration-on-responsible-military-use-of-artificial-intelligence-and-autonomy-2/){:target="state-responsible-use"}
 
-NIST’s clarification of its roles and responsibilities under the executive order, including a Request for Information (RFI) to which [the AI Alliance responded](https://thealliance.ai/files/AI_Alliance_NTIA_Response.pdf){:target="ai-alliance-nist-reponse"}.
-
-[Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework){:target="nist-rmf"}
-
-The NIST framework and guidance for assessing and managing AI Risk.
+A State Department &ldquo;one-page&rdquo; statement of reponsible use of AI by governments, including militaries.
 
 ### University of California, Berkeley
 
