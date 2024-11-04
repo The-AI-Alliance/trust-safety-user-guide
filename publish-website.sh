@@ -2,10 +2,12 @@
 #------------------------------------------------------------------------
 # Publish a new version of the site.
 # This script can be used to publish a new version of this site, which in
-# this case means bump the version number and corresponding new timestamp
-# that appears on the index page (optionally), the footer of every page in
-# the Just the Docs template, and the _config.yaml file, which is where
-# the footer gets the value.
+# this case means bump the version number and corresponding new timestamp:
+# 1. _config.yaml: sets the value shown in the page footers.
+# 2. docs/index.markdown: 
+#    a. Authors and latest version table at the top of the page, if present
+#    b. The history table of versions and timestamps at the bottom, if present.
+#    c. The footer of every page in the Just the Docs template.
 #
 # NOTES: 
 # 1. While recommended, it's not required to use this script...
