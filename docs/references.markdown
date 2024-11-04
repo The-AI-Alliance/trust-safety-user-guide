@@ -44,7 +44,7 @@ A comprehensive assessment of risks in LLM-based systems.
 
 Discussed in [What We Mean by Trust and Safety]({{site.baseurl}}/introduction#what-we-mean-by-trust-and-safety).
 
-[lm-eval-harness](https://github.com/EleutherAI/lm-evaluation-harness){:target="lm-eval"}
+[lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness){:target="lm-eval"}
 
 A popular open-source framework for performing evaluations, including for safety.
 
@@ -73,7 +73,7 @@ Another popular evaluation framework.
 
 [Unitxt](https://github.com/IBM/unitxt){:target="unitxt"}
 
-A library for portable evaluator definitions.
+A library for portable evaluator definitions. Integrated with many safety projects and tools, including [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness){:target="lm-eval"}.
 
 [Responsible AI](https://www.ibm.com/topics/responsible-ai){:target="ibm-responsible-ai"}
 
