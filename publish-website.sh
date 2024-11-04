@@ -6,7 +6,12 @@
 # that appears on the index page (optionally), the footer of every page in
 # the Just the Docs template, and the _config.yaml file, which is where
 # the footer gets the value.
-# NOTE: While recommended, it's not required to use this script...
+#
+# NOTES: 
+# 1. While recommended, it's not required to use this script...
+# 2. This version of this script assumes the newer format for the history
+#    table, with just the most recent version at the top of docs/index.markdown
+#    and the full history in a separate table at the bottom.
 #------------------------------------------------------------------------
 
 tsformat="%Y-%m-%d %H:%M %z"
@@ -32,6 +37,7 @@ Where the options are the following:
                        the command line, because it must be of the form
                        "$tsformat". Without this option, the current 
                        system time is used.
+--no-commit            Edit the files, but don't commit the changes to the repo.
 EOF
 }
 
@@ -44,6 +50,7 @@ error() {
 	exit 1
 }
 
+let no_commit=1
 while [[ $# -gt 0 ]]
 do
 	case $1 in
@@ -51,7 +58,7 @@ do
 			help
 			exit 0
 			;;
-		-n|--n*)
+		-n|--noop)
 			NOOP=echo
 			;;
 		-v|--v*)
@@ -61,6 +68,9 @@ do
 		-t|--t*)
 			shift
 			timestamp="$1"
+			;;
+		--no-commit)
+			let no_commit=0
 			;;
 		*)
 			error "Unrecognized option: $1"
@@ -107,7 +117,7 @@ then
 fi
 
 # Update the index page table with versions.
-latest_history_line=$(grep '\*\*History\*\*' "$index")
+latest_history_line=$(grep '\*\*Last Update\*\*' "$index")
 latest_history=$(echo $latest_history_line | sed -e 's/[^V]*V\([^, ]*\).*/\1/')
 
 if [[ "$latest_history" = "$version" ]]
@@ -118,12 +128,14 @@ else
 	cat $index.$$ | while read line
 	do
 		case $line in
-			**History**.*)
+			*Last*Update*)
 				ymd=$(date -j -f "$tsformat" +"%Y-%m-%d" "$timestamp")
-				echo "| **History** | V$version, $ymd |"
-				old_line=$(echo "$line" | sed -e 's/\*\*History\*\*/           /')
-				echo $old_line
+				echo "| **Last Update**  | V$version, $ymd |"
 				;;
+			*Version*Date*)
+				echo $line
+			    echo "| V$version      | $ymd |"
+			    ;;
 			*)
 				echo "$line"
 				;;
@@ -133,6 +145,12 @@ else
 fi
 
 # Commit and push the updated config file:
+if [[ $no_commit -eq 0 ]]
+then
+	echo "Changes won't be committed to the git repo."
+	exit 0
+fi
+
 if [[ "$latest_history" = "$version" ]]
 then
 	$NOOP git commit -s -m "Updated version and timestamps in $cfg" $cfg
