@@ -75,13 +75,13 @@ Another popular evaluation framework.
 
 A library for portable evaluator definitions.
 
+[Responsible AI](https://www.ibm.com/topics/responsible-ai){:target="ibm-responsible-ai"}
+
+IBM’s description of responsible AI, as informed by IBM product offerings and services. In particular, see the [Responsible Use Guide](https://www.ibm.com/granite/docs/resources/responsible-use-guide.pdf){:target="rug"} (PDF)
+
 [Kepler](https://github.com/sustainable-computing-io/kepler){:target="kepler"}
 
 Sustainability benchmarks, e.g., for estimating carbon consumption. An example of an evaluator that isn’t focused on safety in our definition of the term. 
-
-[Responsible AI](https://www.ibm.com/topics/responsible-ai){:target="ibm-responsible-ai"}
-
-IBM’s description of responsible AI, as informed by IBM product offerings and services.
 
 ### MLCommons
 
