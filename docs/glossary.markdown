@@ -88,11 +88,11 @@ Sending information to a [Model](#model) or [AI System](#ai-system) to have it r
 
 ## Large Language Model
 
-Abbreviated _LLM_, a state of the art [Model](#model), often with billions of parameters, that has the ability to summarize, classify, and even generate text in one or more spoken and programming languages. See also [Multimodal Model](#multimodal-models).
+Abbreviated _LLM_, a state of the art [Model](#model), often with billions of parameters, that has the ability to summarize, classify, and even generate text in one or more spoken and programming languages. See also [Multimodal Model](#multimodal-model).
 
 ## Model
 
-A combination of data and code, usually trained on a [Dataset](#dataset), to support [Inference](#inference) of some kind. See also [Large Language Model](#large-language-model) and [Multimodal Model](#multimodal-models).
+A combination of data and code, usually trained on a [Dataset](#dataset), to support [Inference](#inference) of some kind. See also [Large Language Model](#large-language-model) and [Multimodal Model](#multimodal-model).
 
 ## Multimodal Model
 
