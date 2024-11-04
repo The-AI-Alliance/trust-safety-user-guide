@@ -99,6 +99,10 @@ Meta's comprehensive guide for responsible use of AI in applications.
 
 Meta’s tools for ensuring trust and safety, reflecting the best practices in [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="meta-responsible-ug"}. Released in conjunction with the [Meta Llama 3](https://ai.meta.com/blog/meta-llama-3/){:target="llama"} family of open models.
 
+[Open Source AI Can Help America Lead in AI and Strengthen Global Security](https://about.fb.com/news/2024/11/open-source-ai-america-global-security/){:target="meta-security"}
+
+A recent statement from Meta on allowing US government agencies working on national security to use Llama models, and the importance of open models for security and retaining US leadership.
+
 ### Mitre
 
 [MITRE Enterprise ATT&CK ontology](https://attack.mitre.org/){:target="mitre-eao"}
