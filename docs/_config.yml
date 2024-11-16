@@ -112,6 +112,7 @@ color_scheme: nil
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-target-blank
   - jemoji
 
 kramdown:
