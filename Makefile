@@ -24,6 +24,7 @@ make all                # Clean and locally view the document.
 make clean              # Remove built artifacts, etc.
 make view-pages         # View the published GitHub pages in a browser.
 make view-local         # View the pages locally (requires Jekyll).
+                        # Tip: "JEKYLL_PORT=8000 make view-local" uses port 8000 instead of 4000!
 
 Miscellaneous tasks for help, debugging, setup, etc.
 
@@ -32,6 +33,7 @@ make print-info         # Print the current values of some make and env. variabl
 make setup-jekyll       # Install Jekyll. Make sure Ruby is installed. 
                         # (Only needed for local viewing of the document.)
 make run-jekyll         # Used by "view-local"; assumes everything is already built.
+                        # Tip: "JEKYLL_PORT=8000 make run-jekyll" uses port 8000 instead of 4000!
 endef
 
 define missing_shell_command_error_message
@@ -110,6 +112,7 @@ print-info:
 	@echo "ARCHITECTURE:        ${ARCHITECTURE}"
 	@echo "GIT_HASH:            ${GIT_HASH}"
 	@echo "TIMESTAMP:           ${TIMESTAMP}"
+	@echo "JEKYLL_PORT:         ${JEKYLL_PORT}"
 
 clean::
 	rm -rf ${clean_dirs} 
@@ -119,12 +122,11 @@ view-pages::
 		(echo "ERROR: I could not open the GitHub Pages URL. Try ⌘-click or ^-click on this URL instead:" && \
 		 echo "ERROR:   ${pages_url}" && exit 1 )
 
-view-local:: setup-jekyll do-view-local
-do-view-local: clean run-jekyll
+view-local:: setup-jekyll run-jekyll
 
 # Passing --baseurl '' allows us to use `localhost:4000` rather than require
-# `localhost:4000/The-AI-Alliance/trust-safety-user-guide` when -ping locally.
-run-jekyll:
+# `localhost:4000/The-AI-Alliance/trust-safety-user-guide` when running locally.
+run-jekyll: clean
 	@echo
 	@echo "Once you see the http://127.0.0.1:${JEKYLL_PORT}/ URL printed, open it with command+click..."
 	@echo
