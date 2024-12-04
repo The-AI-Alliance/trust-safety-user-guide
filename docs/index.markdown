@@ -32,7 +32,7 @@ Additional links:
 
 ### Version History
 
-| **Version** | **Date**   |
+| Version     | Date       |
 | V1.1.2      | 2024-11-04 |
 | V1.1.1      | 2024-10-24 |
 | V1.1.0      | 2024-10-10 |
