@@ -32,14 +32,15 @@ Additional links:
 
 ### Version History
 
-| Version     | Date       |
-| V1.1.2      | 2024-11-04 |
-| V1.1.1      | 2024-10-24 |
-| V1.1.0      | 2024-10-10 |
-| V1.0.3      | 2024-07-05 |
-| V1.0.2      | 2024-06-10 |
-| V1.0.1      | 2024-06-05 |
-| V1.0.0      | 2024-05-20 |
+| Version  | Date       |
+| :------- | :--------- |
+| V1.1.2   | 2024-11-04 |
+| V1.1.1   | 2024-10-24 |
+| V1.1.0   | 2024-10-10 |
+| V1.0.3   | 2024-07-05 |
+| V1.0.2   | 2024-06-10 |
+| V1.0.1   | 2024-06-05 |
+| V1.0.0   | 2024-05-20 |
 
 <!--
 These are nice looking buttons, but using a "gratuitously different" way to show links doesn't really work...
