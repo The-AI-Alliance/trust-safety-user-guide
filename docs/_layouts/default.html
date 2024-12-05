@@ -140,6 +140,11 @@ layout: table_wrappers
       {% endunless %}
       <div id="main-content" class="main-content" role="main">
         <a href="https://thealliance.ai" target="_aia" class="no-glyph"><img alt="AI Alliance Banner" src="{{site.baseurl}}/assets/images/alliance-banner.png"/></a>
+        <hr/>
+        <a href="https://thealliance.ai/working-groups/trust-safety#trust-and-safety-form" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 no-glyph" target="join-us">Join Our Work Group!</a>
+        &nbsp;
+        <a href="https://github.com/The-AI-Alliance/trust-safety-evals" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 no-glyph" target="repo">GitHub Repo</a>
+
         {% if
           site.gh_edit_link and
           site.gh_edit_link_text and
@@ -148,7 +153,7 @@ layout: table_wrappers
           site.gh_edit_view_mode
         %}
           <p class="text-small text-grey-dk-000 mb-0">
-            <a href="{{ site.gh_edit_repository }}/{{ page.path }}" id="edit-this-page" target="_doc_repo_page">{{ site.gh_edit_link_text }}</a>
+            <a href="{{ site.gh_edit_repository }}/{{ page.path }}" id="edit-this-page" target="doc_repo_page">{{ site.gh_edit_link_text }}</a>
           </p>
         {% endif %}
 
