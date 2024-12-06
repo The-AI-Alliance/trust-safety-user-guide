@@ -7,9 +7,9 @@ nav_order: 90
 <a name="join-us"></a>
 # How to Contribute to This Document
 
-We welcome your contributions to this User Guide. You are welcome to join the AI Alliance [Trust and Safety Work Group](https://thealliance.ai/working-groups/trust-safety), but there are other ways to contribute, too.
+We welcome your contributions to this User Guide. You are welcome to join the AI Alliance [Trust and Safety Work Group](https://thealliance.ai/working-groups/trust-safety){:target="join-us"}, but there are other ways to contribute, too.
 
-If you want to join our work group, visit [this AI Alliance webpage](https://thealliance.ai/working-groups/trust-safety#trust-and-safety-form){:target="join-us"} and fill in the form. (Thank you for your interest!)
+If you want to join our work group, complete [this form](https://thealliance.ai/working-groups/trust-safety#trust-and-safety-form){:target="join-us"} and fill in the form. (Thank you for your interest!)
 
 Because the sources for this guide are in [this GitHub repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="tsug-repo"}, you can also [post issues](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues){:target="tsug-repo"} or contribute changes as [pull requests](https://github.com/The-AI-Alliance/trust-safety-user-guide/pulls){:target="tsug-repo"}. 
 
