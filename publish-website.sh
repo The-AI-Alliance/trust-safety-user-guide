@@ -7,7 +7,6 @@
 # 2. docs/index.markdown: 
 #    a. Authors and latest version table at the top of the page, if present
 #    b. The history table of versions and timestamps at the bottom, if present.
-#    c. The footer of every page in the Just the Docs template.
 #
 # NOTES: 
 # 1. While recommended, it's not required to use this script...
