@@ -22,7 +22,7 @@ An alphabetical list of links to AI trust and safety information from government
 
 ### ACM Europe Technology Policy Committee
 
-_Comments in Response to European Commission Call for Evidence Survey on “Artificial Intelligence - Implementing Regulation Establishing a Scientific Panel of Independent Experts”_ [PDF](https://www.acm.org/binaries/content/assets/public-policy/acm-europetpc-consultation-2024---general-purpose-ai-code-of-practice.pdf){:target="acm-europe"} was prepared by the ACM Europe Technology Policy Committee (November 15, 2024). It is one of many [ACM Public Policy Products](https://www.acm.org/public-policy/public-policy-statements).
+_Comments in Response to European Commission Call for Evidence Survey on “Artificial Intelligence - Implementing Regulation Establishing a Scientific Panel of Independent Experts”_ [PDF](https://www.acm.org/binaries/content/assets/public-policy/acm-europetpc-consultation-2024---general-purpose-ai-code-of-practice.pdf){:target="acm-europe"} was prepared by the ACM Europe Technology Policy Committee (November 15, 2024). It is one of many [ACM Public Policy Products](https://www.acm.org/public-policy/public-policy-statements){:target="acm-ppp"}.
 
 ### Adobe
 
