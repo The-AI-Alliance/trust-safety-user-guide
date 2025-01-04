@@ -41,4 +41,20 @@ You might notice the emphasis on evaluation, looking for problems with mitigatio
 
 Next, we will define some terms. Then we will explore the work of several leading organizations on trust and safety. How they define and analyze risks, how they mitigate them, and how systems should be developed with risk in mind. Finally, we will conclude with some suggestions for assessing risk priorities for your applications, followed by a list of references for more information.
 
-Proceed to the [glossary]({{site.baseurl}}/glossary).
+## Other AI Alliance Trust and Safety Activities
+
+The AI Alliance has an active [Trust and Safety Work Group](https://thealliance.ai/focus-areas/trust-and-safety){:target="ai-alliance-tswg"} that has other projects you might interest you, in addition to this user guide:
+
+* [Trust and Safety Evaluation Initiative](https://the-ai-alliance.github.io/trust-safety-evals/){:target="tsei"}: A broad effort with several work streams.
+  * Define an evaluation taxonomy across all concerns, not just trust and safety, but also performance, alignment, etc.
+  * Define a reference stack for evaluation.
+  * Implement _evaluators_ that implement the _evaluations_ defined in the taxonomy.
+  * Deploy leaderboards for users to explore taxonomy areas of interest, how well popular open models perform against the corresponding evaluations, and provide the ability to download the suite of those evaluations for deployment into custom infrastructure.
+* [Ranking AI Safety Priorities by Domain](https://the-ai-alliance.github.io/ranking-safety-priorities/){:target="ranking"}: Explore the highest-priority AI-centric use cases and the corresponding safety concerns in several domains, such as healthcare, finance, education, and legal.
+* [The State of Open Source AI Trust and Safety - End of 2024 Edition](https://thealliance.ai/blog/the-state-of-open-source-trust){:target="state-of-safety"}: A survey of AI Alliance members with analysis of their concerns about trust and safety.
+* [Trusted Evals request for proposals](https://thealliance.ai/core-projects/trusted-evals){:target="ts-rfp"}: An open RFP for submitting trust and safety project ideas for work by the AI Alliance.
+
+In addition, The AI Alliance [Open Trusted Data Work Group](https://thealliance.ai/focus-areas/foundation-models){:target="ai-alliance-wg"} is leading the [Open Trusted Data Initiative](https://the-ai-alliance.github.io/open-trusted-data-initiative/){:target="otdi"} to catalog datasets with unambiguous provenance and governance, and clear licenses for open use. Some of these datasets are effectively trust and safety _evaluations_, e.g., datasets for benchmarks.
+
+
+Please proceed to the [glossary]({{site.baseurl}}/glossary).
