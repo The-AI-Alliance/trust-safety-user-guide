@@ -127,6 +127,7 @@ then
 	echo "New version ($version) is the same as the old version in $index. Not changing that file."
 else
 	mv $index $index.$$
+	found_version_history=false
 	cat $index.$$ | while read line
 	do
 		case $line in
@@ -136,7 +137,15 @@ else
 				;;
 			*Version*Date*)
 				echo $line
-			    echo "| V$version      | $ymd |"
+				found_version_history=true
+				;;
+			\|\ :---*)
+				echo $line
+				if $found_version_history
+				then
+				    echo "| V$version   | $ymd |"
+				    found_version_history=false
+				fi
 			    ;;
 			*)
 				echo "$line"
