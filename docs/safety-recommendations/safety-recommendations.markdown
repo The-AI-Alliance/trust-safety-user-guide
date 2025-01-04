@@ -18,6 +18,8 @@ has_children: false
 
 When starting your own AI-enabled projects, we recommend studying [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="meta-rug"} as a good reference guide for how to proceed. See, in particular, the section titled _Responsible LLM product development stages_. We highlight a few guidelines here, some of which are also discussed in the Meta guide.
 
+See also the other AI Alliance Trust and Safety initiatives discussed in the [introduction]({{site.baseurl}}/introduction#other-ai-alliance-trust-and-safety-activities), especially the [Trust and Safety Evaluation Initiative](https://the-ai-alliance.github.io/trust-safety-evals/){:target="tsei"}, for additional resources you can leverage.
+
 ## Define the Objectives and Safety Requirements for the AI System
 
 Good AI system design starts with an understanding of the features and safety objectives the system is supposed to meet, clarification of them through use case definitions, and requirements derived from the use cases. Based on the overall objectives of the system, study the relative importance of the safety categories discussed previously. Some categories will be more important than others. This risk assessment process needs to consider the impacts on users when risk events occur. 
