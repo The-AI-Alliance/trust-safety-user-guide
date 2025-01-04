@@ -18,13 +18,15 @@ has_children: false
 
 ## Trust and Safety Frameworks, Principles and Tools
 
-Links to AI trust and safety information from governments, corporations, universities, and non-profit institutions, organized by those organizations. Many of the references here were discussed in the text.
+An alphabetical list of links to AI trust and safety information from governments, corporations, universities, and non-profit institutions, organized by those organizations. Some of the references here were discussed more fully under [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/exploring) .
 
-### UIUC Secure Learning Lab
+### ACM Europe Technology Policy Committee
 
-[AI Secure, Decoding Trust](https://decodingtrust.github.io/){:target="decodingtrust"}
+_Comments in Response to European Commission Call for Evidence Survey on “Artificial Intelligence - Implementing Regulation Establishing a Scientific Panel of Independent Experts”_ [PDF](https://www.acm.org/binaries/content/assets/public-policy/acm-europetpc-consultation-2024---general-purpose-ai-code-of-practice.pdf){:target="acm-europe"} was prepared by the ACM Europe Technology Policy Committee (November 15, 2024). It is one of many [ACM Public Policy Products](https://www.acm.org/public-policy/public-policy-statements).
 
-A Comprehensive Assessment of Trustworthiness in GPT Models.
+### Adobe
+
+[The AI inflection point](https://www.adobe.com/acrobat/business/reports/sdk/ai-inflection-point.html){:target="adobe"} provides Adobe's recommendations for responsible AI in organizations (published December 2024).
 
 ### Alignment Forum
 
@@ -53,6 +55,7 @@ A popular open-source framework for performing evaluations, including for safety
 [EU AI Act](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence){:target="eu-act"}
 
 The first act to regulate AI in the EU. It uses a risk-based approach to regulating AI, including a unique approach that specifies different rules for more powerful generative AI models. Like GDPR regulations for data, the EU AI Act is expected to impact AI practices far beyond the EU’s borders.
+
 ### Google
 
 [Responsible Generative AI Toolkit](https://ai.google.dev/responsible){:target="google-responsible-ai"}
@@ -83,12 +86,6 @@ IBM’s description of responsible AI, as informed by IBM product offerings and 
 
 Sustainability benchmarks, e.g., for estimating carbon consumption. An example of an evaluator that isn’t focused on safety in our definition of the term. 
 
-### MLCommons
-
-[MLCommons AI Safety](https://mlcommons.org/ai-safety/){:target="mlc-ais"}
-
-The work group at ML Commons that defined an influential [Taxonomy of Harms (v0.5)](https://drive.google.com/file/d/1V8KFfk8awaAXc83nZZzDV2bHgPT8jbJY/view){:target="mlc-harms"} as part of its [benchmarks project](https://mlcommons.org/benchmarks/ai-safety/){:target="mlc-benchmarks"}, See also their [Arxiv paper](https://arxiv.org/abs/2404.12241){:target="mlc-paper"}.
-
 ### Meta
 
 [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="meta-responsible-ug"}
@@ -112,6 +109,12 @@ A globally-accessible knowledge base of adversary tactics and techniques based o
 [Common Weakness Enumeration](https://cwe.mitre.org/){:target="mitre"}
 
 The industry standard database of known vulnerabilities.
+
+### MLCommons
+
+[MLCommons AI Safety](https://mlcommons.org/ai-safety/){:target="mlc-ais"}
+
+The work group at ML Commons that defined an influential [Taxonomy of Harms (v0.5)](https://drive.google.com/file/d/1V8KFfk8awaAXc83nZZzDV2bHgPT8jbJY/view){:target="mlc-harms"} as part of its [benchmarks project](https://mlcommons.org/benchmarks/ai-safety/){:target="mlc-benchmarks"}, See also their [Arxiv paper](https://arxiv.org/abs/2404.12241){:target="mlc-paper"}.
 
 ### Mozilla Foundation
 
@@ -154,13 +157,11 @@ Describes a wide range of trends in A. In particular, it discusses how there are
 
 ### United States Government, Department of Commerce, National Institute of Standards and Technology (NIST)
 
+NIST guidance [Artificial Intelligence Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework){:target="nist-rmf"} (AI RMF 1.0) is discussed in depth [here]({{site.baseurl}}/exploring/nist-risk-framework). It is their recommendations for assessing and managing AI Risk.
+
 [NIST’s Responsibilities Under the October 30, 2023 Executive Order](https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence){:target="nist-exec-order"}
 
 NIST’s clarification of its roles and responsibilities under the executive order (next reference), including a Request for Information (RFI) to which [the AI Alliance responded](https://thealliance.ai/files/AI_Alliance_NTIA_Response.pdf){:target="ai-alliance-nist-reponse"}.
-
-[Artificial Intelligence Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework){:target="nist-rmf"}
-
-The NIST framework and guidance for assessing and managing AI Risk.
 
 ### United States Government, Executive Branch
 
@@ -182,6 +183,13 @@ Guidance on risk assessment and management.
 
 [Chatbot Arena](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard){:target="chatbot-arena"}
 A popular, crowd-sourced platform for gauging the performance of chatbots.
+
+
+### University of Illinois at Chicago (UIUC) Secure Learning Lab
+
+[AI Secure, Decoding Trust](https://decodingtrust.github.io/){:target="decodingtrust"}
+
+A Comprehensive Assessment of Trustworthiness in GPT Models.
 
 ### University of Notre Dame, et al.
 

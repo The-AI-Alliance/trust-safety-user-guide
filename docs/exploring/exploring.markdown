@@ -15,4 +15,9 @@ What is required for us to trust AI? There are many ways to understand and appro
 * [MLCommons Taxonomy of Hazards]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards).
 * [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks).
 
+Here are some additional sources of information that we won't cover in more detail here:
+
+* [The AI inflection point](https://www.adobe.com/acrobat/business/reports/sdk/ai-inflection-point.html){:target="adobe"}: Adobe's recommendations for responsible AI in organizations (published December 2024).
+* ACM Public Policy Products, _Comments in Response to European Commission Call for Evidence Survey on “Artificial Intelligence - Implementing Regulation Establishing a Scientific Panel of Independent Experts”_ [PDF](https://www.acm.org/binaries/content/assets/public-policy/acm-europetpc-consultation-2024---general-purpose-ai-code-of-practice.pdf){:target="acm-europe"} from the ACM Europe Technology Policy Committee (November 15, 2024).
+
 Next we provide some specific [recommends]({{site.baseurl}}/safety-recommendations/safety-recommendations) for successful, safe use of AI.

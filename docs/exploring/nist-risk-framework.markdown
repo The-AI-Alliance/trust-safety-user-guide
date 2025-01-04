@@ -46,6 +46,8 @@ NIST is expanding its AI-related efforts. The [Assessing Risks and Impacts of AI
 > The program will result in guidelines, tools, methodologies, and metrics that organizations can use for evaluating the safety of their systems as part of their governance and decision-making processes to design, develop, release or use AI technology. ARIA will inform the work of the U.S. AI Safety Institute at NIST.
 > -- Source: [Assessing Risks and Impacts of AI](https://ai-challenges.nist.gov/aria){:target="nist-aria"}
 
+The [library page](https://ai-challenges.nist.gov/aria/library){:target="nist-aria-library"} provides a collection of resources.
+
 [NIST AI RMF Profiles](https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Core_And_Profiles/6-sec-profile){:target="nist-profile"} are companion resources designed to assist organizations in managing AI risks in specific settings. _Use case_ profiles are targeted implementations of the AI RMF functions to specific use cases or scenarios. _Cross-sectoral_ profiles can be applied across industries and use cases. 
 
 In April 2024 NIST released a draft of the [NIST AI RMF Generative AI Profile](https://airc.nist.gov/docs/NIST.AI.600-1.GenAI-Profile.ipd.pdf){:target="nist-genai"} for public review. The Generative AI (GAI) Profile defines a set of risks considered to be specific to or amplified by GAI. Additionally, an extensive catalog of over 400 mitigation actions is provided. This profile is both an use case profile (i.e., it is concerned specifically with GAI applications) and a cross-sectoral profile (neither industry- nor technology-specific). 
