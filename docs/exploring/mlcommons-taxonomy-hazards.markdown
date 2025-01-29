@@ -7,7 +7,7 @@ parent: Exploring AI Trust and Safety
 
 # MLCommons Taxonomy of Hazards
 
-> **NOTE:** (December 4, 2024) MLCommons released V1.0 of this taxonomy as part of their MLCommons AI Safety project, now rebranded as [AILuminate](https://mlcommons.org/ailuminate/){:target="mlc-ail"}. This section will be updated to reflect this release.
+> **NOTE:** (December 4, 2024) MLCommons released V1.0 of this taxonomy as part of their MLCommons AI Safety project, now called [AILuminate](https://mlcommons.org/ailuminate/){:target="mlc-ail"}. This section will be updated to reflect this release.
 
 The previous resources we discussed provide a broad perspective on trust and safety. As part of the [MLCommons AI Safety](https://mlcommons.org/ai-safety/){:target='_mlcais'} project (arxiv paper), the [v0.5 proof of concept](https://mlcommons.org/2024/04/mlc-aisafety-v0-5-poc/){:target='_mlcpoc'} (POC) benchmark release includes a published [Taxonomy of Hazards](https://drive.google.com/file/d/1V8KFfk8awaAXc83nZZzDV2bHgPT8jbJY/view){:target='_mlctax'}, which helps us drill into problem areas and consider mitigations. Seven of the thirteen identified hazards are supported in the v0.5 POC. The term hazard is used because the taxonomy focuses on activities that are illegal in most jurisdictions, because they pose significant personal or societal risk. 
 

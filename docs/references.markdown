@@ -86,6 +86,10 @@ IBM’s description of responsible AI, as informed by IBM product offerings and 
 
 Sustainability benchmarks, e.g., for estimating carbon consumption. An example of an evaluator that isn’t focused on safety in our definition of the term. 
 
+### International AI Safety Report 2025
+
+The [International AI Safety Report 2025](https://www.gov.uk/government/publications/international-ai-safety-report-2025){:target="iaisr-2025"} is a report on the state of advanced AI capabilities and risks. Written by 100 AI experts including representatives nominated by 33 countries and intergovernmental organizations, it is the latest annual update to this report that has been published for several years. The 2025 report was published January 29, 2025, just before the [Artificial Intelligence Action Summit](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia){:target="aias"}, February 10 and 11, 2025, in Paris.
+
 ### Meta
 
 [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="meta-responsible-ug"}
