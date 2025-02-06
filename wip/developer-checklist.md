@@ -30,11 +30,25 @@ So, this note is a place to gather ideas. Please add your thoughts!
 
 What would apply no-matter what country, culture, etc. is targeted for a model or application? For simplicity, we'll just use model, even though most applications should be tested, especially more complex systems that might use multiple models for different purposes. 
 
+Suggestions from Dean Wampler:
+
 * Objectivity and bias - Gender, demography, religion, politics, etc.
 * License to use
 * Is this model more of a research concept than a production model?
 * How likely is this model to be actively maintained and updated?
 
+Suggestions from Bill Stout:
+
+* Collect data - Can you trust how data was collected
+* Engineer data - Can you trust how data was processed
+* Model training - Can you trust model training
+* Model evaluation - Can you trust the model
+* Model Deployment - Can you trust the binaries
+* Model Monitoring - Can you trust results
+* Transparency - Do you know the model
+* Human oversight - Can you control the model
+* Security & Privacy - Will it keep your secrets
+* Improvement - Will it get better
 
 ## Regional Checklists
 
