@@ -8,7 +8,7 @@ has_children: false
 # The AI Trust and Safety User Guide
 
 | **Authors**      | [The AI Alliance Trust and Safety Work Group](https://thealliance.ai/focus-areas/trust-and-safety){:target="ai-alliance-tswg"} (See the [Contributors]({{site.baseurl}}/contributing/#contributors)) |
-| **Last Update**  | V1.2.0, 2025-01-04 |
+| **Last Update**  | V1.2.1, 2025-06-03 |
 
 Welcome to the **The AI Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
@@ -34,6 +34,7 @@ Additional links:
 
 | Version  | Date       |
 | :------- | :--------- |
+| V1.2.1   | 2025-06-03 |
 | V1.2.0   | 2025-01-04 |
 | V1.1.3   | 2025-01-04 |
 | V1.1.2   | 2024-11-04 |
@@ -43,11 +44,3 @@ Additional links:
 | V1.0.2   | 2024-06-10 |
 | V1.0.1   | 2024-06-05 |
 | V1.0.0   | 2024-05-20 |
-
-<!--
-These are nice looking buttons, but using a "gratuitously different" way to show links doesn't really work...
--->
-<!--
-[The AI Alliance](https://thealliance.ai){:target="ai-alliance" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .no-glyph} [GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="tsug-repo" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .no-glyph}
--->
-
