@@ -40,6 +40,15 @@ div.child-pages-toc a[href^="https://example.com"]::after
   display: none !important;
 }
 
+.disabled {
+  background-color: grey;
+  opacity: 0.5;
+}
+
+.bold {
+  font-weight: bold
+}
+
 // A "box" around that can be used for a different kind of callout.
 div.callout-box {
   background: #F0F0F8;
@@ -76,3 +85,32 @@ p.caption {
 
 .resizer { display:flex; margin:0; padding:0; resize:both; overflow:hidden }
 .resizer > .resized { flex-grow:1; margin:0; padding:0; border:0 }
+
+form.form-dataset-table {
+}
+th.form-dataset-table-label {
+  text-align: right;
+}
+td.form-dataset-table-value {
+  text-align: left;
+  width: 100%;
+}
+td.form-dataset-table-value-shorter {
+  text-align: left;
+  width: 90%;
+}
+input.form-dataset-table-input {
+  width: 100%;
+}
+input.form-dataset-table-file-input {
+
+}
+input.form-dataset-table-checkbox {
+  text-align: left;
+}
+select.form-dataset-table-value {
+  background-color: blue;
+}
+select.form-dataset-table-value {
+  background-color: blue;
+}
