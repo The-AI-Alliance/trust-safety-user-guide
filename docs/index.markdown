@@ -5,12 +5,12 @@ nav_order: 10
 has_children: false
 ---
 
-# The AI Trust and Safety User Guide
+# AI Trust and Safety User Guide
 
 | **Authors**      | [The AI Alliance Trust and Safety Work Group](https://thealliance.ai/focus-areas/trust-and-safety){:target="ai-alliance-tswg"} (See the [Contributors]({{site.baseurl}}/contributing/#contributors)) |
 | **Last Update**  | V1.2.1, 2025-06-03 |
 
-Welcome to the **The AI Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
+Welcome to the **AI Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
 > **Tip:** Use the search box at the top of this page to find specific content.
 
