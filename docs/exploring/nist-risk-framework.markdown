@@ -39,6 +39,7 @@ These functions are somewhat continuously and iteratively applied over a systemâ
 
 NIST is expanding its AI-related efforts. The [Assessing Risks and Impacts of AI](https://ai-challenges.nist.gov/aria){:target="nist-aria"} program was launched in May 2024. From their website:
 
+{: .highlight}
 > The latest in a portfolio of evaluations managed by the NIST Information Technology Laboratory â€“ ARIA will assess models and systems submitted by technology developers from around the world. ARIA is an evaluation environment which is sector and task agnostic.
 >
 > ARIA will support three evaluation levels: model testing, red-teaming, and field testing. ARIA is unique in that it will move beyond an emphasis on system performance and accuracy and produce measurements on technical and societal robustness.
@@ -71,5 +72,7 @@ The catalog of mitigation actions is grouped by AI RMF function - GOVERN, MAP, M
 By mapping its own risk taxonomy to NIST GAI risks, organizations can leverage the rich mitigation catalog contained in the GAI profile.
 
 For a complementary assessment of risks in AI, see this comprehensive guide to AI security risk analysis from [BIML: An Architectural Risk Analysis of Large Language Models](https://berryvilleiml.com/results/){:target="biml"}.
+
+---
 
 The next section explores [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety).

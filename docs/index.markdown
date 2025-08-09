@@ -12,6 +12,7 @@ has_children: false
 
 Welcome to the **AI Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
+{: .tip}
 > **Tip:** Use the search box at the top of this page to find specific content.
 
 This guide is organized as follows:
@@ -34,6 +35,7 @@ Additional links:
 
 | Version  | Date       |
 | :------- | :--------- |
+| V1.3.0   | 2025-08-09 |
 | V1.2.1   | 2025-06-03 |
 | V1.2.0   | 2025-01-04 |
 | V1.1.0   | 2024-10-10 |

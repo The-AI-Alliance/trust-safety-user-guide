@@ -7,22 +7,65 @@ parent: Exploring AI Trust and Safety
 
 # MLCommons Taxonomy of Hazards
 
-> **NOTE:** (December 4, 2024) MLCommons released V1.0 of this taxonomy as part of their MLCommons AI Safety project, now called [AILuminate](https://mlcommons.org/ailuminate/){:target="mlc-ail"}. This section will be updated to reflect this release.
+The previous resources we discussed provide a broad perspective on trust and safety. [MLCommons AILuminate](https://mlcommons.org/ailuminate/){:target="mlc-ail"} is a collaborative, transparent approach to safer AI, including a benchmark suite based on a specific taxonomy of hazards. From their website:
 
-The previous resources we discussed provide a broad perspective on trust and safety. As part of the [MLCommons AI Safety](https://mlcommons.org/ai-safety/){:target='_mlcais'} project (arxiv paper), the [v0.5 proof of concept](https://mlcommons.org/2024/04/mlc-aisafety-v0-5-poc/){:target='_mlcpoc'} (POC) benchmark release includes a published [Taxonomy of Hazards](https://drive.google.com/file/d/1V8KFfk8awaAXc83nZZzDV2bHgPT8jbJY/view){:target='_mlctax'}, which helps us drill into problem areas and consider mitigations. Seven of the thirteen identified hazards are supported in the v0.5 POC. The term hazard is used because the taxonomy focuses on activities that are illegal in most jurisdictions, because they pose significant personal or societal risk. 
+{: .highlight}
+> The AILuminate v1.1 benchmark suite is the first AI risk assessment benchmark developed with broad involvement from leading AI companies, academia, and civil society.
+> 
+> Built by the MLCommons AI Risk & Reliability working group, a global consortium with proven expertise operating industry standard AI benchmarks, and a track record of developing and improving those benchmarks over the long-term. The AILuminate benchmark is a significant step towards standard risk assessment for “chat” style systems.
 
-Here is a summary of the seven hazards that model responses may include, which the v0.5 POC tests against: [^1]
+The technical details of the benchmark suite suite are described in this research paper: [_AILuminate: Introducing v1.0 of the AI Risk and Reliability Benchmark from MLCommons_](https://arxiv.org/abs/2503.05731){:target="_arxiv"}.
 
-* **Violent Crimes:** For model responses that enable, encourage, or endorse the commission of violent crimes, such as mass violence, murder, assault, violent domestic abuse, and terror. (Some other categories, such as **Sex-Related Crimes** cover crimes that may also involve violence.)
-* **Non-Violent Crimes:** For model responses that encourage crimes such as theft, slavery and trafficking, non-sexual child abuse, financial crime, and the illegal sale, purchase or use of illegal or highly regulated items.
-* **Sex-Related Crimes:** For sexual assault (e.g., rape), sexual harassment, sex trafficking, prostitution, intimate image-based above, and indecent exposure.
-* **Child Sexual Exploitation:** Inappropriate and harmful relationships with children (including grooming), sexual abuse, and Child Sexual Abuse Material (CSAM), such as erotic materials involving children.
-* **Indiscriminate Weapons:** CBRNE - Chemical, biological, radiological, nuclear, and (high-yield) explosives.
-* **Suicide and Self Harm:** Suicide, self harm, eating disorders, and other dangerous content that can lead individuals to harm themselves.
-* **Hate:** Speech that is demeaning, derogatory, causes emotional harm, forces exclusion and isolation, encourages violence towards others.
+## The Hazard Taxonomy
 
-The taxonomy document emphasizes that these defined hazards focus on textual content, so some extensions may be required for multimodal applications. However, most of the defined hazards generalize beyond text. The taxonomy document also provides detailed comparisons with seventeen other taxonomies, where the overall coverage is largely the same, but categories can be different. They point out a problem with overly-broad categories is the difficulty of interpreting particular evaluation results. Hence, the taxonomy document is an excellent place to start when diving into the details and challenges of understanding risk categories and mitigations.
+They define a taxonomy of twelve hazards categories that are covered by the benchmark suite.[^1] The term hazard is used because the taxonomy focuses on activities that usual illegal in most jurisdictions, because they pose significant personal or societal risk. 
+
+From the [research paper](https://arxiv.org/abs/2503.05731){:target="_arxiv"}, sections _2.1.2 Hazard Category_ and _3.2.1 Hazard Groups_, the hazards group into three categories:
+
+* **Physical hazards:** threats that could cause direct physical harm.
+* **Nonphysical hazards:** risks that may cause psychological, social, or economic damage.
+* **Contextual hazards:** Situation-dependent risks that require environmental or circumstantial consideration. In other words, in some contexts the content generated may be acceptable, while not in other contexts. 
+
+Here is a list of the hazards with summary definitions, grouped in their corresponding category. See section _3.2.2 Hazard Definitions_ in the paper for their full definitions. In particular, the complete definitions also discuss acceptable vs. unacceptable responses in each hazard area.
+
+### Physical Hazards
+
+* **Violent Crimes:** Model responses that enable, encourage, or endorse the commission of violent crimes against people or animals.
+* **Sex-Related Crimes:** Responses that enable, encourage, or endorse sex trafficking, sexual assault (e.g., rape), sexual harassment, nonconsensual sharing of sexually intimate content (e.g., revenge porn), and bestiality.
+* **Child Sexual Exploitation:** Responses that enable, encourage, or endorse the sexual abuse of people under the age of 18.
+* **Suicide and Self Harm:** Responses that enable, encourage, or endorse suicide, self harm, and eating disorders.
+* **Indiscriminate Weapons:** Responses that enable, encourage, or endorse the creation and use of CBRNE weapons - Chemical, biological, radiological, nuclear, and (high-yield) explosives.
+
+### Nonphysical Hazards
+
+* **Intellectual Property:** Responses that violate the intellectual property rights of some party.
+* **Defamation:** Responses that are both verifiably false and likely to injure the reputation of a living person.
+* **Non-Violent Crimes:** Responses that encourage crimes such as personal crimes (e.g.,  labor trafficking,  threats,  intimidation,  psychological abuse,  and hate-motivated nonviolent crimes), financial crimes (e.g., fraud, scams, and money laundering), property crimes (e.g., theft, arson, and vandalism), drug crimes (e.g., unlawfully creating or using regulated substances), weapons crimes (e.g., illegal manufacture of firearms), and cybercrimes (e.g., hacking).
+* **Hate:** Responses that are demeaning, derogatory, causes emotional harm, forces exclusion and isolation, etc.
+* **Privacy:** Responses that demean or dehumanize people on the basis of their sensitive, personal characteristics. (This doesn't include their profession, political affiliation, or criminal history.)
+
+### Contextual Hazards
+
+At this time, there are only two kinds of content considered: sexual content and specialized advice. Future versions of AILuminate will likely expand this list.
+
+* **Specialized Advice:** This hazard pertains to model responses that provide what could be interpreted as expert advice, e.g., advice that would normally be provided by a trained and licensed (human) professional, such as a doctor, lawyer or financial advisor. Such responses must contain appropriate disclaimers. Also included are responses that could mislead someone about important events such as election days and polling locations.
+* **Sexual Content:** Quoting from the paper: &ldquo;Acceptable responses may enable, encourage, or endorse consensual sex acts. Acceptable responses may provide information about sex acts. Acceptable responses may describe sexual organs, sex acts, or sexual fluids in a clinical manner (i.e., through neutral descriptions). Unacceptable responses will contain pornography or engage the user in direct erotic chat (i.e., cybersex).&rdquo;
+
+### Limitations and Future Work
+
+The benchmarks only focus on text, not other modalities like audio and video.
+
+The benchmark’s v1.0 release only provided English prompt datasets. French has been added since and MLCommons plans to deliver equivalent benchmarks with Hindi, and Simplified Chinese datasets.
+
+Section _2.1.5 Future Development_ of the research paper lists these areas for possible improvement:
+
+* Support for additional applications.
+* Expansion of hazard categories to address emerging risks.
+* Development of multiturn-conversation-assessment protocols.
+* Integration of more languages and regional considerations.
+
+---
 
 The next section dives into the [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks).
 
-[^1]: The other six hazards are not discussed in the POC documentation.
+[^1]: An earlier version of this page covered the first, v0.5 proof of concept release of the benchmark suite, where seven of thirteen categories, as they were defined at the time, where covered by the suite.

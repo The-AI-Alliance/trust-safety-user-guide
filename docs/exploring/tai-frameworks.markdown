@@ -31,4 +31,6 @@ Figure 3: Conceptual Framework Principles for TrustedAI in the AI System Lifecyc
 <p class="caption">Figure 3: Conceptual Framework Principles for TrustedAI in the AI System Lifecycle (Source: <a href="https://la3d.github.io/nuggets/posts/frameworks-reflection/" target="la3d-fr">Reflections on Trusted AI Frameworks after two years</a>)
 </p>
 
+---
+
 Now that we have explored different perspectives on trust and safety, the next section provides some guidance on [how to approach trust and safety in your projects]({{site.baseurl}}/safety-recommendations/safety-recommendations).

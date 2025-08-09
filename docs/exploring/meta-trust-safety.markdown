@@ -35,4 +35,6 @@ Meta’s own AI-based applications integrate detection and mitigation of risks a
 
 Most of Meta’s Responsible Use Guide discusses the whole software development process for AI applications, designed to maximize safety and alignment of your AI systems for its goals. We return to this subject in [Safety for Your AI Systems]({{site.baseurl}}/safety/safety).
 
+---
+
 The next section explores [Mozilla Foundation's guidance on Trustworthy AI]({{site.baseurl}}/exploring/mozilla-trustworthy-ai).
