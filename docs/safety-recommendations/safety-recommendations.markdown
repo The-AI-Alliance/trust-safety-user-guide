@@ -18,7 +18,7 @@ has_children: false
 
 When starting your own AI-enabled projects, we recommend studying [Meta’s Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:target="meta-rug"} as a good reference guide for how to proceed. See, in particular, the section titled _Responsible LLM product development stages_. We highlight a few guidelines here, some of which are also discussed in the Meta guide.
 
-See also the other AI Alliance Trust and Safety initiatives discussed in the [introduction]({{site.baseurl}}/introduction#other-ai-alliance-trust-and-safety-activities), especially the [Trust and Safety Evaluation Initiative](https://the-ai-alliance.github.io/trust-safety-evals/){:target="tsei"}, for additional resources you can leverage.
+See also the other AI Alliance Trust and Safety initiatives discussed in the [introduction]({{site.baseurl}}/introduction#other-ai-alliance-trust-and-safety-activities), for additional resources you can leverage.
 
 ## Define the Objectives and Safety Requirements for the AI System
 
@@ -26,7 +26,7 @@ Good AI system design starts with an understanding of the features and safety ob
 
 ### The Importance of Context in AI Safety
 
-The point about chatbots shows that the total _context_ of the application is important. In particular for trust and safety concerns, what is considered unacceptable can vary with the situation. No one size fits all.
+The point about [ChatBots]({{site.baseurl}}/glossary/chatbot) shows that the total _context_ of the application is important. In particular for trust and safety concerns, what is considered unacceptable can vary with the situation. No one size fits all.
 
 ### Cultural Norms
 
@@ -34,24 +34,36 @@ Some topics are acceptable in some cultures and to some groups of users, but not
 
 ### User Goals and Intentions
 
-Consider an application that helps a user generate creative ideas for artistic projects. In this case, Hallucination is acceptable, even desirable. However, results that infringe on copyright and trademark rights are highly undesirable and could lead to legal consequences.
+Consider an application that helps a user generate creative ideas for artistic projects. In this case, [Hallucination]({{site.baseurl}}/glossary/#hallucination) is acceptable, even desirable. However, results that infringe on copyright and trademark rights are highly undesirable and could lead to legal consequences.
 
-In contrast, for an application intended to provide factually-accurate information to a user, Hallucination can have serious harmful consequences. In this case, quotation of copyrighted and trademarked information may be desirable, even required, as long as proper attribution is included.
+In contrast, for an application intended to provide factually-accurate information to a user, hallucination can have serious harmful consequences. In this case, quotation of copyrighted and trademarked information may be desirable, even required, as long as proper attribution is included.
 
-A recent infamous example illustrates the challenges of understanding a user’s _good intentions_. The first release of Google’s Gemini model was [found to generate images](https://www.npr.org/2024/03/18/1239107313/google-races-to-find-a-solution-after-ai-generator-gemini-misses-the-mark){:target="gemini"} of people with diverse ethnicities and genders set in historical or real-world situations where only white people or white men should have been represented to reflect the realities of those situations. For example, images of the United States &lgquo;Founding Fathers&rdquo; should only include white men, as no one from any other demographic group was allowed to participate in their activities.
+A recent infamous example illustrates the challenges of understanding a user’s _good intentions_. The first release of Google’s Gemini model was [found to generate images](https://www.npr.org/2024/03/18/1239107313/google-races-to-find-a-solution-after-ai-generator-gemini-misses-the-mark){:target="gemini"} of people with diverse ethnicities and genders set in historical or real-world situations where only white people or white men should have been represented to reflect the realities of those situations. For example, images of the United States &ldquo;Founding Fathers&rdquo; should only include white men, as no one from any other demographic group was allowed to participate in their activities.
 
-In this case, the Gemini team over-compensated for known biases in training data. _Their good intentions_ were to have the model create images with diverse representation. While desirable for &lgquo;generic&rdquo; images of modern life, like workplaces and sporting events, this was deemed offensive in those scenarios where diverse representation most certainly did not exist. This behavior has been observed in other widely-used models, too.
-However, it is possible that some users would want images with diversity in known historical situations for the purpose of visualizing a &lgquo;better world&rdquo;, free of bias and unequal representation. As an analogy, it is common to see modern stagings of the plays of Shakespeare with a diverse cast, even though in Shakespeare’s time only white men, not even women, could perform. The modern musical _Hamilton_ is a popular depiction of mostly Anglo-Saxon Americans, but portrayed with a diverse cast, using modern music and dance forms that emerged in diverse communities. Hence, understanding and respecting a user’s good intentions in a given context can be key to creating optimal, acceptable results.
+In this case, Gemini over-compensated for known biases in training data. The Google team's _good intentions_ were to have the model create images with diverse representation. While desirable for &ldquo;generic&rdquo; images of modern life, like workplaces and sporting events, this was deemed offensive in those scenarios where diverse representation most certainly did not exist. This behavior has been observed in other widely-used models, too.
+However, it is possible that some users would want images with diversity in known historical situations for the purpose of visualizing a &ldquo;better world&rdquo;, free of bias and unequal representation. As an analogy, it is common to see modern stagings of the plays of Shakespeare with a diverse cast, even though in Shakespeare’s time only white men, not even women, could perform. The modern musical _Hamilton_ is a popular depiction of mostly Anglo-Saxon Americans, but portrayed with a diverse cast, using modern music and dance forms that emerged in diverse communities. Hence, understanding and respecting a user’s good intentions in a given context can be key to creating optimal, acceptable results.
 
 ## Design for Model-Level and System-Level Alignment
 
-We discussed previously how tools like Meta Llama Cybersec Eval 2, Meta Llama Guard 2, and Meta Llama Code Shield are used in different parts of the development process and AI system architecture. It may take some experimentation to find the optimal places to address safety concerns, balancing overall performance with trustworthy results. Other alignment tools include various tuning methodologies to improve model alignment and application patterns like [RAG](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){:target="ibm-rag"} as part of inference processing. 
+We discussed previously how tools like Meta Llama Cybersec Eval 2, Meta Llama Guard 2, and Meta Llama Code Shield are used in different parts of the development process and AI system architecture. It may take some experimentation to find the optimal places to address safety concerns, balancing overall performance with trustworthy results. Other [Alignment]({{site.baseurl}}/glossary/#alignment) tools include various tuning methodologies to improve model alignment and application patterns like [RAG]({{site.baseurl}}/glossary/#retrieval-augmented-generation) as part of inference processing. 
+
+However, it is also important to keep in mind these principles of good software design:
+
+### Keep It Simple!
+
+A common temptation is to lean into complexity with lots of moving parts. Even in pre-AI systems, securing and maintaining such systems is much harder than simpler systems. The inherent nondeterminism introduced by [LLMs]({{site.baseurl}}/glossary/#large-language-models) greatly increases these challenges.
+
+### Minimize the &ldquo;Blast Radius&rdquo;
+
+One reason _components_ with good abstraction boundaries are useful is they help prevent abnormal behavior in one component from propagating to other components, as long as the other components are also designed _defensively_ to be resilient against undesired behaviors of their dependencies. This is certainly true in AI systems, too. Notice we said _undesired_, rather than _unexpected_. The former term means the design results from an exhaustive exploration of all conceivable occurrences, although it is nearly impossible to complete eliminate the unexpected. Given the probabilistic nature of LLM responses, extra care is required here!
+
+[Agent]({{site.baseurl}}/glossary/#agent) systems that are allowed to invoke potentially-destructive actions on the user's behalf are particularly risky and require extra _safety engineering_, including rigorous testing. Consider instead designing these systems to construct actions to take, then require human review and permission before performing the actions.
 
 ## Identify Metrics for the Prioritized Safety Categories
 
-With the safety categories prioritized, identify the corresponding metrics and available benchmark and test suites for measuring model and system behaviors for these categories.
+With the safety categories prioritized, identify the corresponding metrics and available [Benchmark]({{site.baseurl}}/glossary/#benchmark) and test suites for measuring model and system behaviors for these categories.
 
-Make sure you understand the limitations of these tests and benchmarks, both their accuracy at detecting issues and their coverage of potential prompts and responses in those areas of interest. It is easy to be lulled into a false sense of security by impressive-looking numbers.
+Make sure you understand the limitations of these tests and benchmarks, both their accuracy at detecting issues and their coverage of potential [Prompts]({{site.baseurl}}/glossary/#prompt) and responses in those areas of interest. It is easy to be lulled into a false sense of security by impressive-looking numbers.
 
 ## Measure Your AI Systems Against those Metrics
 
@@ -59,7 +71,7 @@ Use resources such as the emerging [MLCommons AI Safety Benchmarks](https://mlco
 
 Also test the whole AI system, because while models generate responses to prompts, the system can include filters or modify prompts to keep them aligned, add extra information from RAG queries, etc. Similarly, filtering and transformations of the responses are usually implemented.
 
-Hence, a public benchmark &lgquo;leaderboard&rdquo; is a good place to find a &lgquo;base&rdquo; model, but you will need the ability to run most or all of the same tests in your local environment against your tuned models and your AI system as a whole.
+Hence, a public benchmark &ldquo;leaderboard&rdquo; is a good place to find a &ldquo;base&rdquo; model, but you will need the ability to run most or all of the same tests in your local environment against your tuned models and your AI system as a whole.
 
 ## Continuously Evaluate Your AI System
 

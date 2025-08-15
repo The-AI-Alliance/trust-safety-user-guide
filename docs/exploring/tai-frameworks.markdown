@@ -33,4 +33,4 @@ Figure 3: Conceptual Framework Principles for TrustedAI in the AI System Lifecyc
 
 ---
 
-Now that we have explored different perspectives on trust and safety, the next section provides some guidance on [how to approach trust and safety in your projects]({{site.baseurl}}/safety-recommendations/safety-recommendations).
+The next section explores [Cybersecurity]({{site.baseurl}}/exploring/cybersecurity).

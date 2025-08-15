@@ -73,6 +73,10 @@ By mapping its own risk taxonomy to NIST GAI risks, organizations can leverage t
 
 For a complementary assessment of risks in AI, see this comprehensive guide to AI security risk analysis from [BIML: An Architectural Risk Analysis of Large Language Models](https://berryvilleiml.com/results/){:target="biml"}.
 
+## Adversarial Machine Learning
+
+[Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations](https://csrc.nist.gov/pubs/ai/100/2/e2025/final){:target="nist-aml"} is a more recent report in this series that offers a taxonomy and general guidance on the unique security challenges of [AI Systems]({{site.baseurl}}/glossary/#ai-systems).
+
 ---
 
 The next section explores [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety).

@@ -13,15 +13,17 @@ has_children: false
 Welcome to the **AI Trust and Safety User Guide**, an introduction to the broad topic of trustworthy, safe AI, prepared by The AI Alliance.
 
 {: .tip}
-> **Tip:** Use the search box at the top of this page to find specific content.
+> **Tips:** 
+> 1. Use the search box at the top of this page to find specific content.
+> 2. [Capitalized Terms]({{site.baseurl}}/glossary) link to glossary definitions.
 
 This guide is organized as follows:
 
 * [Introduction to Trust and Safety]({{site.baseurl}}/introduction): What these concepts mean to us and why they are important.
-* [A Glossary of Terms]({{site.baseurl}}/glossary): How we define various terms.
-* [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/exploring): Several expert explorations of key concepts.
+* [Glossary]({{site.baseurl}}/glossary): How we define various terms.
+* [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/exploring): Several expert explorations of key concepts. This is the _heart_ of the guide.
 * [Safety for Your AI Systems]({{site.baseurl}}/safety-recommendations/safety-recommendations): Some particular recommendations on how to successfully build trusted and safe AI systems.
-* [Final Thoughts]({{site.baseurl}}/final-thoughts): Conclusions.
+* [Final Thoughts]({{site.baseurl}}/final-thoughts).
 * [References]({{site.baseurl}}/references): For more information.
 
 Additional links:
@@ -35,6 +37,7 @@ Additional links:
 
 | Version  | Date       |
 | :------- | :--------- |
+| V1.3.1   | 2025-08-15 |
 | V1.3.0   | 2025-08-09 |
 | V1.2.1   | 2025-06-03 |
 | V1.2.0   | 2025-01-04 |
