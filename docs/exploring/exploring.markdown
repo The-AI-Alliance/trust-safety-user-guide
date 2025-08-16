@@ -10,12 +10,12 @@ has_children: true
 What is required for us to trust AI? There are many ways to understand and approach risk. Let’s review a few ways of categorizing risk and mitigation strategies that experts in the field have developed, many of whom are AI Alliance members. We will start with some broad perspectives on risk management, then explore more detailed taxonomies of risk and mitigation tools. Finally, we offer specific information about [Cybersecurity]({{site.baseurl}}/glossary#cybersecurity) in AI Systems.
 
 * [NIST Artificial Intelligence Risk Management Framework]({{site.baseurl}}/exploring/nist-risk-framework): A framework developed by the National Institute of Standards and Technology, under the United States Department of Commerce.
-* [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety).
-* [Mozilla Foundation's guidance on Trustworthy AI]({{site.baseurl}}/exploring/mozilla-trustworthy-ai).
-* [MLCommons Taxonomy of Hazards]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards).
-* [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks).
-* [Cybersecurity]({{site.baseurl}}/exploring/cybersecurity)
-
+* [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety): R&D at Meta on trust and safety.
+* [Mozilla Foundation's guidance on Trustworthy AI]({{site.baseurl}}/exploring/mozilla-trustworthy-ai): Mozilla Foundation's guidance on ensuring trustworthy AI.
+* [MLCommons Taxonomy of Hazards]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards): The influential risk taxonomy and corresponding benchmarks from the MLCommons industry collaboration.
+* [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks): Trustworthiness research from an academic and armed forces collaboration.
+* [Cybersecurity]({{site.baseurl}}/exploring/cybersecurity): New security considerations when using AI.
+	
 Here are some additional sources of information that we won't cover in more detail here, although we may expand coverage of them at a later date:
 
 * [International AI Safety Report 2025](https://www.gov.uk/government/publications/international-ai-safety-report-2025){:target="iaisr-2025"}: A report on the state of advanced AI capabilities and risks – written by 100 AI experts including representatives nominated by 33 countries and intergovernmental organizations (January 29, 2025).
