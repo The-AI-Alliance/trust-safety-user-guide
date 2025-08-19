@@ -32,7 +32,7 @@ An aspect of [Governance](#governance), where we trace behaviors through [AI Sys
 
 ## Agent
 
-The AI equivalent of a _component_ or _service_, which orchestrates other components and services in an autonomous or semi-autonomous way to help a user perform a task. Hence, an agent might invoke non-AI tools, such as a web search or a weather reporting service, and use an [LLM](#large-language-model) to both construct queries of these services and to interpret their results, to format a response to the user, etc. Agents may be designed to perform actions automatically for the user, although this &ldquo;power&rdquo; needs to be carefully designed and tested, depending on the severity of unintended consequences. Often, agents are designed to recommend actions the user should take or at least request user confirmation before taking actions. Agents are an old concept in AI research with recent, resurgent interest.
+The AI equivalent of a _component_ or _service_, which orchestrates other components and services in an autonomous or semi-autonomous way to help a user perform a task. Hence, an agent might invoke non-AI tools, such as a web search or a weather reporting service, and use an [LLM](#large-language-model) to both construct queries of these services and to interpret their results, to format a [Response](#response) to the user, etc. Agents may be designed to perform actions automatically for the user, although this &ldquo;power&rdquo; needs to be carefully designed and tested, depending on the severity of unintended consequences. Often, agents are designed to recommend actions the user should take or at least request user confirmation before taking actions. Agents are an old concept in AI research with recent, resurgent interest.
 
 ## AI Actor
 
@@ -62,7 +62,7 @@ An [AI System](#ai-system) application for interactive sessions. It provides a u
 
 ## Context
 
-Additional information passed to an [LLM](#large-language-model) as part of a user [Prompt](#prompt), which is intended to provide additional, useful _context_ information so that the response is better than if the user's prompt was passed to the LLM alone. This additional content may include a [System Prompt](#system-prompt), relevant documents retrieved using [RAG](#retrieval-augmented-generation), etc.
+Additional information passed to an [LLM](#large-language-model) as part of a user [Prompt](#prompt), which is intended to provide additional, useful _context_ information so that the [Response](#response) is better than if the user's prompt was passed to the LLM alone. This additional content may include a [System Prompt](#system-prompt), relevant documents retrieved using [RAG](#retrieval-augmented-generation), etc.
 
 ## Cybersecurity
 
@@ -100,6 +100,10 @@ A classifier [Model](#model) or similar tool, possibly including a [Dataset](#da
 
 Does the [AI System's](#ai-system) behaviors exhibit social biases, exclusion, preferential treatment, or other forms of non-objectivity?
 
+## Guardrails
+
+A general term for one or more subsystems in production [AI Systems](#ai-system) that use various techniques, including specialized [Models](#model), to detect and mitigate content in user [Prompts](#prompt) and system [Responses](#response) that is undesirable in some way, such as hate speech, misinformation, hallucinations, etc.
+
 ## Governance
 
 End-to-end control of assets, especially [Datasets](#dataset) and [Models](#model), with lineage traceability and access controls for protecting the security and integrity of assets.
@@ -127,6 +131,10 @@ A combination of data and code, usually trained on a [Dataset](#dataset), to sup
 ## Privacy
 
 Protection of individuals’ sensitive data and preservation of their rights.
+
+## Response
+
+The generic term for outputs from a [Model](#model) or [AI System](#ai-system). Sometimes _results_ is also used.
 
 ## Responsible AI
 

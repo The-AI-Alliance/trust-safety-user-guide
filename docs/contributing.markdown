@@ -20,4 +20,5 @@ Notice that every page has [{{ site.gh_edit_link_text }}]({{ site.gh_edit_reposi
 The following people have contributed to the creation and maintenance of this document:
 
 * [Dean Wampler](mailto:dwampler@thealliance.ai)
+* [Bill Stout](mailto:bill.stout@servicenow.com)
 * [Chris Giblin](mailto:cgi@zurich.ibm.com)
