@@ -1,7 +1,7 @@
 # Development Trustworthy Checklist
 
 > [!NOTE]
-> Most of this content was worked into the user guide in August 2025 ([issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues/13), PR).
+> Most of this content was worked into the user guide in August 2025 ([issue](https://github.com/The-AI-Alliance/trust-safety-user-guide/issues/13)).
 
 
 The checklist idea applies to developers, data scientists, project managers, etc.
