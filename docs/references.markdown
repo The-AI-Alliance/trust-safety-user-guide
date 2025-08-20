@@ -201,7 +201,7 @@ NIST’s clarification of its roles and responsibilities under the executive ord
 
 ### Prompt Engineering
 
-The [Wikipedia](https://en.wikipedia.org/wiki/) page on [prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering){:target="wikipedia-prompt"} provides one of many overviews of techniques used to manipulate [Prompts]({{site.baseurl}}/glossary/#prompt) in order to achieve responses that are  more desirable, when used by _good_ actors, or less desirable, when used by _bad_ actors to undermine an AI system.
+The [Wikipedia](https://en.wikipedia.org/wiki/){:target="wikipedia"} page on [prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering){:target="wikipedia-prompt"} provides one of many overviews of techniques used to manipulate [Prompts]({{site.baseurl}}/glossary/#prompt) in order to achieve responses that are  more desirable, when used by _good_ actors, or less desirable, when used by _bad_ actors to undermine an AI system.
 
 ### Your AI Product Needs Evals
 
