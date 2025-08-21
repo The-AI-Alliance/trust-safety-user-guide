@@ -25,16 +25,19 @@ This guide is organized as follows:
 	* [NIST Artificial Intelligence Risk Management Framework]({{site.baseurl}}/exploring/nist-risk-framework): A framework developed by the National Institute of Standards and Technology, under the United States Department of Commerce.
 	* [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety): R&D at Meta on trust and safety.
 	* [Mozilla Foundation's guidance on Trustworthy AI]({{site.baseurl}}/exploring/mozilla-trustworthy-ai): Mozilla Foundation's guidance on ensuring trustworthy AI.
-	* [MLCommons Taxonomy of Hazards]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards): The influential risk taxonomy and corresponding benchmarks from the MLCommons industry collaboration.
+	* [MLCommons AILuminate]({{site.baseurl}}/exploring/mlcommons-ailuminate): The influential risk taxonomy and corresponding benchmarks from the MLCommons industry collaboration.
 	* [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks): Trustworthiness research from an academic and armed forces collaboration.
 	* [Cybersecurity]({{site.baseurl}}/exploring/cybersecurity): New security considerations when using AI.
 * [Safety for Your AI Systems]({{site.baseurl}}/safety-recommendations/safety-recommendations): Some particular recommendations on how to successfully build trusted and safe AI systems.
 * [Final Thoughts]({{site.baseurl}}/final-thoughts).
 * [References]({{site.baseurl}}/references): For more information.
 
+{: .todo}
+> **Help Wanted!** We want to expand the [exploration]({{site.baseurl}}/exploring/exploring) of trust and safety expertise, and greatly expand the information for how you can apply what you learned. [We need your help]({{site.baseurl}}/contributing#join-us)!
+
 Additional links:
 
-* [Contributing to This Document]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can help.
+* [Contributing to the User Guide]({{site.baseurl}}/contributing): We welcome your contributions! Here's how you can help.
 * [About Us]({{site.baseurl}}/about): More about the AI Alliance and this document.
 * [The AI Alliance](https://thealliance.ai){:target="ai-alliance"}
 * [This Guide's GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="tsug-repo"}
@@ -43,8 +46,7 @@ Additional links:
 
 | Version  | Date       |
 | :------- | :--------- |
-| V1.3.2   | 2025-08-19 |
-| V1.3.1   | 2025-08-15 |
+| V1.3.3   | 2025-08-20 |
 | V1.3.0   | 2025-08-09 |
 | V1.2.1   | 2025-06-03 |
 | V1.2.0   | 2025-01-04 |

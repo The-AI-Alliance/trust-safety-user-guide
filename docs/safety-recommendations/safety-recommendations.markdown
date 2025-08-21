@@ -90,7 +90,7 @@ _In particular_, be wary of so-called _out-of-distribution_ prompts and response
 
 ## Measure Your AI Systems Against those Metrics
 
-Use resources such as the emerging [MLCommons AI Safety Benchmarks](https://mlcommons.org/benchmarks/ai-safety/){:target="mlc-benchmarks"} to select models with the best results based on the metrics identified. Most benchmarks are open source, so they can also be used internally for evaluation of proprietary models. For example, if you tune a public model using your private data to achieve better alignment for your domain. You will want to use the same benchmarks to verify that alignment for the domain has improved while also preserving safety performance.
+Use resources such as the emerging [MLCommons AI Safety Benchmarks](https://mlcommons.org/benchmarks/ai-safety/){:target="mlc-benchmarks"} to select models with the best results based on the metrics identified. Most benchmarks are open source, so they can also be used internally for [Evaluation]({{site.baseurl}}/glossary/#evaluation) of proprietary models. For example, if you tune a public model using your private data to achieve better alignment for your domain. You will want to use the same benchmarks to verify that alignment for the domain has improved while also preserving safety performance.
 
 Also test the whole AI system, because while models generate responses to prompts, the system can include filters or modify prompts to keep them aligned, add extra information from RAG queries, etc. Similarly, filtering and transformations of the responses are usually implemented.
 

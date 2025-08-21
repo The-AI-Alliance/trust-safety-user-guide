@@ -12,7 +12,7 @@ What is required for us to trust AI? There are many ways to understand and appro
 * [NIST Artificial Intelligence Risk Management Framework]({{site.baseurl}}/exploring/nist-risk-framework): A framework developed by the National Institute of Standards and Technology, under the United States Department of Commerce.
 * [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety): R&D at Meta on trust and safety.
 * [Mozilla Foundation's guidance on Trustworthy AI]({{site.baseurl}}/exploring/mozilla-trustworthy-ai): Mozilla Foundation's guidance on ensuring trustworthy AI.
-* [MLCommons Taxonomy of Hazards]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards): The influential risk taxonomy and corresponding benchmarks from the MLCommons industry collaboration.
+* [MLCommons AILuminate]({{site.baseurl}}/exploring/mlcommons-ailuminate): The influential risk taxonomy and corresponding benchmarks from the MLCommons industry collaboration.
 * [The Trusted AI (TAI) Frameworks Project]({{site.baseurl}}/exploring/tai-frameworks): Trustworthiness research from an academic and armed forces collaboration.
 * [Cybersecurity]({{site.baseurl}}/exploring/cybersecurity): New security considerations when using AI.
 	
