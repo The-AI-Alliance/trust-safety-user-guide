@@ -191,6 +191,10 @@ NIST’s clarification of its roles and responsibilities under the executive ord
 
 [AI Leaderboards Are No Longer Useful](https://www.aisnakeoil.com/p/ai-leaderboards-are-no-longer-useful){:target="ai-snakeoil-useful"} is an informative and influential blog post about the difficulties of relying on leaderboards to choose the best performing models or systems, because they often ignore total cost, rely on benchmarks that have limited scope, and other challenges.
 
+### ClairBot from the Responsible AI Team at Ekimetrics
+
+[ClairBot](https://clair.bot/){:target="clairbot"} from the Responsible AI Team at [Ekimetrics](https://ekimetrics.com/){:target="ekimetrics"} is a research project that compares several model responses for domain-specific questions, where each of the models has been tuned for a particular domain, in this case ad serving, laws and regulations, and social sciencies and ethics.
+
 ### Foundational Challenges in Assuring Alignment and Safety of Large Language Models
 
 [Foundational Challenges in Assuring Alignment and Safety of Large Language Models](https://llm-safety-challenges.github.io/){:target="llm-safety-challenges"} is a comprehensive survey of current challenges for LLMs.
