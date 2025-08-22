@@ -180,4 +180,4 @@ See our definition in [What We Mean by Trust and Safety]({{site.baseurl}}/introd
 
 ---
 
-Next, we [explore trust and safety concepts]({{site.baseurl}}/exploring/exploring) as expressed by various expert organizations.
+Next, we [explore trust and safety concepts]({{site.baseurl}}/exploring/) as expressed by various expert organizations.

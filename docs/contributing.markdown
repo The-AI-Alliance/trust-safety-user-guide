@@ -23,4 +23,4 @@ The following people have contributed to the creation and maintenance of this us
 * [Bill Stout](mailto:bill.stout@servicenow.com)
 * [Chris Giblin](mailto:cgi@zurich.ibm.com)
 
-Much of the content described here, especially in the [exploring]({{site.baseurl}}/exploring/exploring) section, was developed and copyrighted by the corresponding organizations, as noted.
+Much of the content described here, especially in the [exploring]({{site.baseurl}}/exploring/) section, was developed and copyrighted by the corresponding organizations, as noted.

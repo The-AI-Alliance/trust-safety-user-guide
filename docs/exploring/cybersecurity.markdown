@@ -10,7 +10,7 @@ parent: Exploring AI Trust and Safety
 {: .note}
 > **Help Wanted:** This is a new section in this guide and it needs your help to make it more comprehensive and definitive! For example, rather than just list resources, we would also like to provide a useful summary of the most important ideas. [Please join us]({{site.baseurl}}/contributing/#join-us)!
 
-[AI Systems]({{site.baseurl}}/glossary/#ai-system) must support all the standard practices and techniques for conventional [Cybersecurity]({{site.baseurl}}/glossary/#cybersecurity), plus handle new threats.
+[AI Systems]({{site.glossaryurl}}/#ai-system) must support all the standard practices and techniques for conventional [Cybersecurity]({{site.glossaryurl}}/#cybersecurity), plus handle new threats.
 
 Here are some resources focused on AI cybersecurity.
 
@@ -38,7 +38,7 @@ Resources will be published by the work groups as they become available. See, fo
 
 ## Agent Security
 
-[Agents]({{site.baseurl}}/glossary/#agent) are potentially-complex [AI Systems]({{site.baseurl}}/glossary/#ai-system). Evaluating an individual [LLM]({{site.baseurl}}/glossary/#large-language-model) for trustworthiness is hard enough; an agent introduces potentially more than one LLM, plus other services, that work together to both return results and sometimes invoke actions on behalf of a user. This increases the challenges of satisfying security concerns.
+[Agents]({{site.glossaryurl}}/#agent) are potentially-complex [AI Systems]({{site.glossaryurl}}/#ai-system). Evaluating an individual [LLM]({{site.glossaryurl}}/#large-language-model) for trustworthiness is hard enough; an agent introduces potentially more than one LLM, plus other services, that work together to both return results and sometimes invoke actions on behalf of a user. This increases the challenges of satisfying security concerns.
 
 Here are some resources for more information specifically about agent security:
 

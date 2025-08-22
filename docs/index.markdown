@@ -15,13 +15,13 @@ Welcome to the **AI Trust and Safety User Guide**, an introduction to the broad 
 {: .tip}
 > **Tips:** 
 > 1. Use the search box at the top of this page to find specific content.
-> 2. [Capitalized Terms]({{site.baseurl}}/glossary) link to glossary definitions.
+> 2. [Capitalized Terms]({{site.glossaryurl}}/) link to glossary definitions.
 
 This guide is organized as follows:
 
 * [Introduction to Trust and Safety]({{site.baseurl}}/introduction): What these concepts mean to us and why they are important.
-* [Glossary]({{site.baseurl}}/glossary): How we define various terms.
-* [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/exploring): Several expert explorations of key concepts. This is the _heart_ of the guide:
+* [Glossary]({{site.glossaryurl}}/): How we define various terms.
+* [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/): Several expert explorations of key concepts. This is the _heart_ of the guide:
 	* [NIST Artificial Intelligence Risk Management Framework]({{site.baseurl}}/exploring/nist-risk-framework): A framework developed by the National Institute of Standards and Technology, under the United States Department of Commerce.
 	* [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety): R&D at Meta on trust and safety.
 	* [Mozilla Foundation's guidance on Trustworthy AI]({{site.baseurl}}/exploring/mozilla-trustworthy-ai): Mozilla Foundation's guidance on ensuring trustworthy AI.
@@ -33,7 +33,7 @@ This guide is organized as follows:
 * [References]({{site.baseurl}}/references): For more information.
 
 {: .todo}
-> **Help Wanted!** We want to expand the [exploration]({{site.baseurl}}/exploring/exploring) of trust and safety expertise, and greatly expand the information for how you can apply what you learned. [We need your help]({{site.baseurl}}/contributing#join-us)!
+> **Help Wanted!** We want to expand the content in [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/), and greatly expand the information throughout on how you can apply what you learn. [We need your help]({{site.baseurl}}/contributing#join-us)!
 
 Additional links:
 

@@ -75,7 +75,7 @@ For a complementary assessment of risks in AI, see this comprehensive guide to A
 
 ## Adversarial Machine Learning
 
-[Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations](https://csrc.nist.gov/pubs/ai/100/2/e2025/final){:target="nist-aml"} is a more recent report in this series that offers a taxonomy and general guidance on the unique security challenges of [AI Systems]({{site.baseurl}}/glossary/#ai-systems).
+[Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations](https://csrc.nist.gov/pubs/ai/100/2/e2025/final){:target="nist-aml"} is a more recent report in this series that offers a taxonomy and general guidance on the unique security challenges of [AI Systems]({{site.glossaryurl}}/#ai-systems).
 
 ---
 
