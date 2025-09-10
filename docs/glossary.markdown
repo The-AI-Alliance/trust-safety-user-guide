@@ -80,7 +80,7 @@ The catch-all term for &ldquo;classic&rdquo; security of systems, predating AI. 
 
 The capability of measuring and quantifying how a [Model](#model) or [AI System](#ai-system) that uses models responds to inputs. Much like other software, models and AI systems need to be trusted and useful to their users. Evaluation aims to provide the evidence needed to gain users’ confidence. 
 
-Evaluations can cover functional and nonfunctional dimensions of models, and are applicable throughout the model development and deployment lifecycle. Functional evaluation dimensions include alignment to use cases, accuracy in responses, faithfulness to given context, robustness against perturbations and noise, and adherence to safety and social norms. Nonfunctional evaluation dimensions include latency, throughput, compute efficiency, cost to execute, carbon footprint and other sustainability concerns. Evaluations are applied as regression tests while models are trained and fine-tuned, as benchmarks while GenAI-powered applications are designed and developed, and as guardrails when these applications are deployed in production. They also have a role in compliance, both with specific industry regulations, and with emerging government policies. 
+Evaluations can cover functional and nonfunctional dimensions of models, and are applicable throughout the model development and deployment lifecycle. Functional evaluation dimensions include alignment to use cases, accuracy in responses, faithfulness to given context, robustness against perturbations and noise, and adherence to safety and social norms. Nonfunctional evaluation dimensions include latency, throughput, compute efficiency, cost to execute, carbon footprint and other sustainability concerns. Evaluations are applied as regression tests while models are trained and fine-tuned, as benchmarks while generative AI-powered applications are designed and developed, and as guardrails when these applications are deployed in production. They also have a role in compliance, both with specific industry regulations, and with emerging government policies. 
 
 Evaluations can be implemented in many ways. A [Model](#model) might be used to judge results or some executable code might be used for simpler cases. Often an evaluation includes a [Dataset](#dataset), such as question-answer pairs that represent the desired behavior. Other techniques include rule-based systems, evaluation with LLMs acting as judges, and human evaluation.
 
@@ -92,7 +92,7 @@ An umbrella term for the software tools, runtime services, benchmark systems, et
 
 ## Explainability
 
-Can humans understand why the system behaves the way that it does in a particular scenario?
+Can humans understand why the system behaves the way that it does in a particular situation?
 
 ## Fairness
 
