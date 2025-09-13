@@ -21,7 +21,7 @@ The goal of this living guide is to provide useful, up-to-date resources for und
 
 ## What We Mean by Trust and Safety
 
-{: .highlight}
+{: .attention}
 > **Trust** is based in part on **Safety**. A user will avoid a system perceived to be untrustworthy. In the case of AI systems, trust is earned or lost based, in part, on how well the system handles safety concerns such as preventing [Prompts]({{site.glossaryurl}}/#prompt) (queries) and [Responses]({{site.glossaryurl}}/#response)s that show lack of [Fairness]({{site.glossaryurl}}/#fairness) (e.g., bias and exclusion), hate speech, [Hallucination]({{site.glossaryurl}}/#hallucination) (i.e., false statements), advocate unethical behavior, and other undesirable content.
 
 The scope of this user guide is safety and its impact on trust. Safety can be defined to mean many things. We will primarily focus on safety related to _known harms_, such as hate speech, leaking proprietary data, etc. However, most of the concepts we will discuss can encompass broader definitions of safety. 

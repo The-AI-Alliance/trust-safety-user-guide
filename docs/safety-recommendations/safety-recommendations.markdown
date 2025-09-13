@@ -119,7 +119,7 @@ Also beware of concerns about benchmark gaming and training data pollution. Even
 
 Here is a _starter checklist_ of items that should apply no matter what country, culture, etc. your application targets. 
 
-{: .highlight}
+{: .attention}
 > **Help Wanted:** Help us make this checklist better! Help us build locale- and domain-specific checklists!!
 
 * **Objectivity and bias:** E.g., gender, demography, religion, politics, etc.

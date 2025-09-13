@@ -144,7 +144,7 @@ The [Holistic Evaluation of Language Models (HELM)](https://crfm.stanford.edu/he
 
 Recently, HELM released [**AIR-Bench 2024**](https://crfm.stanford.edu/helm/air-bench/latest/){:target="airbench"}. From their website:
 
-{: .highlight}
+{: .attention}
 > We introduce **AIR-Bench 2024**, the first AI safety benchmark aligned with emerging government regulations and company policies, following the regulation-based safety categories grounded in our AI Risks study, AIR 2024. AIR 2024 decomposes 8 government regulations and 16 company policies into a four-tiered safety taxonomy with 314 granular risk categories in the lowest tier. **AIR-Bench 2024** contains 5,694 diverse prompts spanning these categories, with manual curation and human auditing to ensure quality. We evaluate leading language models on **AIR-Bench 2024**, uncovering insights into their alignment with specified safety concerns. By bridging the gap between public benchmarks and practical AI risks, **AIR-Bench 2024** provides a foundation for assessing model safety across jurisdictions, fostering the development of safer and more responsible AI systems.
 
 #### Human-centered Artificial Intelligence (HAI)

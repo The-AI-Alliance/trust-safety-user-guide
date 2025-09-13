@@ -9,7 +9,7 @@ parent: Exploring AI Trust and Safety
 
 The previous resources we discussed provide a broad perspective on trust and safety. [MLCommons AILuminate](https://mlcommons.org/ailuminate/){:target="mlc-ail"} is a collaborative, transparent approach to safer AI, including a benchmark suite based on a specific taxonomy of hazards. From their website:
 
-{: .highlight}
+{: .attention}
 > The AILuminate v1.1 benchmark suite is the first AI risk assessment benchmark developed with broad involvement from leading AI companies, academia, and civil society.
 > 
 > Built by the MLCommons AI Risk & Reliability working group, a global consortium with proven expertise operating industry standard AI benchmarks, and a track record of developing and improving those benchmarks over the long-term. The AILuminate benchmark is a significant step towards standard risk assessment for “chat” style systems.
