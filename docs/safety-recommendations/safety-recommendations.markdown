@@ -101,7 +101,7 @@ Hence, a public benchmark &ldquo;leaderboard&rdquo; is a good place to find a &l
 A particular challenge for developers adding AI capabilities to their applications is the inherent _probabilistic_ nature of responses. Most developers are skilled at writing tests for &ldquo;classical&rdquo; systems that are mostly _deterministic_. They often don't have the same skills for working _statistically_ with AI results, skills that their data scientist and AI researcher colleagues possess. Developers need to acquire these skills and learn how to write custom benchmarks and adapt related techniques in order to validate _all_ the requirements for an application, including how will it performs the use cases for which it is designed.
 
 {: .note}
-> **NOTE:** See the AI Alliance sister project, [Achieving Confidence in Enterprise AI Applications](https://the-ai-alliance.github.io/ai-application-testing/){:target="confidence"}, which is focused on improving the tools available for developers and teaching them how to use them.
+> **NOTE:** See the AI Alliance sister project, [Testing Generative AI Applications](https://the-ai-alliance.github.io/ai-application-testing/){:target="tgai"}, which is focused on improving the tools available for developers and teaching them how to use them.
 
 ## Continuously Evaluate Your AI System
 
