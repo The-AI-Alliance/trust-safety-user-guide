@@ -15,7 +15,7 @@ This web site is built with [GitHub Pages](https://pages.github.com/){:target="g
 We welcome contributions! For more information, see [Contributing]({{site.baseurl}}/contributing/).
 
 * [More About the AI Alliance](https://thealliance.ai/about-aia){:target="ai-alliance"}
-* [Contact Us](mailto:contact@thealliance.ai) (email)
+* [Contact Us](mailto:contact@thealliance.ai?subject=Questions about the AI Alliance) (email)
 * Follow us on [LinkedIn](https://www.linkedin.com/company/the-aialliance/){:target="linkedin"}
 
 ## About Jekyll
