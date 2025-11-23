@@ -7,7 +7,7 @@ has_children: true
 
 # Exploring AI Trust and Safety
 
-What is required for us to trust AI? There are many ways to understand and approach risk. Let’s review a few ways of categorizing risk and mitigation strategies that experts in the field have developed, many of whom are AI Alliance members. We will start with some broad perspectives on risk management, then explore more detailed taxonomies of risk and mitigation tools. Finally, we offer specific information about [Cybersecurity]({{site.glossaryurl}}/#cybersecurity) in AI Systems.
+What is required for us to trust AI? There are many ways to understand and approach risk. Let’s review a few ways of categorizing risk and mitigation strategies that experts in the field have developed, many of whom are AI Alliance members. We will start with some broad perspectives on risk management, then explore more detailed taxonomies of risk and mitigation tools. Finally, we offer specific information about [Cybersecurity]({{site.glossaryurl}}/#cybersecurity){:target="_glossary"} in AI Systems.
 
 * [NIST Artificial Intelligence Risk Management Framework]({{site.baseurl}}/exploring/nist-risk-framework): A framework developed by the National Institute of Standards and Technology, under the United States Department of Commerce.
 * [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety): R&D at Meta on trust and safety.

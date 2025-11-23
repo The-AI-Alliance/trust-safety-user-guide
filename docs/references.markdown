@@ -80,7 +80,7 @@ The [evaluate](https://huggingface.co/docs/evaluate/index){:target="hf-eval"} fr
 [IBM](https://ibm.com){:target="ibm"} offers many resources for AI trust and safety:
 
 * [Responsible AI](https://www.ibm.com/topics/responsible-ai){:target="ibm-responsible-ai"}: IBM’s description of responsible AI, as informed by IBM product offerings and services. In particular, see the [Responsible Use Guide](https://www.ibm.com/granite/docs/resources/responsible-use-guide.pdf){:target="rug"} (PDF)
-* [What is retrieval-augmented generation?](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){:target="ibm-rag"}: One of many introductions to the popular [RAG Pattern]({{site.glossaryurl}}/#retrieval-augmented-generation).
+* [What is retrieval-augmented generation?](https://research.ibm.com/blog/retrieval-augmented-generation-RAG){:target="ibm-rag"}: One of many introductions to the popular [RAG Pattern]({{site.glossaryurl}}/#retrieval-augmented-generation){:target="_glossary"}.
 * [Granite Guardian](https://www.ibm.com/granite/docs/models/guardian/){:target="ibm-gg"}: IBM models that provide a robust suite of safeguards designed to detect risks in both prompts and responses, ensuring safe and responsible use with any large language model while promoting responsible AI development.
 * [Unitxt](https://github.com/IBM/unitxt){:target="unitxt"}: A library for portable Evaluation definitions. Integrated with many safety projects and tools, including [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness){:target="lm-eval"} (discussed [above](#eleutherai)).
 * [Risk Atlas Nexus](https://huggingface.co/spaces/ibm/risk-atlas-nexus){:target="ran"}: Aimed a relatively-novice users of trust and safety tools, it provides a query prompt to search for risk categories that are most relevant to the user's needs. The user can then browse for more details on each category. It is hosted on the [IBM Hugging Face Community](https://huggingface.co/ibm){:target="ibm-hf"}.
@@ -153,7 +153,7 @@ Recently, HELM released [**AIR-Bench 2024**](https://crfm.stanford.edu/helm/air-
 
 ### United States Government, Department of Commerce, National Institute of Standards and Technology (NIST)
 
-[Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations](https://csrc.nist.gov/pubs/ai/100/2/e2025/final){:target="nist-aml"} offers a taxonomy and general guidance on the unique security challenges of [AI Systems]({{site.glossaryurl}}/#ai-systems).
+[Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations](https://csrc.nist.gov/pubs/ai/100/2/e2025/final){:target="nist-aml"} offers a taxonomy and general guidance on the unique security challenges of [AI Systems]({{site.glossaryurl}}/#ai-systems){:target="_glossary"}.
 
 We discussed the NIST guidance [Artificial Intelligence Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework){:target="nist-rmf"} (AI RMF 1.0) [here]({{site.baseurl}}/exploring/nist-risk-framework). It is their recommendations for assessing and managing AI Risk.
 
@@ -175,7 +175,7 @@ NIST’s clarification of its roles and responsibilities under the executive ord
 
 [AI Risk-Management Standards Profile for General-Purpose AI Systems (GPAIS) and Foundation Models](https://cltc.berkeley.edu/seeking-input-and-feedback-ai-risk-management-standards-profile-for-increasingly-multi-purpose-or-general-purpose-ai/){:target="ucb-airm"} offers guidance on risk assessment and management.
 
-[Chatbot Arena](https://openlm.ai/chatbot-arena/){:target="chatbot-arena"} is a very popular, crowd-sourced platform for gauging the performance of [ChatBots]({{site.glossaryurl}}/chatbot). See also the related [LMArena](https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard){:target="lmarena"} project.
+[Chatbot Arena](https://openlm.ai/chatbot-arena/){:target="chatbot-arena"} is a very popular, crowd-sourced platform for gauging the performance of [ChatBots]({{site.glossaryurl}}/#chatbot){:target="_glossary"}. See also the related [LMArena](https://huggingface.co/spaces/lmarena-ai/lmarena-leaderboard){:target="lmarena"} project.
 
 ### University of Illinois at Chicago (UIUC) Secure Learning Lab
 
@@ -205,7 +205,7 @@ NIST’s clarification of its roles and responsibilities under the executive ord
 
 ### Prompt Engineering
 
-The [Wikipedia](https://en.wikipedia.org/wiki/){:target="wikipedia"} page on [prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering){:target="wikipedia-prompt"} provides one of many overviews of techniques used to manipulate [Prompts]({{site.glossaryurl}}/#prompt) in order to achieve responses that are  more desirable, when used by _good_ actors, or less desirable, when used by _bad_ actors to undermine an AI system.
+The [Wikipedia](https://en.wikipedia.org/wiki/){:target="wikipedia"} page on [prompt engineering](https://en.wikipedia.org/wiki/Prompt_engineering){:target="wikipedia-prompt"} provides one of many overviews of techniques used to manipulate [Prompts]({{site.glossaryurl}}/#prompt){:target="_glossary"} in order to achieve responses that are  more desirable, when used by _good_ actors, or less desirable, when used by _bad_ actors to undermine an AI system.
 
 ### Your AI Product Needs Evals
 

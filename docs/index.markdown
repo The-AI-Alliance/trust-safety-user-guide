@@ -15,12 +15,11 @@ Welcome to the **AI Trust and Safety User Guide**, an introduction to the broad 
 {: .tip}
 > **Tips:** 
 > 1. Use the search box at the top of this page to find specific content.
-> 2. [Capitalized Terms]({{site.glossaryurl}}/) link to glossary definitions.
+> 2. Capitalized Terms link to [glossary definitions]({{site.glossaryurl}}/){:target="_glossary"}.
 
 This guide is organized as follows:
 
 * [Introduction to Trust and Safety]({{site.baseurl}}/introduction): What these concepts mean to us and why they are important.
-* [Glossary]({{site.glossaryurl}}/): How we define various terms.
 * [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/): Several expert explorations of key concepts. This is the _heart_ of the guide:
 	* [NIST Artificial Intelligence Risk Management Framework]({{site.baseurl}}/exploring/nist-risk-framework): A framework developed by the National Institute of Standards and Technology, under the United States Department of Commerce.
 	* [Trust and Safety at Meta]({{site.baseurl}}/exploring/meta-trust-safety): R&D at Meta on trust and safety.
@@ -41,14 +40,3 @@ Additional links:
 * [About Us]({{site.baseurl}}/about): More about the AI Alliance and this document.
 * [The AI Alliance](https://thealliance.ai){:target="ai-alliance"}
 * [This Guide's GitHub Repo](https://github.com/The-AI-Alliance/trust-safety-user-guide){:target="tsug-repo"}
-
-### Version History
-
-| Version  | Date       |
-| :------- | :--------- |
-| V1.3.3   | 2025-08-20 |
-| V1.3.0   | 2025-08-09 |
-| V1.2.1   | 2025-06-03 |
-| V1.2.0   | 2025-01-04 |
-| V1.1.0   | 2024-10-10 |
-| V1.0.0   | 2024-05-20 |

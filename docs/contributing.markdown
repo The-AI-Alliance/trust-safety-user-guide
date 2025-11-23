@@ -31,3 +31,15 @@ The following people have contributed to the creation and maintenance of this us
 * [Chris Giblin](mailto:cgi@zurich.ibm.com)
 
 Much of the content described here, especially in the [exploring]({{site.baseurl}}/exploring/) section, was developed and copyrighted by the corresponding organizations, as noted.
+
+## Version History
+
+| Version  | Date       |
+| :------- | :--------- |
+| V1.4.0   | 2025-11-23 |
+| V1.3.3   | 2025-08-20 |
+| V1.3.0   | 2025-08-09 |
+| V1.2.1   | 2025-06-03 |
+| V1.2.0   | 2025-01-04 |
+| V1.1.0   | 2024-10-10 |
+| V1.0.0   | 2024-05-20 |

@@ -40,7 +40,7 @@ Based on the overall objectives of the system, study the relative importance of 
 
 ### The Importance of Context in AI Safety
 
-The point about [ChatBots]({{site.glossaryurl}}/chatbot) shows that the total _context_ of the application is important. In particular for trust and safety concerns, what is considered unacceptable can vary with the situation. No one size fits all.
+The point about [ChatBots]({{site.glossaryurl}}/#chatbot){:target="_glossary"} shows that the total _context_ of the application is important. In particular for trust and safety concerns, what is considered unacceptable can vary with the situation. No one size fits all.
 
 ### Cultural Norms
 
@@ -48,7 +48,7 @@ Topics and words that are acceptable for discourse in some cultures and among so
 
 ### User Goals and Intentions
 
-Consider an application that helps a user generate creative ideas for artistic projects. In this case, [Hallucination]({{site.glossaryurl}}/#hallucination) is acceptable, even desirable. However, results that infringe on copyright and trademark rights are still undesirable, in part because of their legal consequences.
+Consider an application that helps a user generate creative ideas for artistic projects. In this case, [Hallucination]({{site.glossaryurl}}/#hallucination){:target="_glossary"} is acceptable, even desirable. However, results that infringe on copyright and trademark rights are still undesirable, in part because of their legal consequences.
 
 In contrast, for an application intended to provide factually-accurate information to a user, hallucination can have serious harmful consequences. In this case, output of copyrighted and trademarked information may be desirable, even required, as long as proper quotation and attribution are included.
 
@@ -60,29 +60,29 @@ However, it is possible that some users would want images with diversity in know
 
 ## Design for Model-Level and System-Level Alignment
 
-We discussed previously how tools like Meta Llama Cybersec Eval 2, Meta Llama Guard 2, and Meta Llama Code Shield are used in different parts of the development process and AI system architecture. It may take some experimentation to find the optimal places to address safety concerns, balancing overall performance with trustworthy results. Other [Alignment]({{site.glossaryurl}}/#alignment) tools include various tuning methodologies to improve model alignment and application patterns like [RAG]({{site.glossaryurl}}/#retrieval-augmented-generation) as part of inference processing. 
+We discussed previously how tools like Meta Llama Cybersec Eval 2, Meta Llama Guard 2, and Meta Llama Code Shield are used in different parts of the development process and AI system architecture. It may take some experimentation to find the optimal places to address safety concerns, balancing overall performance with trustworthy results. Other [Alignment]({{site.glossaryurl}}/#alignment){:target="_glossary"} tools include various tuning methodologies to improve model alignment and application patterns like [RAG]({{site.glossaryurl}}/#retrieval-augmented-generation){:target="_glossary"} as part of inference processing. 
 
 However, it is also important to keep in mind these principles of good software design:
 
 ### Keep It Simple!
 
-A common temptation is to lean into complexity with lots of moving parts. Even in pre-AI systems, securing and maintaining such systems is much harder than simpler systems. The inherent nondeterminism introduced by [LLMs]({{site.glossaryurl}}/#large-language-models) greatly increases these challenges.
+A common temptation is to lean into complexity with lots of moving parts. Even in pre-AI systems, securing and maintaining such systems is much harder than simpler systems. The inherent nondeterminism introduced by [LLMs]({{site.glossaryurl}}/#large-language-models){:target="_glossary"} greatly increases these challenges.
 
 ### Use Defense in Depth
 
 A classic security strategy applies defensive measures at many levels in an application, e.g., at every subsystem boundary. This reflects the recognition that no security technique is infallible, so layering security levels and mixing different tools and techniques helps eliminate weaknesses in any one approach.
 
-Similarly, it is not yet possible to train and tune models to be completely trustworthy and safe on their own. Hence most applications need to pass [Prompts]({{site.glossaryurl}}/#prompt) (queries) and [Responses]({{site.glossaryurl}}/#response) through [Guardrails]({{site.glossaryurl}}/#guardrails) to detect and mitigate undesirable content. 
+Similarly, it is not yet possible to train and tune models to be completely trustworthy and safe on their own. Hence most applications need to pass [Prompts]({{site.glossaryurl}}/#prompt){:target="_glossary"} (queries) and [Responses]({{site.glossaryurl}}/#response){:target="_glossary"} through [Guardrails]({{site.glossaryurl}}/#guardrails){:target="_glossary"} to detect and mitigate undesirable content. 
 
 ### Minimize the &ldquo;Blast Radius&rdquo;
 
 One reason _components_ with good abstraction boundaries are useful is they help prevent abnormal behavior in one component from propagating to other components, as long as the other components are also designed _defensively_ to be resilient against undesired behaviors of their dependencies. This is certainly true in AI systems, too. Notice we said _undesired_, rather than _unexpected_. The former term means the design results from an exhaustive exploration of all conceivable occurrences, although it is nearly impossible to complete eliminate the unexpected. Given the probabilistic nature of LLM responses, extra care is required here! Consider which boundaries in the application should be &ldquo;wrapped&rdquo; with guardrails, such as every boundary that encapsulates an LLM invocation.
 
-[Agent]({{site.glossaryurl}}/#agent) systems that are allowed to invoke potentially-destructive actions on the user's behalf are particularly risky and require extra _safety engineering_, including rigorous testing. Consider instead designing these systems to construct actions to take, then require human review and permission before performing the actions.
+[Agent]({{site.glossaryurl}}/#agent){:target="_glossary"} systems that are allowed to invoke potentially-destructive actions on the user's behalf are particularly risky and require extra _safety engineering_, including rigorous testing. Consider instead designing these systems to construct actions to take, then require human review and permission before performing the actions.
 
 ## Identify Metrics for the Prioritized Safety Categories
 
-With the safety categories prioritized, identify the corresponding metrics and available [Benchmarks]({{site.glossaryurl}}/#benchmark) and test suites for measuring model and system behaviors for these categories.
+With the safety categories prioritized, identify the corresponding metrics and available [Benchmarks]({{site.glossaryurl}}/#benchmark){:target="_glossary"} and test suites for measuring model and system behaviors for these categories.
 
 Make sure you understand the limitations of these tests and benchmarks, and their accuracy at detecting issues you care about. It is easy to be lulled into a false sense of security by impressive-looking numbers.
 
@@ -90,7 +90,7 @@ _In particular_, be wary of so-called _out-of-distribution_ prompts and response
 
 ## Measure Your AI Systems Against those Metrics
 
-Use resources such as the emerging [MLCommons AI Safety Benchmarks](https://mlcommons.org/benchmarks/ai-safety/){:target="mlc-benchmarks"} to select models with the best results based on the metrics identified. Most benchmarks are open source, so they can also be used internally for [Evaluation]({{site.glossaryurl}}/#evaluation) of proprietary models. For example, if you tune a public model using your private data to achieve better alignment for your domain. You will want to use the same benchmarks to verify that alignment for the domain has improved while also preserving safety performance.
+Use resources such as the emerging [MLCommons AI Safety Benchmarks](https://mlcommons.org/benchmarks/ai-safety/){:target="mlc-benchmarks"} to select models with the best results based on the metrics identified. Most benchmarks are open source, so they can also be used internally for [Evaluation]({{site.glossaryurl}}/#evaluation){:target="_glossary"} of proprietary models. For example, if you tune a public model using your private data to achieve better alignment for your domain. You will want to use the same benchmarks to verify that alignment for the domain has improved while also preserving safety performance.
 
 Also test the whole AI system, because while models generate responses to prompts, the system can include filters or modify prompts to keep them aligned, add extra information from RAG queries, etc. Similarly, filtering and transformations of the responses are usually implemented.
 

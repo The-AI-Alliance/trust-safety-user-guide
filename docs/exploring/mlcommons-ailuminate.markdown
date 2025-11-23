@@ -55,7 +55,7 @@ At this time, there are only two kinds of content considered: sexual content and
 
 The benchmarks only focus on text, not other modalities like audio and video.
 
-The benchmark’s v1.0 release only provided English [Prompt]({{site.glossaryurl}}/#prompt) datasets. French has been added since and MLCommons plans to deliver equivalent benchmarks with Hindi, and Simplified Chinese datasets.
+The benchmark’s v1.0 release only provided English [Prompt]({{site.glossaryurl}}/#prompt){:target="_glossary"} datasets. French has been added since and MLCommons plans to deliver equivalent benchmarks with Hindi, and Simplified Chinese datasets.
 
 Section _2.1.5 Future Development_ of the research paper lists these areas for possible improvement:
 

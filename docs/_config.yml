@@ -25,6 +25,10 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 , "docs/tests/", "notes.md", "vendor"
 ]
 
+# Added by AI Alliance: a glossary URL, which in this case is internal
+# to this site!
+glossaryurl: https://the-ai-alliance.github.io/glossary/glossary
+
 # Regression tests
 # By default, the pages in /docs/tests are excluded when the site is built.
 # To include them, comment-out the relevant line above.
@@ -74,10 +78,6 @@ nav_external_links:
     url: "https://github.com/The-AI-Alliance/trust-safety-user-guide"
     hide_icon: false
 
-# Added by AI Alliance: a glossary URL, which in this case is internal
-# to this site!
-glossaryurl: /glossary
-
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
@@ -95,8 +95,8 @@ back_to_top_text: "Back to the top"
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%Y-%m-%d %H:%M %z" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
-last_modified_timestamp: 2025-08-20
-last_version: 1.3.3
+last_modified_timestamp: 2025-11-23
+last_version: 1.4.0
 
 # Custom: Add the range of years for the copyright here. This is done here,
 # rather than default.html, so that the latter file can remain completely 
