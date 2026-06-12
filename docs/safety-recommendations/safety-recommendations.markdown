@@ -38,7 +38,7 @@ Good AI system design starts with an understanding of the features and safety ob
 
 Based on the overall objectives of the system, study the relative importance of the safety categories discussed previously. Some categories will be more important than others. This risk assessment process needs to consider the impacts on users when risk events occur. 
 
-Also use the [Evaluation Cards]({{site.glossaryurl}}/#evaluation-cards){:target="_glossary"} catalog hosted by the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"} for ideas about available evaluations and specific results for various various.
+Also use the [catalog](https://evalcards.evalevalai.com/){:target="evaleval-catalog"} of [Evaluation Cards]({{site.glossaryurl}}/#evaluation-cards){:target="_glossary"} hosted by the [EvalEval Coalition]({{site.baseurl}}/references/#evaleval-coalition) for ideas about available evaluations and specific results for various models.
 
 ### The Importance of Context in AI Safety
 
