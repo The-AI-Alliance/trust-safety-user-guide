@@ -38,6 +38,8 @@ Good AI system design starts with an understanding of the features and safety ob
 
 Based on the overall objectives of the system, study the relative importance of the safety categories discussed previously. Some categories will be more important than others. This risk assessment process needs to consider the impacts on users when risk events occur. 
 
+Also use the [Evaluation Cards]({{site.glossaryurl}}/#evaluation-cards){:target="_glossary"} catalog hosted by the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"} for ideas about available evaluations and specific results for various various.
+
 ### The Importance of Context in AI Safety
 
 The point about [ChatBots]({{site.glossaryurl}}/#chatbot){:target="_glossary"} shows that the total _context_ of the application is important. In particular for trust and safety concerns, what is considered unacceptable can vary with the situation. No one size fits all.
@@ -84,7 +86,9 @@ One reason _components_ with good abstraction boundaries are useful is they help
 
 With the safety categories prioritized, identify the corresponding metrics and available [Benchmarks]({{site.glossaryurl}}/#benchmark){:target="_glossary"} and test suites for measuring model and system behaviors for these categories.
 
-Make sure you understand the limitations of these tests and benchmarks, and their accuracy at detecting issues you care about. It is easy to be lulled into a false sense of security by impressive-looking numbers.
+Start with the [Evaluation Cards]({{site.glossaryurl}}/#evaluation-cards){:target="_glossary"} catalog hosted by the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"} for available kinds evaluations and specific measurements of them for various models.
+
+Make sure you understand the limitations of these evaluations, and their accuracy at detecting issues you care about. It is easy to be lulled into a false sense of security by impressive-looking numbers.
 
 _In particular_, be wary of so-called _out-of-distribution_ prompts and responses, meaning content that occurs in production runs that was not adequately covered in the training datasets used to train and tune the models used in the application, including those models inside guardrails. An area of active research is how to make models more _resilient_ in their handling of out-of-distribution data. 
 

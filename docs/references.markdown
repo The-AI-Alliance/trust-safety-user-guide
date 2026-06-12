@@ -60,6 +60,8 @@ In [What We Mean by Trust and Safety]({{site.baseurl}}/introduction#what-we-mean
 
 [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness){:target="lm-eval"} is their popular, de-facto standard open-source framework for performing evaluations, including, but not limited to safety.
 
+EleutherAI is part of the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"}, discussed under [Hugging Face](#hugging-face) below.
+
 ### European Union
 
 The [EU AI Act](https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence){:target="eu-act"} is the first act to regulate AI in the EU. It uses a risk-based approach to regulating AI, including a unique approach that specifies different rules for more powerful generative AI models. Like GDPR regulations for data, the EU AI Act is expected to impact AI practices far beyond the EU’s borders.
@@ -75,6 +77,8 @@ The [EU AI Act](https://www.europarl.europa.eu/topics/en/article/20230601STO9380
 
 The [evaluate](https://huggingface.co/docs/evaluate/index){:target="hf-eval"} framework from [Hugging Face](https://huggingface.co/){:target="hf"} is another popular tool for executing evaluations.
 
+Recently, Hugging Face and collaborators created the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"}, which has [announced a standard](https://evalevalai.com/infrastructure/2026/06/09/evaluation-cards-launch/){:target="evaleval"} for [Evaluation Cards]({{site.glossaryurl}}/#evaluation-cards){:target="_glossary"} and a catalog of them hosted at Hugging Face for various models evaluated against many benchmarks. **This is an important resource when looking for evaluation results, captured in a standardized way.**
+
 ### IBM
 
 [IBM](https://ibm.com){:target="ibm"} offers many resources for AI trust and safety:
@@ -87,6 +91,9 @@ The [evaluate](https://huggingface.co/docs/evaluate/index){:target="hf-eval"} fr
 * [BlueBench Leaderboard](https://huggingface.co/spaces/ibm-research/bluebench){:target="bluebench-leaderboard"}: An easy-to-use suite of benchmarks for different domains. It is hosted on the [IBM Research Hugging Face Community](https://huggingface.co/ibm-research){:target="ibmr-hf"}.
 * [Safety BAT Leaderboard](https://huggingface.co/spaces/aialliance/safetybat){:target="bat-leaderboard"}: A benchmark that uses [BenchBench](https://github.com/IBM/benchbench){:target="ibm-bb"} to rate benchmarks according to their agreement with a defined _Aggregate Benchmark_, an enhanced representation of many benchmarks that are available. Since benchmarks can be expensive to run yourself, it is useful for selecting a representative set of benchmarks that cover the areas of concern, but don't overlap with each other too much. It is hosted on the [AI Alliance Hugging Face Community](https://huggingface.co/aialliance){:target="aia-hf"}
 * [Kepler](https://github.com/sustainable-computing-io/kepler){:target="kepler"}: Sustainability benchmarks, e.g., for estimating carbon consumption. An example of an Evaluation that isn’t focused on safety. 
+
+
+IBM is part of the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"}, discussed under [Hugging Face](#hugging-face) above.
 
 ### Infosys Responsible AI Toolkit
 
