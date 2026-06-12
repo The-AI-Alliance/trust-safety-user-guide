@@ -38,7 +38,7 @@ Good AI system design starts with an understanding of the features and safety ob
 
 Based on the overall objectives of the system, study the relative importance of the safety categories discussed previously. Some categories will be more important than others. This risk assessment process needs to consider the impacts on users when risk events occur. 
 
-Also use the [catalog](https://evalcards.evalevalai.com/){:target="evaleval-catalog"} of [Evaluation Cards]({{site.glossaryurl}}/#evaluation-cards){:target="_glossary"} hosted by the [EvalEval Coalition]({{site.baseurl}}/references/#evaleval-coalition) for ideas about available evaluations and specific results for various models.
+Also use the [catalog](https://evalcards.evalevalai.com/){:target="evaleval-catalog"} of [Evaluation Cards]({{site.glossaryurl}}/#evaluation-card){:target="_glossary"} hosted by the [EvalEval Coalition]({{site.baseurl}}/references/#evaleval-coalition) for ideas about available evaluations and specific results for various models.
 
 ### The Importance of Context in AI Safety
 
@@ -86,7 +86,7 @@ One reason _components_ with good abstraction boundaries are useful is they help
 
 With the safety categories prioritized, identify the corresponding metrics and available [Benchmarks]({{site.glossaryurl}}/#benchmark){:target="_glossary"} and test suites for measuring model and system behaviors for these categories.
 
-Start with the [Evaluation Cards]({{site.glossaryurl}}/#evaluation-cards){:target="_glossary"} catalog hosted by the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"} for available kinds evaluations and specific measurements of them for various models.
+Start with the [Evaluation Cards]({{site.glossaryurl}}/#evaluation-card){:target="_glossary"} catalog hosted by the [EvalEval Coalition](https://evalevalai.com/){:target="evaleval"} for available kinds evaluations and specific measurements of them for various models.
 
 Make sure you understand the limitations of these evaluations, and their accuracy at detecting issues you care about. It is easy to be lulled into a false sense of security by impressive-looking numbers.
 
