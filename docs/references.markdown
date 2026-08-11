@@ -124,7 +124,7 @@ The [Responsible Use Guide](https://llama.meta.com/responsible-use-guide/){:targ
 
 ### MLCommons
 
-[MLCommons AI Safety](https://mlcommons.org/ai-safety/){:target="mlc-ais"} is the work group at [ML Commons](https://mlcommons.org/){:target="mlc"} that defined an influential taxonomy of harms and benchmarks that we discussed [here]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards).
+[MLCommons AI Safety](https://mlcommons.org/ai-safety/){:target="mlc-ais"} is the work group at [ML Commons](https://mlcommons.org/){:target="mlc"} that defined an influential taxonomy of harms and benchmarks that we discussed [here]({{site.baseurl}}/exploring/mlcommons-taxonomy-hazards). Recently, they also published a guide called ["How to Tell When a Benchmark Is Worth Trusting](https://mlcommons.org/2026/08/benchmark-is-worth-trusting/){:target="mlc-guide"}, which helps you understand the modern challenges of creating and maintaining trustworthy benchmarks.
 
 ### Mozilla Foundation
 

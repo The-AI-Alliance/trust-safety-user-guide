@@ -16,6 +16,9 @@ The previous resources we discussed provide a broad perspective on trust and saf
 
 The technical details of the benchmark suite suite are described in this research paper: [_AILuminate: Introducing v1.0 of the AI Risk and Reliability Benchmark from MLCommons_](https://arxiv.org/abs/2503.05731){:target="_arxiv"}.
 
+{: .note}
+> **NOTE:** On August 11, 2026, MLCommons published a guide called ["How to Tell When a Benchmark Is Worth Trusting](https://mlcommons.org/2026/08/benchmark-is-worth-trusting/){:target="mlc-guide"}, which helps you understand the modern challenges of creating and maintaining trustworthy benchmarks.
+
 ## The Hazard Taxonomy
 
 They define a taxonomy of twelve hazards categories that are covered by the benchmark suite.[^1] The term hazard is used because the taxonomy focuses on activities that usual illegal in most jurisdictions, because they pose significant personal or societal risk. 

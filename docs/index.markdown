@@ -29,7 +29,7 @@ This guide is organized as follows:
 * [References]({{site.baseurl}}/references): For more information.
 
 {: .todo}
-> **Help Wanted!** We want to expand the content in [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/), and greatly expand the information throughout on how you can apply what you learn. [We need your help]({{site.baseurl}}/contributing#join-us)!
+> **Help Wanted!** We want to expand the content in [Exploring AI Trust and Safety]({{site.baseurl}}/exploring/), improve the content on how you can apply what you learn, and ensure that everything remains up to date. [We need your help]({{site.baseurl}}/contributing#join-us)!
 
 Additional links:
 
