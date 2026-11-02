@@ -146,6 +146,8 @@ The laboratory's [Interactive OODA Processes for Operational Joint Human-Machine
 
 [ROOST](https://roost.tools/){:target="roost"} (Robust Open Online Safety Tools) is a non-profit that builds, releases, and maintains modular, open-source infrastructure for online safety. They serve product teams, trust & safety leads, and community moderators who need to review, triage, and enforce on harmful content without building everything from scratch or relying on opaque or expensive vendor tools. The focus is on modular, self-hostable, and interoperable components.
 
+In particular, see their [`awesome-safety-tools`](https://github.com/roostorg/awesome-safety-tools){:target="roost"} repo, a catalog of various safety tools from many providers.
+
 ### ServiceNow
 
 [Responsible AI Guidelines: A Practical Handbook for Human-Centered AI](https://www.servicenow.com/standard/other-documents/responsible-ai-guidelines.html){:target="servicenow-responsible-ai"} is [ServiceNow’s](https://www.servicenow.com/){:target="servicenow"} guide to responsible AI, reflecting their experiences building and providing AI technologies.
