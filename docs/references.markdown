@@ -142,6 +142,10 @@ https://oecd.ai/en/catalogue/tools){:target="oecd2"}
 
 The laboratory's [Interactive OODA Processes for Operational Joint Human-Machine Decision Making](https://www.sto.nato.int/publications/STO%20Meeting%20Proceedings/STO-MP-IST-160/MP-IST-160-PP-3P.pdf){:target="nato-pnw"}, by Blaha and Leslie, explores machine vs. human approaches to OODA (Observe, Orient, Decide, Act)
 
+### Robust Open Online Safety Tools
+
+[ROOST](https://roost.tools/){:target="roost"} (Robust Open Online Safety Tools) is a non-profit that builds, releases, and maintains modular, open-source infrastructure for online safety. They serve product teams, trust & safety leads, and community moderators who need to review, triage, and enforce on harmful content without building everything from scratch or relying on opaque or expensive vendor tools. The focus is on modular, self-hostable, and interoperable components.
+
 ### ServiceNow
 
 [Responsible AI Guidelines: A Practical Handbook for Human-Centered AI](https://www.servicenow.com/standard/other-documents/responsible-ai-guidelines.html){:target="servicenow-responsible-ai"} is [ServiceNow’s](https://www.servicenow.com/){:target="servicenow"} guide to responsible AI, reflecting their experiences building and providing AI technologies.
